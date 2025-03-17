@@ -1,0 +1,178 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --heading-desktop-h1-font-family: "Urbanist", Helvetica;
+  --heading-desktop-h1-font-size: 72px;
+  --heading-desktop-h1-font-style: normal;
+  --heading-desktop-h1-font-weight: 400;
+  --heading-desktop-h1-letter-spacing: -0.72px;
+  --heading-desktop-h1-line-height: 120.00000762939453%;
+  --heading-desktop-h2-font-family: "Urbanist", Helvetica;
+  --heading-desktop-h2-font-size: 52px;
+  --heading-desktop-h2-font-style: normal;
+  --heading-desktop-h2-font-weight: 400;
+  --heading-desktop-h2-letter-spacing: -0.52px;
+  --heading-desktop-h2-line-height: 120.00000762939453%;
+  --heading-desktop-h3-font-family: "Urbanist", Helvetica;
+  --heading-desktop-h3-font-size: 44px;
+  --heading-desktop-h3-font-style: normal;
+  --heading-desktop-h3-font-weight: 400;
+  --heading-desktop-h3-letter-spacing: -0.44px;
+  --heading-desktop-h3-line-height: 120.00000762939453%;
+  --heading-desktop-h4-font-family: "Urbanist", Helvetica;
+  --heading-desktop-h4-font-size: 36px;
+  --heading-desktop-h4-font-style: normal;
+  --heading-desktop-h4-font-weight: 400;
+  --heading-desktop-h4-letter-spacing: -0.36px;
+  --heading-desktop-h4-line-height: 130%;
+  --heading-desktop-h5-font-family: "Urbanist", Helvetica;
+  --heading-desktop-h5-font-size: 28px;
+  --heading-desktop-h5-font-style: normal;
+  --heading-desktop-h5-font-weight: 400;
+  --heading-desktop-h5-letter-spacing: -0.2800000000000001px;
+  --heading-desktop-h5-line-height: 140%;
+  --heading-desktop-tagline-font-family: "DM Sans", Helvetica;
+  --heading-desktop-tagline-font-size: 16px;
+  --heading-desktop-tagline-font-style: normal;
+  --heading-desktop-tagline-font-weight: 600;
+  --heading-desktop-tagline-letter-spacing: 0px;
+  --heading-desktop-tagline-line-height: 150%;
+  --text-large-semi-bold-font-family: "DM Sans", Helvetica;
+  --text-large-semi-bold-font-size: 22px;
+  --text-large-semi-bold-font-style: normal;
+  --text-large-semi-bold-font-weight: 600;
+  --text-large-semi-bold-letter-spacing: 0px;
+  --text-large-semi-bold-line-height: 150%;
+  --text-medium-normal-font-family: "DM Sans", Helvetica;
+  --text-medium-normal-font-size: 18px;
+  --text-medium-normal-font-style: normal;
+  --text-medium-normal-font-weight: 400;
+  --text-medium-normal-letter-spacing: 0px;
+  --text-medium-normal-line-height: 150%;
+  --text-regular-medium-font-family: "DM Sans", Helvetica;
+  --text-regular-medium-font-size: 16px;
+  --text-regular-medium-font-style: normal;
+  --text-regular-medium-font-weight: 500;
+  --text-regular-medium-letter-spacing: 0px;
+  --text-regular-medium-line-height: 150%;
+  --text-regular-normal-font-family: "DM Sans", Helvetica;
+  --text-regular-normal-font-size: 16px;
+  --text-regular-normal-font-style: normal;
+  --text-regular-normal-font-weight: 400;
+  --text-regular-normal-letter-spacing: 0px;
+  --text-regular-normal-line-height: 150%;
+  --text-regular-semi-bold-font-family: "DM Sans", Helvetica;
+  --text-regular-semi-bold-font-size: 16px;
+  --text-regular-semi-bold-font-style: normal;
+  --text-regular-semi-bold-font-weight: 600;
+  --text-regular-semi-bold-letter-spacing: 0px;
+  --text-regular-semi-bold-line-height: 150%;
+  --text-small-link-font-family: "DM Sans", Helvetica;
+  --text-small-link-font-size: 14px;
+  --text-small-link-font-style: normal;
+  --text-small-link-font-weight: 400;
+  --text-small-link-letter-spacing: 0px;
+  --text-small-link-line-height: 150%;
+  --text-small-normal-font-family: "DM Sans", Helvetica;
+  --text-small-normal-font-size: 14px;
+  --text-small-normal-font-style: normal;
+  --text-small-normal-font-weight: 400;
+  --text-small-normal-letter-spacing: 0px;
+  --text-small-normal-line-height: 150%;
+  --text-small-semi-bold-font-family: "DM Sans", Helvetica;
+  --text-small-semi-bold-font-size: 14px;
+  --text-small-semi-bold-font-style: normal;
+  --text-small-semi-bold-font-weight: 600;
+  --text-small-semi-bold-letter-spacing: 0px;
+  --text-small-semi-bold-line-height: 150%;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
