@@ -5,17 +5,17 @@ import {
   AvatarFallback,
   AvatarImage,
 } from "../../../../components/ui/avatar";
-import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
+import Button from "../../../../components/ui/button";
+import { Card, CardContent } from "../../../../components/ui/Card";
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-} from "../../../../components/ui/navigation-menu";
-import { Separator } from "../../../../components/ui/separator";
+} from "../../../../components/ui/NavigationMenu";
+import { Separator } from "../../../../components/ui/Separator";
 
-export const DesktopViewSection = (): JSX.Element => {
+export const DesktopViewSection = () => {
   // Navigation links data
   const navLinks = [
     { text: "Servicios" },
@@ -73,7 +73,7 @@ export const DesktopViewSection = (): JSX.Element => {
   return (
     <div className="flex flex-col items-start w-full">
       {/* Header/Navigation */}
-      <header className="flex flex-col w-full items-center bg-white">
+      <header className="flex flex-col w-full items-center bg-white rounded-[10px]">
         <div className="flex h-[72px] items-center justify-between px-16 py-0 relative self-stretch w-full">
           <div className="flex items-center gap-6">
             <img
@@ -113,6 +113,7 @@ export const DesktopViewSection = (): JSX.Element => {
                 <span className="font-text-regular-medium text-[#08030d] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)]">
                   ESP
                 </span>
+                <ChevronDownIcon className="w-6 h-6" />
               </Button>
 
               <Button className="px-5 py-2 bg-[#a33cfa] rounded-[100px]">

@@ -2,7 +2,7 @@ import React from "react";
 import { DesktopViewSection } from "./sections/DesktopViewSection/DesktopViewSection";
 import { MobileViewSection } from "./sections/MobileViewSection/MobileViewSection";
 
-export const Box = (): JSX.Element => {
+export const Box = () => {
   return (
     <main className="w-full">
       {/* Desktop view - hidden on mobile */}

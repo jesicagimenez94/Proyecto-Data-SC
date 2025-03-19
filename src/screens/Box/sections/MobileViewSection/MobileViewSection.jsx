@@ -15,11 +15,11 @@ import {
   AccordionTrigger,
 } from "../../../../components/ui/accordion";
 import { Avatar } from "../../../../components/ui/avatar";
-import { Button } from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/card";
-import { Separator } from "../../../../components/ui/separator";
+import Button from "../../../../components/ui/button";
+import { Card, CardContent } from "../../../../components/ui/Card";
+import { Separator } from "../../../../components/ui/Separator";
 
-export const MobileViewSection = (): JSX.Element => {
+export const MobileViewSection = () => {
   // Navigation links data
   const navLinks = [
     { title: "Link One" },
