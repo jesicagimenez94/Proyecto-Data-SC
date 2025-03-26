@@ -1,3 +1,5 @@
+//////////////////////////////////////////////////////////
+// Importaciones
 import {
   ChevronRightIcon,
   FacebookIcon,
@@ -13,12 +15,14 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../../../../components/ui/accordion";
-import { Avatar } from "../../../../components/ui/avatar";
-import Button from "../../../../components/ui/button";
-import { Card, CardContent } from "../../../../components/ui/Card";
-import { Separator } from "../../../../components/ui/Separator";
+} from "../../components/ui/accordion";
+import { Avatar } from "../../components/ui/avatar";
+import Button from "../../components/ui/button";
+import { Card, CardContent } from "../../components/ui/Card";
+import { Separator } from "../../components/ui/Separator";
 
+//////////////////////////////////////////////////////////
+// Componente MobileViewSection (❗REFACTORIZAR ESTE COMPONENTE)
 export const MobileViewSection = () => {
   // Navigation links data
   const navLinks = [

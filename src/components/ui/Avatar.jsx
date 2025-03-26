@@ -1,10 +1,17 @@
-"use client";
+"use client"; // Indicamos que se trata de un archivo de cliente
 
+//////////////////////////////////////////////////////////
+// Importaciones
 import * as AvatarPrimitive from "@radix-ui/react-avatar";
 import * as React from "react";
 
 import { cn } from "../../lib/utils";
 
+//////////////////////////////////////////////////////////
+
+/// forwardRef es una función que crea un componente de reenvío de referencia: https://es.reactjs.org/docs/forwarding-refs.html
+
+// Componente raíz del Avatar, que agrupa imagen y fallback
 const Avatar = React.forwardRef(({ className, ...props }, ref) => (
   <AvatarPrimitive.Root
     ref={ref}
@@ -17,6 +24,7 @@ const Avatar = React.forwardRef(({ className, ...props }, ref) => (
 ));
 Avatar.displayName = AvatarPrimitive.Root.displayName;
 
+// Imagen del Avatar, se ajusta al contenedor circular.
 const AvatarImage = React.forwardRef(({ className, ...props }, ref) => (
   <AvatarPrimitive.Image
     ref={ref}
@@ -26,6 +34,7 @@ const AvatarImage = React.forwardRef(({ className, ...props }, ref) => (
 ));
 AvatarImage.displayName = AvatarPrimitive.Image.displayName;
 
+// Fallback del Avatar, muestra un fondo con íconos o texto cuando no hay imagen
 const AvatarFallback = React.forwardRef(({ className, ...props }, ref) => (
   <AvatarPrimitive.Fallback
     ref={ref}

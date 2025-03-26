@@ -1,0 +1,110 @@
+{
+    "navLinks": [
+        {
+            "id": 101,
+            "text": "Servicios",
+            "href": "/#services"
+        },
+        {
+            "id": 102,
+            "text": "Proyectos",
+            "href": "/#projects"
+        },
+        {
+            "id":103,
+            "text": "Acerca de",
+            "href":"/#aboutus"
+        }
+    ],
+    "features": [
+        {
+            "id": 201,
+            "title": "Innovative data analytics solutions",
+            "description": "LincePulce offers advanced data analytics services that empower businesses to make informed decisions. By harnessing the power of big data, we help organizations uncover valuable insights and optimize their operations for success."
+        },
+        {
+            "id": 202,
+            "title": "Customized business intelligence tools",
+            "description": "LincePulce offers customized business intelligence tools that enhance decision-making. These tools provide seamless data visualization, real-time insights, and intuitive reporting, allowing your team to access and analyze critical information efficiently."
+        },
+        {
+            "id": 203,
+            "title": "Comprehensive data management service",
+            "description": "Our Data Management Service provides an efficient solution for organizing, storing, and analyzing your data. It ensures security, accessibility, and maintenance at every stage. From collection to reporting, our service simplifies the process, allowing informed decisions based on accurate information."
+        }
+    ],
+    "teamMembers": [
+        {
+            "image": "public/placeholder-image-11.png"
+        },
+        {
+            "image": "public/placeholder-image-12.png"
+        },
+        {
+            "image": "public/placeholder-image-13.png"
+        },
+        {
+            "image": "public/placeholder-image-14.png"
+        },
+        {
+            "image": "public/placeholder-image-15.png"
+        },
+        {
+            "image": "public/placeholder-image-16.png"
+        }
+    ],
+    "footerLinks": [
+        {
+            "id": 401,
+            "text": "Servicios",
+            "href": "/#services"
+        },
+        {
+            "id": 402,
+            "text": "Proyectos",
+            "href": "/#projects"
+        },
+        {
+            "id": 403,
+            "text": "Acerca de",
+            "href": "/#aboutus"
+        },
+        {
+            "id": 404,
+            "text": "Link Four",
+            "href": "/#link-four"
+        },
+        {
+            "id": 405,
+            "text": "Link Five",
+            "href": "/#link-five"
+        }
+    ],
+    "socialIcons": [
+        {
+            "id": 501,
+            "src": "public/icon---facebook.svg",
+            "alt": "Icon facebook"
+        },
+        {
+            "id": 502,
+            "src": "public/icon---instagram.svg",
+            "alt": "Icon instagram"
+        },
+        {
+            "id": 503,
+            "src": "public/icon---x.svg",
+            "alt": "Icon x"
+        },
+        {
+            "id": 504,
+            "src": "public/icon---linkedin.svg",
+            "alt": "Icon linkedin"
+        },
+        {
+            "id": 505,
+            "src": "public/icon---youtube.svg",
+            "alt": "Icon youtube"
+        }
+    ]
+}

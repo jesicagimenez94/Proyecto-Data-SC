@@ -1,7 +1,13 @@
+//////////////////////////////////////////////////////////
+// Importaciones
 import * as React from "react";
-
 import { cn } from "../../lib/utils";
 
+//////////////////////////////////////////////////////////
+
+/// forwardRef es una función que crea un componente de reenvío de referencia: https://es.reactjs.org/docs/forwarding-refs.html
+
+// Componente de tarjeta, que agrupa contenido relacionado
 const Card = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
@@ -14,6 +20,7 @@ const Card = React.forwardRef(({ className, ...props }, ref) => (
 ));
 Card.displayName = "Card";
 
+// Encabezado de la tarjeta, contiene el título y descripción
 const CardHeader = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
@@ -23,6 +30,7 @@ const CardHeader = React.forwardRef(({ className, ...props }, ref) => (
 ));
 CardHeader.displayName = "CardHeader";
 
+// Título de la tarjeta
 const CardTitle = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
@@ -32,6 +40,7 @@ const CardTitle = React.forwardRef(({ className, ...props }, ref) => (
 ));
 CardTitle.displayName = "CardTitle";
 
+// Descripción de la tarjeta
 const CardDescription = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}
@@ -41,11 +50,13 @@ const CardDescription = React.forwardRef(({ className, ...props }, ref) => (
 ));
 CardDescription.displayName = "CardDescription";
 
+// Contenido de la tarjeta
 const CardContent = React.forwardRef(({ className, ...props }, ref) => (
   <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
 ));
 CardContent.displayName = "CardContent";
 
+// Pie de la tarjeta, contiene acciones o información adicional
 const CardFooter = React.forwardRef(({ className, ...props }, ref) => (
   <div
     ref={ref}

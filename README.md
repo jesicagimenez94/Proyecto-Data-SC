@@ -1,4 +1,4 @@
-# Data SC
+# LincePulce
 
 Bienvenido querido compañero de desarrollo! Abajo están las instrucciones para trabajar con la app. 
 
