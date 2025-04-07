@@ -1,6 +1,11 @@
 {
     "navLinks": [
         {
+            "id": 100,
+            "text": "Inicio",
+            "href": "/"
+        },
+        {
             "id": 101,
             "text": "Servicios",
             "href": "/#services"
@@ -12,7 +17,7 @@
         },
         {
             "id":103,
-            "text": "Acerca de",
+            "text": "Nosotros",
             "href":"/#aboutus"
         }
     ],
