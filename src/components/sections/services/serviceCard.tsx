@@ -9,12 +9,16 @@ type ServiceCardProps = {
   url: string
 }
 
+/* The `export function ServiceCard` is a React functional component that takes in props `title`,
+`description`, `backgroundPattern`, and `url` as defined in the `ServiceCardProps` type. */
 /**
- * The `ServiceCard` function in TypeScript React renders a styled card component with a title,
+ * The function `ServiceCard` in TypeScript React renders a styled card component with a title,
  * description, background pattern, and a link to explore more.
  * @param {ServiceCardProps}  - - `title`: The title of the service card.
- * @returns The `ServiceCard` component is being returned. It is a functional component that renders a
- * styled card with a title, description, background pattern, and a link to explore more.
+ * @returns The `ServiceCard` component is being returned. It is a functional component that displays a
+ * service card with a title, description, background pattern, and a link to explore more. The
+ * component accepts props such as `title`, `description`, `backgroundPattern`, and `url` to customize
+ * the content of the service card.
  */
 export function ServiceCard({ title, description, backgroundPattern, url }: ServiceCardProps) {
   return (
