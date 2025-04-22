@@ -1,6 +1,11 @@
 {
     "navLinks": [
         {
+            "id": 100,
+            "text": "Inicio",
+            "href": "/"
+        },
+        {
             "id": 101,
             "text": "Servicios",
             "href": "/#services"
@@ -12,25 +17,25 @@
         },
         {
             "id":103,
-            "text": "Acerca de",
+            "text": "Nosotros",
             "href":"/#aboutus"
         }
     ],
     "features": [
         {
             "id": 201,
-            "title": "Innovative data analytics solutions",
-            "description": "LincePulce offers advanced data analytics services that empower businesses to make informed decisions. By harnessing the power of big data, we help organizations uncover valuable insights and optimize their operations for success."
+            "title": "Business Intelligence",
+            "description": "Datos que Impulsan el Éxito Transformamos datos en conocimiento accionable mediante dashboards interactivos, reportes dinámicos y análisis predictivos. Descubre patrones ocultos y toma decisiones informadas con nuestras soluciones de Power BI."
         },
         {
             "id": 202,
-            "title": "Customized business intelligence tools",
-            "description": "LincePulce offers customized business intelligence tools that enhance decision-making. These tools provide seamless data visualization, real-time insights, and intuitive reporting, allowing your team to access and analyze critical information efficiently."
+            "title": "Soporte Técnico",
+            "description": "Seguridad y Continuidad Mantenemos tu infraestructura tecnológica operativa y segura. Con soporte proactivo y atención inmediata, resolvemos incidencias y optimizamos el rendimiento de tus sistemas."
         },
         {
             "id": 203,
-            "title": "Comprehensive data management service",
-            "description": "Our Data Management Service provides an efficient solution for organizing, storing, and analyzing your data. It ensures security, accessibility, and maintenance at every stage. From collection to reporting, our service simplifies the process, allowing informed decisions based on accurate information."
+            "title": "Desarrollo de Software",
+            "description": "Creando el Futuro Diseñamos y desarrollamos aplicaciones robustas, escalables y seguras a la medida de t us necesidades. Desde plataformas web hasta integraciones complejas, nuestra experiencia garantiza productos innovadores y eficientes."
         }
     ],
     "teamMembers": [
