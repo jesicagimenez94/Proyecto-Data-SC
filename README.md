@@ -1,4 +1,4 @@
-# LincePulce
+# EstelarCode
 
 Bienvenido querido compañero de desarrollo! Abajo están las instrucciones para trabajar con la app. 
 
