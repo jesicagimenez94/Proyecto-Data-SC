@@ -1,6 +1,11 @@
 {
     "navLinks": [
         {
+            "id": 100,
+            "text": "Inicio",
+            "href": "/"
+        },
+        {
             "id": 101,
             "text": "Servicios",
             "href": "/#services"
@@ -12,28 +17,25 @@
         },
         {
             "id":103,
-            "text": "Acerca de",
+            "text": "Nosotros",
             "href":"/#aboutus"
         }
     ],
     "features": [
         {
             "id": 201,
-            "title": "Business Intelligence",
-            "description": "Datos que Impulsan el éxito. Transformamos datos en conocimiento accionable mediante dashboards interactivos, reportes dinámicos y análisis predictivos. Descubre patrones ocultos y toma decisiones informadas con nuestras soluciones de BI.",
-            "backgroundImage": "public/proyectImg1.png"
+            "title": "Innovative data analytics solutions",
+            "description": "LincePulce offers advanced data analytics services that empower businesses to make informed decisions. By harnessing the power of big data, we help organizations uncover valuable insights and optimize their operations for success."
         },
         {
             "id": 202,
-            "title": "Soporte Técnico",
-            "description": "Seguridad y Continuidad. Mantenemos tu infraestructura tecnológica operativa y segura. Con soporte proactivo y atención inmediata, resolvemos incidencias y optimizamos el rendimiento de tus sistemas.",
-            "backgroundImage": "public/proyectImg2.png"
+            "title": "Customized business intelligence tools",
+            "description": "LincePulce offers customized business intelligence tools that enhance decision-making. These tools provide seamless data visualization, real-time insights, and intuitive reporting, allowing your team to access and analyze critical information efficiently."
         },
         {
             "id": 203,
-            "title": "Desarrollo de Software",
-            "description": "Creando el Futuro Diseñamos y desarrollamos aplicaciones robustas, escalables y seguras a la medida de t us necesidades. Desde plataformas web hasta integraciones complejas, nuestra experiencia garantiza productos innovadores y eficientes.",
-            "backgroundImage": "public/proyectImg3.png"
+            "title": "Comprehensive data management service",
+            "description": "Our Data Management Service provides an efficient solution for organizing, storing, and analyzing your data. It ensures security, accessibility, and maintenance at every stage. From collection to reporting, our service simplifies the process, allowing informed decisions based on accurate information."
         }
 
     ],
@@ -111,28 +113,27 @@
     "socialIcons": [
         {
             "id": 501,
-            "src": "public/icon---facebook.svg",
-            "alt": "Icon facebook"
+            "src": "public/icon---instagram-white.svg",
+            "alt": "Icon instagram",
+            "url": "https://www.instagram.com/"
         },
         {
             "id": 502,
-            "src": "public/icon---instagram.svg",
-            "alt": "Icon instagram"
+            "src": "public/icon---x-white.svg",
+            "alt": "Icon x",
+            "url": "https://x.com/"
         },
         {
             "id": 503,
-            "src": "public/icon---x.svg",
-            "alt": "Icon x"
+            "src": "public/icon---linkedin-white.svg",
+            "alt": "Icon linkedin",
+            "url": "https://www.linkedin.com/"
         },
         {
             "id": 504,
-            "src": "public/icon---linkedin.svg",
-            "alt": "Icon linkedin"
-        },
-        {
-            "id": 505,
-            "src": "public/icon---youtube.svg",
-            "alt": "Icon youtube"
+            "src": "public/icon---youtube-white.svg",
+            "alt": "Icon youtube",
+            "url": "https://www.youtube.com/"
         }
     ]
 }

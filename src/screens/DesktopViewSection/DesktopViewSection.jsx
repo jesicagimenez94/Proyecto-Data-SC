@@ -3,12 +3,12 @@
 import HeroSection from "../../components/sections/HeroSection";
 import ExperienceSection from "../../components/sections/ExperienceSection";
 import FeaturesSection from "../../components/sections/FeaturesSection";
-import CTASection from "../../components/sections/CTASection";
+//import CTASection from "../../components/sections/CTASection";
 import TeamSection from "../../components/sections/TeamSection";
 import StatsSection from "../../components/sections/StatsSection";
 import TestimonialSection from "../../components/sections/TestimonialSection";
 import BenefitsSection from "../../components/sections/BenefitsSection";
-import Proyectos from "../../components/sections/Proyectos";
+
 //////////////////////////////////////////////////////////
 // Componente DesktopViewSection
 export const DesktopViewSection = () => {
@@ -22,7 +22,8 @@ export const DesktopViewSection = () => {
       <TeamSection />
       <Proyectos />
       <StatsSection />
-      <CTASection />
+      {/*<CTASection />*/}
+      <FormularioSection />
     </div>
   );
 };
