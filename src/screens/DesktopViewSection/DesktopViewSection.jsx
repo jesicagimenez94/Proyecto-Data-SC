@@ -15,10 +15,10 @@ export const DesktopViewSection = () => {
   return (
     <div className="flex flex-col items-start w-full">
       <HeroSection />
-      <ExperienceSection />
       <FeaturesSection />
-      <TestimonialSection />
+      <ExperienceSection />
       <BenefitsSection />
+      <TestimonialSection />
       <TeamSection />
       <StatsSection />
       <CTASection />
