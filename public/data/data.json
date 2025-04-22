@@ -83,28 +83,27 @@
     "socialIcons": [
         {
             "id": 501,
-            "src": "public/icon---facebook.svg",
-            "alt": "Icon facebook"
+            "src": "public/icon---instagram-white.svg",
+            "alt": "Icon instagram",
+            "url": "https://www.instagram.com/"
         },
         {
             "id": 502,
-            "src": "public/icon---instagram.svg",
-            "alt": "Icon instagram"
+            "src": "public/icon---x-white.svg",
+            "alt": "Icon x",
+            "url": "https://x.com/"
         },
         {
             "id": 503,
-            "src": "public/icon---x.svg",
-            "alt": "Icon x"
+            "src": "public/icon---linkedin-white.svg",
+            "alt": "Icon linkedin",
+            "url": "https://www.linkedin.com/"
         },
         {
             "id": 504,
-            "src": "public/icon---linkedin.svg",
-            "alt": "Icon linkedin"
-        },
-        {
-            "id": 505,
-            "src": "public/icon---youtube.svg",
-            "alt": "Icon youtube"
+            "src": "public/icon---youtube-white.svg",
+            "alt": "Icon youtube",
+            "url": "https://www.youtube.com/"
         }
     ]
 }
