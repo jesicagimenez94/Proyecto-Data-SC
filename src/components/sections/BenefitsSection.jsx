@@ -8,41 +8,27 @@ import Button from "../../components/ui/button";
 const BenefitsSection = () => {
   return (
     <>
-      <section className="w-full items-start gap-20 px-16 py-28 flex flex-col bg-white">
-        <div className="flex items-center gap-20 self-stretch w-full">
+      <section className="w-full items-start gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-20 md:px-16 lg:px-28 flex flex-col bg-[#141118]">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 w-full">
+          {/* Contenido de texto */}
           <div className="flex flex-col items-start gap-8 flex-1">
-            <div className="flex flex-col items-start gap-6 self-stretch w-full">
-              <img
-                className="w-20 h-20"
-                alt="Icon relume"
-                src="public/icon---relume-10.svg"
-              />
-
-              <div className="flex flex-col items-start gap-6 self-stretch w-full">
-                <h2 className="self-stretch text-[length:var(--heading-desktop-h2-font-size)] tracking-[var(--heading-desktop-h2-letter-spacing)] leading-[var(--heading-desktop-h2-line-height)] font-heading-desktop-h2 text-[#08030d] [font-style:var(--heading-desktop-h2-font-style)]">
-                  Our benefits
-                </h2>
-
-                <p className="font-text-medium-normal text-[length:var(--text-medium-normal-font-size)] leading-[var(--text-medium-normal-line-height)] self-stretch text-[#08030d] tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)]">
-                  Our expert team provides tailored solutions that optimize
-                  performance and efficiency. Clients gain insights through
-                  data-driven strategies, leading to informed decision-making.
-                  Additionally, we prioritize innovative approaches that enhance
-                  productivity and streamline operations, ensuring organizations
-                  can adapt to market changes swiftly. With our support,
-                  businesses can achieve sustainable growth and a competitive
-                  edge.
-                </p>
-              </div>
+            <div className="flex flex-col items-start gap-6 w-full">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-[var(--heading-desktop-h2-letter-spacing)] leading-[var(--heading-desktop-h2-line-height)] font-heading-desktop-h2 text-[#E0CFF7]">
+                Nuestra misión
+              </h2>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[var(--text-medium-normal-line-height)] text-[#E0CFF7]">
+                En EstelarCode creemos que la tecnología no solo debe resolver problemas, sino también potenciar oportunidades. Nuestra misión es brindar soluciones digitales innovadoras, eficientes a medida que ayuden a empresas y personas a crecer, optimizar sus procesos y adaptarse al mundo digital de forma simple y efectiva. Trabajamos con pasión, transparencia y compromiso, buscando siempre superar las expectativas de nuestros clientes y acompañarlos en cada paso de su evolución tecnológica.
+              </p>
             </div>
 
-            <div className="flex items-center gap-6">
+            {/* Botones */}
+            <div className="flex flex-col sm:flex-row items-center gap-4">
               <Button
                 variant="outline"
-                className="px-6 py-2.5 bg-[#08030d0d] rounded-[100px] border-transparent"
+                className="px-6 py-2.5 bg-[#a03df4] rounded-[100px] border-transparent"
               >
-                <span className="font-text-regular-medium text-[#08030d] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)]">
-                  Button
+                <span className="text-sm sm:text-base md:text-lg text-[#E0CFF7] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
+                  Contactanos
                 </span>
               </Button>
 
@@ -50,23 +36,24 @@ const BenefitsSection = () => {
                 variant="link"
                 className="rounded-[100px] overflow-hidden p-0"
               >
-                <span className="font-text-regular-medium text-[#08030d] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)]">
-                  Button
+                <span className="text-sm sm:text-base md:text-lg text-[#E0CFF7] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
+                  Conoce más
                 </span>
-                <ChevronRightIcon className="w-6 h-6" />
+                <ChevronRightIcon className="w-5 h-5 sm:w-6 sm:h-6 text-[#a259ff]" />
               </Button>
             </div>
           </div>
 
+          {/* Imagen */}
           <img
-            className="flex-1 h-[540px] object-cover rounded-[40px]"
-            alt="Placeholder image"
-            src="public/placeholder-image-10.png"
+            className="flex-1 w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[540px] object-cover rounded-[20px] lg:rounded-[40px]"
+            alt="Nuestra misión"
+            src="public/nuestra-mision.png"
           />
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default BenefitsSection
+export default BenefitsSection;
