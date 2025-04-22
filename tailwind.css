@@ -8,6 +8,9 @@
 }
 
 :root {
+  --background-footer: #08030D;
+  --background-section-gray: #141218;
+  --input-background: #FFFFFF0D;
   --heading-desktop-h1-font-family: "Orbitron", Helvetica;
   --heading-desktop-h1-font-size: 80px;
   --heading-desktop-h1-font-style: normal;
