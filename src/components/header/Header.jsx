@@ -58,7 +58,7 @@ export default function Header() {
               <img
                 className="w-[200px] h-9 object-contain rounded-2xl"
                 alt="Company logo"
-                src="public/logos/isotipo-transparente.png"
+                src="public/logos/web_header_600x200.png"
               />
             </div>
 
