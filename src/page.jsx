@@ -19,10 +19,10 @@ export const Home = () => {
       <HeroSection />
       <ServicesSection />
       <ExperienceSection />
+      <Proyectos />
       <BenefitsSection />
       <TestimonialSection />
       <TeamSection />
-      <Proyectos />
       <StatsSection />
       {/*<CTASection />*/}
       <FormularioSection />
