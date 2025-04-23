@@ -67,7 +67,7 @@ export default function FormularioSection() {
   };
 
   return (
-    <section className="flex flex-col w-full items-start gap-20 px-16 py-16 bg-[var(--background-section-gray)]">
+    <section className="flex flex-col w-full items-start gap-20 px-16 py-16 bg-[var(--background-section-gray)]" id="form-section">
       <div className="max-w">
         <div className="rounded-lg overflow-hidden">
           <div className="md:flex">

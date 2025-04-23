@@ -21,7 +21,7 @@ const HeroSection = () => {
           </div>
 
           <div className="flex items-start gap-4">
-            <Button className="px-6 py-2.5 bg-[#a33cfa] rounded-[100px]">
+            <Button className="px-6 py-2.5 bg-[#a33cfa] rounded-[100px]" href="#form-section">
               <span className="font-text-regular-medium text-[#fff] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)]">
                 Contactanos
               </span>

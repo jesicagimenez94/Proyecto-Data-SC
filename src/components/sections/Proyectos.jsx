@@ -13,7 +13,7 @@ const Proyectos = () => {
   return (
     <>
       {/* Features Section */}
-      <section className="w-full items-center gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-1 md:px-16 lg:px-28 flex flex-col bg-[#141118]">
+      <section className="w-full items-center gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-1 md:px-16 lg:px-28 flex flex-col bg-[#141118]" id="proyectos">
         <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center tracking-[var(--heading-desktop-h3-letter-spacing)] leading-[var(--heading-desktop-h3-line-height)] font-heading-desktop-h3 text-[#E0CFF7]">
           Proyectos
         </h3>

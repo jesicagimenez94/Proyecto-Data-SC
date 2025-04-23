@@ -26,6 +26,7 @@ const BenefitsSection = () => {
               <Button
                 variant="outline"
                 className="px-6 py-2.5 bg-[#a03df4] rounded-[100px] border-transparent"
+                href="#form-section"
               >
                 <span className="text-sm sm:text-base md:text-lg text-[#E0CFF7] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
                   Contactanos

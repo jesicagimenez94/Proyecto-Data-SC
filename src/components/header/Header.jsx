@@ -31,11 +31,18 @@ export default function Header() {
         
         <div className="flex h-[72px] items-center justify-between px-10 w-full max-w-[1650px] bg-[#000]/60 backdrop-blur-md rounded-full">
           
-        
+        {/* Logo */}
+        <div className="flex items-center">
+            <img
+              className="h-12 md:h-14 lg:h-16 object-contain"
+              alt="Company logo"
+              src="public/logos/web_square_500x500.png"
+            />
+            </div>
 
           {/* Navigation. Se usa únicamente para el menú de navegación (desktop y mobile), difiere del componente Button ya que el menú muestra una lista de enlaces de navegación, mientras que el botón es un elemento interactivo que generalmente dispara una acción. */}
           {/* DARLE FUNCIONALIDAD (MÁS PARA MOBILE) */}
-          <div className="flex items-center w-full justify-between gap-6">
+          <div className="flex items-center justify-between gap-6">
             <NavigationMenu>
               <NavigationMenuList className="flex items-center gap-10">
                 {navLinks?.map((item, index) => (
@@ -53,14 +60,7 @@ export default function Header() {
               </NavigationMenuList>
             </NavigationMenu>
 
-            {/* Logo */}
-        <div className="flex items-center gap-6">
-              <img
-                className="w-[200px] h-9 object-contain rounded-2xl"
-                alt="Company logo"
-                src="public/logos/web_header_600x200.png"
-              />
-            </div>
+            
 
             <div className="flex items-center gap-4">
               {/* Botón de cambio de idioma */}
@@ -77,7 +77,7 @@ export default function Header() {
               {/* DARLE FUNCIONALIDAD */}
               <Button
                 className="px-5 py-2 bg-[#a33cfa] text-white rounded-full font-medium shadow-md"
-                href="#"
+                href="#form-section"
               >
                 Contacto
               </Button>

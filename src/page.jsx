@@ -10,6 +10,7 @@ import BenefitsSection from "./components/sections/BenefitsSection";
 import Proyectos from "./components/sections/Proyectos";
 import FormularioSection from "./components/sections/FormSection";
 //import CTASection from "./components/sections/CTASection";
+import ScrollToTopButton from "./components/ui/ScrollToTopButton";
 
 //////////////////////////////////////////////////////////
 // Componente Home (DesktopViewSection)
@@ -26,6 +27,7 @@ export const Home = () => {
       <StatsSection />
       {/*<CTASection />*/}
       <FormularioSection />
+      <ScrollToTopButton />
     </div>
   );
 };
