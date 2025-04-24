@@ -7,6 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        sans: ['Orbitron', 'sans-serif'],
+        orbitron: ['Orbitron', 'sans-serif'],
         "heading-desktop-h1": "var(--heading-desktop-h1-font-family)",
         "heading-desktop-h2": "var(--heading-desktop-h2-font-family)",
         "heading-desktop-h3": "var(--heading-desktop-h3-font-family)",
@@ -26,15 +28,6 @@ module.exports = {
         "text-small-link": "var(--text-small-link-font-family)",
         "text-small-normal": "var(--text-small-normal-font-family)",
         "text-small-semi-bold": "var(--text-small-semi-bold-font-family)",
-        sans: [
-          "ui-sans-serif",
-          "system-ui",
-          "sans-serif",
-          '"Apple Color Emoji"',
-          '"Segoe UI Emoji"',
-          '"Segoe UI Symbol"',
-          '"Noto Color Emoji"',
-        ],
       },
       colors: {
         border: "hsl(var(--border))",

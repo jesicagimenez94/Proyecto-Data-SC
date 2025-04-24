@@ -35,35 +35,37 @@ const TeamSection = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-start gap-10 self-stretch w-full">
+        <div className="flex flex-col items-start gap-10 self-stretch">
           {/* Primer fila del equipo */}
-          <div className="flex items-start gap-12 self-stretch w-full">
+          <div className="flex items-start gap-12 self-stretch w-full justify-center max-w-[1500px] mx-auto">
             {teamMembers?.slice(0, 3).map((member, index) => (
               <Card
                 key={index}
-                className="flex-1 bg-transparent border-none shadow-none"
+                className="flex-1 bg-transparent border-none shadow-none max-w-[750px] mx-auto min-h-[370px] flex"
               >
-                <CardContent className="flex flex-col items-center gap-6 p-0">
-                  <img
-                    className="w-40 h-40 object-cover rounded-[20px] shadow-2xl"
-                    alt={member.name || "Placeholder image"}
-                    src={member.image}
-                  />
+                <CardContent className="flex flex-col items-center gap-6 p-0 w-full">
+                  <div className="flex-grow flex flex-col items-center gap-6">
+                    <img
+                      className="w-40 h-40 object-cover rounded-[20px] shadow-2xl"
+                      alt={member.name || "Placeholder image"}
+                      src={member.image}
+                    />
 
-                  <div className="flex flex-col items-center gap-4 self-stretch w-full">
-                    <div className="flex flex-col items-center self-stretch w-full">
-                      <h4 className="self-stretch font-text-large-semi-bold text-[#E0CFF7] text-[length:var(--text-large-semi-bold-font-size)] text-center tracking-[var(--text-large-semi-bold-letter-spacing)] leading-[var(--text-large-semi-bold-line-height)] [font-style:var(--text-large-semi-bold-font-style)]">
-                        {member.name}
-                      </h4>
+                    <div className="flex flex-col items-center gap-4 self-stretch w-full">
+                      <div className="flex flex-col items-center self-stretch w-full">
+                        <h4 className="self-stretch font-text-large-semi-bold text-[#E0CFF7] text-[length:var(--text-large-semi-bold-font-size)] text-center tracking-[var(--text-large-semi-bold-letter-spacing)] leading-[var(--text-large-semi-bold-line-height)] [font-style:var(--text-large-semi-bold-font-style)]">
+                          {member.name}
+                        </h4>
 
-                      <p className="self-stretch font-text-medium-normal text-[#a03df4] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                        {member.jobTitle}
+                        <p className="self-stretch font-text-medium-normal text-[#a03df4] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                          {member.jobTitle}
+                        </p>
+                      </div>
+
+                      <p className="font-text-regular-normal text-[length:var(--text-regular-normal-font-size)] text-center leading-[var(--text-regular-normal-line-height)] self-stretch text-[#E0CFF7] tracking-[var(--text-regular-normal-letter-spacing)] [font-style:var(--text-regular-normal-font-style)]">
+                        {member.description}
                       </p>
                     </div>
-
-                    <p className="font-text-regular-normal text-[length:var(--text-regular-normal-font-size)] text-center leading-[var(--text-regular-normal-line-height)] self-stretch text-[#E0CFF7] tracking-[var(--text-regular-normal-letter-spacing)] [font-style:var(--text-regular-normal-font-style)]">
-                      {member.description}
-                    </p>
                   </div>
 
                   <div className="flex items-start gap-3.5">
@@ -107,33 +109,35 @@ const TeamSection = () => {
           </div>
 
           {/* Segunda fila del equipo */}
-          <div className="flex items-start gap-12 self-stretch w-full">
+          <div className="flex items-start gap-12 self-stretch w-full justify-center max-w-[1500px] mx-auto">
             {teamMembers.slice(3, 6).map((member, index) => (
               <Card
                 key={index}
-                className="flex-1 bg-transparent border-none shadow-none"
+                className="flex-1 bg-transparent border-none shadow-none max-w-[750px] mx-auto min-h-[370px] flex"
               >
-                <CardContent className="flex flex-col items-center gap-6 p-0">
-                  <img
-                    className="w-40 h-40 object-cover rounded-[20px] shadow-2xl"
-                    alt={member.name || "Placeholder image"}
-                    src={member.image}
-                  />
+                <CardContent className="flex flex-col items-center gap-6 p-0 w-full">
+                  <div className="flex-grow flex flex-col items-center gap-6">
+                    <img
+                      className="w-40 h-40 object-cover rounded-[20px] shadow-2xl"
+                      alt={member.name || "Placeholder image"}
+                      src={member.image}
+                    />
 
-                  <div className="flex flex-col items-center gap-4 self-stretch w-full">
-                    <div className="flex flex-col items-center self-stretch w-full">
-                      <h4 className="self-stretch font-text-large-semi-bold text-[#E0CFF7] text-[length:var(--text-large-semi-bold-font-size)] text-center tracking-[var(--text-large-semi-bold-letter-spacing)] leading-[var(--text-large-semi-bold-line-height)] [font-style:var(--text-large-semi-bold-font-style)]">
-                        {member.name}
-                      </h4>
+                    <div className="flex flex-col items-center gap-4 self-stretch w-full">
+                      <div className="flex flex-col items-center self-stretch w-full">
+                        <h4 className="self-stretch font-text-large-semi-bold text-[#E0CFF7] text-[length:var(--text-large-semi-bold-font-size)] text-center tracking-[var(--text-large-semi-bold-letter-spacing)] leading-[var(--text-large-semi-bold-line-height)] [font-style:var(--text-large-semi-bold-font-style)]">
+                          {member.name}
+                        </h4>
 
-                      <p className="self-stretch font-text-medium-normal text-[#a03df4] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
-                        {member.jobTitle}
+                        <p className="self-stretch font-text-medium-normal text-[#a03df4] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                          {member.jobTitle}
+                        </p>
+                      </div>
+
+                      <p className="font-text-regular-normal text-[length:var(--text-regular-normal-font-size)] text-center leading-[var(--text-regular-normal-line-height)] self-stretch text-[#E0CFF7] tracking-[var(--text-regular-normal-letter-spacing)] [font-style:var(--text-regular-normal-font-style)]">
+                        {member.description}
                       </p>
                     </div>
-
-                    <p className="font-text-regular-normal text-[length:var(--text-regular-normal-font-size)] text-center leading-[var(--text-regular-normal-line-height)] self-stretch text-[#E0CFF7] tracking-[var(--text-regular-normal-letter-spacing)] [font-style:var(--text-regular-normal-font-style)]">
-                      {member.description}
-                    </p>
                   </div>
 
                   <div className="flex items-start gap-3.5">
@@ -188,10 +192,10 @@ const TeamSection = () => {
             </p>
           </div>
 
-          <div className="flex flex-col w-[155px] items-start gap-4">
+          <div className="flex flex-col w-[250px] items-center gap-4">
             <Button
               variant="outline"
-              className="py-4 rounded-[100px] border-transparent  shadow-2xl bg-[#a03df4]"
+              className="py-4 rounded-[100px] border-transparent shadow-2xl bg-[#a03df4]"
             >
               <span className="font-text-regular-medium text-[#f2f2f2] text-[length:var(--text-regular-medium-font-size)] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)] [font-style:var(--text-regular-medium-font-style)]">
                 Open positions

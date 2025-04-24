@@ -1,5 +1,6 @@
 //////////////////////////////////////////////////////////
 // Importaciones
+import './styles/global.css';
 import { DesktopViewSection } from "./screens/DesktopViewSection/DesktopViewSection";
 // import { MobileViewSection } from "./screens/MobileViewSection/MobileViewSection";
 import { ContentProvider } from "./context/ContentProvider";
@@ -15,15 +16,11 @@ const App = () => {
   return (
     <ContentProvider>
       <MainLayout>
-        {/* Desktop view - hidden on mobile */}
+        {/* Desktop view */}
         <div className="hidden md:block">
           <DesktopViewSection />
         </div>
 
-        {/* Mobile view - hidden on desktop */}
-        {/* <div className="block md:hidden">
-          <MobileViewSection />
-        </div> */}
       </MainLayout>
     </ContentProvider>
   );
