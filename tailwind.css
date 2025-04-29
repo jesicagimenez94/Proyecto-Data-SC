@@ -41,12 +41,14 @@
   --heading-desktop-h5-font-weight: 400;
   --heading-desktop-h5-letter-spacing: -0.2800000000000001px;
   --heading-desktop-h5-line-height: 140%;
+
   --heading-desktop-tagline-font-family: "DM Sans", Helvetica;
   --heading-desktop-tagline-font-size: 16px;
   --heading-desktop-tagline-font-style: normal;
   --heading-desktop-tagline-font-weight: 600;
   --heading-desktop-tagline-letter-spacing: 0px;
   --heading-desktop-tagline-line-height: 150%;
+  
   --heading-mobile-h1-font-family: "Orbitron", Helvetica;
   --heading-mobile-h1-font-size: 44px;
   --heading-mobile-h1-font-style: normal;
@@ -77,48 +79,56 @@
   --heading-mobile-h5-font-weight: 400;
   --heading-mobile-h5-letter-spacing: -0.2px;
   --heading-mobile-h5-line-height: 140%;
+
   --text-large-semi-bold-font-family: "DM Sans", Helvetica;
   --text-large-semi-bold-font-size: 22px;
   --text-large-semi-bold-font-style: normal;
   --text-large-semi-bold-font-weight: 600;
   --text-large-semi-bold-letter-spacing: 0px;
   --text-large-semi-bold-line-height: 150%;
+
   --text-medium-normal-font-family: "DM Sans", Helvetica;
   --text-medium-normal-font-size: 18px;
   --text-medium-normal-font-style: normal;
   --text-medium-normal-font-weight: 400;
   --text-medium-normal-letter-spacing: 0px;
   --text-medium-normal-line-height: 150%;
+
   --text-regular-medium-font-family: "DM Sans", Helvetica;
   --text-regular-medium-font-size: 16px;
   --text-regular-medium-font-style: normal;
   --text-regular-medium-font-weight: 500;
   --text-regular-medium-letter-spacing: 0px;
   --text-regular-medium-line-height: 150%;
+
   --text-regular-normal-font-family: "DM Sans", Helvetica;
   --text-regular-normal-font-size: 16px;
   --text-regular-normal-font-style: normal;
   --text-regular-normal-font-weight: 400;
   --text-regular-normal-letter-spacing: 0px;
   --text-regular-normal-line-height: 150%;
+
   --text-regular-semi-bold-font-family: "DM Sans", Helvetica;
   --text-regular-semi-bold-font-size: 16px;
   --text-regular-semi-bold-font-style: normal;
   --text-regular-semi-bold-font-weight: 600;
   --text-regular-semi-bold-letter-spacing: 0px;
   --text-regular-semi-bold-line-height: 150%;
+
   --text-small-link-font-family: "DM Sans", Helvetica;
   --text-small-link-font-size: 14px;
   --text-small-link-font-style: normal;
   --text-small-link-font-weight: 400;
   --text-small-link-letter-spacing: 0px;
   --text-small-link-line-height: 150%;
+
   --text-small-normal-font-family: "DM Sans", Helvetica;
   --text-small-normal-font-size: 14px;
   --text-small-normal-font-style: normal;
   --text-small-normal-font-weight: 400;
   --text-small-normal-letter-spacing: 0px;
   --text-small-normal-line-height: 150%;
+
   --text-small-semi-bold-font-family: "DM Sans", Helvetica;
   --text-small-semi-bold-font-size: 14px;
   --text-small-semi-bold-font-style: normal;
