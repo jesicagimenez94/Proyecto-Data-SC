@@ -15,15 +15,7 @@ const App = () => {
   return (
     <ContentProvider>
       <MainLayout>
-        {/* Desktop view - hidden on mobile */}
-        <div className="hidden md:block">
-          <Home />
-        </div>
-
-        {/* Mobile view - hidden on desktop */}
-        {/* <div className="block md:hidden">
-          <MobileViewSection />
-        </div> */}
+        <Home />
       </MainLayout>
     </ContentProvider>
   );

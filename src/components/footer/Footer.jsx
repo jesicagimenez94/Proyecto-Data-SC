@@ -1,5 +1,6 @@
 import { Separator } from "../../components/ui/Separator";
 import { useContent } from "../../context/ContentProvider";
+
 export default function Footer() {
   const { footerLinks = [], socialIcons = [] } = useContent() || {};
 
@@ -25,7 +26,7 @@ export default function Footer() {
 
           <div className="flex items-start gap-6">
             <span className="font-text-small-normal text-white text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)]">
-              © 2024 LincePulce. All rights reserved.
+              © 2024 EstelarCode. All rights reserved.
             </span>
 
             <FooterLink href="#">Privacy Policy</FooterLink>
