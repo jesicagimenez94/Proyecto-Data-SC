@@ -5,9 +5,7 @@ import Footer from "../components/footer/Footer"
 
 //////////////////////////////////////////////////////////
 // MainLayout es un componente que envuelve a todos los componentes de la aplicación
-/**
- * @param {Object} props - Props del componente.
- */
+
 const MainLayout = ({children}) => {
   return (
     <>

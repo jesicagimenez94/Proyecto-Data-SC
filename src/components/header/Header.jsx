@@ -1,51 +1,36 @@
-//////////////////////////////////////////////////////////
-// Importaciones
-
+import { useState } from "react";
+import { useContent } from "../../context/ContentProvider";
 import { ChevronDownIcon } from "lucide-react";
-
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-} from "../../components/ui/NavigationMenu"; // Importando los componentes de la navegación
-
+} from "../../components/ui/NavigationMenu";
 import Button from "../../components/ui/button";
 
-import { useContent } from "../../context/ContentProvider"; // Importando el hook useContent
-
-//////////////////////////////////////////////////////////
-// Componente Header/Navigation
 export default function Header() {
-  // Esto sirve para obtener los datos del JSON que cargamos en el ContentProvider
-  // Se usa "|| {}" para asegurarnos de que, si useContent() devuelve null o undefined
-  // no intentemos hacer destructuring de un valor que no existe, evitando errores.
-  // Además, asignamos un array vacío como valor por defecto ([]) para que
-  // en caso de que estas propiedades no existan en el contexto, la aplicación
-  // no falle al intentar mapearlas o usarlas en la UI.
   const { navLinks = [] } = useContent() || {};
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <>
       <header className="fixed top-4 z-50 w-full flex justify-center">
-        
         <div className="flex h-[72px] items-center justify-between px-10 w-full max-w-[1650px] bg-[#000]/60 backdrop-blur-md rounded-full">
-          
-        {/* Logo */}
-        <div className="flex items-center">
+          {/* Logo */}
+          <div className="flex items-center">
             <img
               className="h-12 md:h-14 lg:h-16 object-contain"
               alt="Company logo"
               src="public/logos/web_square_500x500.png"
             />
-            </div>
+          </div>
 
-          {/* Navigation. Se usa únicamente para el menú de navegación (desktop y mobile), difiere del componente Button ya que el menú muestra una lista de enlaces de navegación, mientras que el botón es un elemento interactivo que generalmente dispara una acción. */}
-          {/* DARLE FUNCIONALIDAD (MÁS PARA MOBILE) */}
-          <div className="flex items-center justify-between gap-6">
+          {/* Menú para escritorio */}
+          <div className="hidden lg:flex items-center justify-between gap-6">
             <NavigationMenu>
               <NavigationMenuList className="flex items-center gap-10">
-                {navLinks?.map((item, index) => (
+                {navLinks.map((item, index) => (
                   <NavigationMenuItem key={index}>
                     <NavigationMenuLink asChild>
                       <a
@@ -60,11 +45,7 @@ export default function Header() {
               </NavigationMenuList>
             </NavigationMenu>
 
-            
-
             <div className="flex items-center gap-4">
-              {/* Botón de cambio de idioma */}
-              {/* DARLE FUNCIONALIDAD */}
               <Button
                 variant="outline"
                 className="px-5 py-2 bg-white text-black rounded-full flex items-center gap-2 shadow-md"
@@ -73,8 +54,6 @@ export default function Header() {
                 <ChevronDownIcon className="w-4 h-4" />
               </Button>
 
-              {/* Botón de contacto */}
-              {/* DARLE FUNCIONALIDAD */}
               <Button
                 className="px-5 py-2 bg-[#a33cfa] text-white rounded-full font-medium shadow-md"
                 href="#form-section"
@@ -83,7 +62,63 @@ export default function Header() {
               </Button>
             </div>
           </div>
+
+          {/* Ícono hamburguesa para mobile */}
+          <div className="flex lg:hidden">
+            <div
+              className="space-y-2 cursor-pointer"
+              onClick={() => setIsNavOpen((prev) => !prev)}
+            >
+              <span className="block h-0.5 w-8 bg-white"></span>
+              <span className="block h-0.5 w-8 bg-white"></span>
+              <span className="block h-0.5 w-8 bg-white"></span>
+            </div>
+          </div>
         </div>
+
+        {/* Menú mobile desplegable */}
+        {isNavOpen && (
+          <div
+          className={`absolute top-0 left-0 w-full h-screen bg-black/100 flex flex-col items-center justify-center z-[999] gap-8 text-white text-xl transition-all duration-300 ease-in-out transform ${
+            isNavOpen
+              ? "opacity-100 scale-100 visible pointer-events-auto"
+              : "opacity-0 scale-95 invisible pointer-events-none"
+          }`}
+        >
+          <button
+            className="absolute top-6 right-6 text-white text-3xl"
+            onClick={() => setIsNavOpen(false)}
+          >
+            ×
+          </button>
+        
+          {navLinks.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              onClick={() => setIsNavOpen(false)}
+              className="hover:underline"
+            >
+              {item.text}
+            </a>
+          ))}
+        
+          <Button
+            variant="outline"
+            className="px-5 py-2 bg-white text-black rounded-full flex items-center gap-2 shadow-md"
+          >
+            <span className="font-medium">ESP</span>
+            <ChevronDownIcon className="w-4 h-4" />
+          </Button>
+        
+          <Button
+            className="px-5 py-2 bg-[#a33cfa] text-white rounded-full font-medium shadow-md"
+            href="#form-section"
+          >
+            Contacto
+          </Button>
+        </div>
+        )}
       </header>
     </>
   );

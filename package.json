@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "source": "./index.html",
   "type": "module",
-  "name": "lincepulce",
-  "description": "Sitio Web de LincePulce",
+  "name": "estelarcode",
+  "description": "Sitio Web de EstelarCode",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
