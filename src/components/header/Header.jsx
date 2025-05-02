@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useContent } from "../../context/ContentProvider";
+import { useState } from "react";
+import { useContent } from "../../context/ContentProvider";
 import { ChevronDownIcon } from "lucide-react";
 import {
   NavigationMenu,
@@ -13,14 +15,14 @@ import Button from "../../components/ui/button";
 export default function Header() {
   const { navLinks = [] } = useContent() || {};
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <>
       <header className="fixed top-4 z-50 w-full flex justify-center">
         <div className="flex h-[72px] items-center justify-between px-10 w-full max-w-[1650px] bg-[#000]/60 backdrop-blur-md rounded-full">
-          
-        {/* Logo */}
-        <div className="flex items-center">
+          {/* Logo */}
+          <div className="flex items-center">
             <img
               className="h-12 md:h-14 lg:h-16 object-contain"
               alt="Company logo"
@@ -30,8 +32,11 @@ export default function Header() {
 
           {/* Menú para escritorio */}
           <div className="hidden lg:flex items-center justify-between gap-6">
+          {/* Menú para escritorio */}
+          <div className="hidden lg:flex items-center justify-between gap-6">
             <NavigationMenu>
               <NavigationMenuList className="flex items-center gap-10">
+                {navLinks.map((item, index) => (
                 {navLinks.map((item, index) => (
                   <NavigationMenuItem key={index}>
                     <NavigationMenuLink asChild>

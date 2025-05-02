@@ -10,8 +10,11 @@ const HeroSection = () => {
       {/* Hero Section */}
       <section className="flex w-full h-[900px] text-center items-center justify-center [background:linear-gradient(0deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.7)_100%),url(public/background-hero.webp)_50%_50%_/_cover]">
         <div className="flex flex-col w-[95%] items-center gap-8">
+      <section className="flex w-full h-[900px] text-center items-center justify-center [background:linear-gradient(0deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.7)_100%),url(public/background-hero.webp)_50%_50%_/_cover]">
+        <div className="flex flex-col w-[95%] items-center gap-8">
           <div className="flex flex-col items-center gap-6 self-stretch w-full">
             <h1 className="heading-h1 text-[32px] md:text-[56px] text-white text">
+            <h1 className="self-stretch font-heading-desktop-h1 text-white tracking-[var(--heading-desktop-h1-letter-spacing)] leading-[var(--heading-desktop-h1-line-height)] [font-style:var(--heading-desktop-h1-font-style)] text-[40px] md:text-[80px]">
               Impulsamos tu transformación digital
             </h1>
 
