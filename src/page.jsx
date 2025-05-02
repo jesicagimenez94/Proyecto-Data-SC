@@ -1,13 +1,13 @@
 //////////////////////////////////////////////////////////
 // Importaciones
 import HeroSection from "./components/sections/HeroSection";
-import ExperienceSection from "./components/sections/ExperienceSection";
+import ExperienceSection from "./components/sections/AboutUsSection";
 import {ServicesSection} from "./components/sections/services/servicesSection";
 import TeamSection from "./components/sections/TeamSection";
-import StatsSection from "./components/sections/StatsSection";
+import StatsSection from "./components/sections/statsSection";
 import TestimonialSection from "./components/sections/TestimonialSection";
-import BenefitsSection from "./components/sections/BenefitsSection";
-import Proyectos from "./components/sections/Proyectos";
+import BenefitsSection from "./components/sections/MissionSection";
+import Projects from "./components/sections/projectsSections";
 import FormularioSection from "./components/sections/FormSection";
 //import CTASection from "./components/sections/CTASection";
 import ScrollToTopButton from "./components/ui/ScrollToTopButton";
@@ -20,11 +20,11 @@ export const Home = () => {
       <HeroSection />
       <ServicesSection />
       <ExperienceSection />
-      <Proyectos />
+      <Projects />
       <BenefitsSection />
       <TestimonialSection />
       <TeamSection />
-      <StatsSection />
+      {/*<StatsSection />*/}
       {/*<CTASection />*/}
       <FormularioSection />
       <ScrollToTopButton />

@@ -17,7 +17,7 @@ const TeamSection = () => {
 
   return (
     <>
-      <section className="flex flex-col w-full items-center gap-10 px-12 py-12 bg-[#0c0412]" id="team-members">
+      <section className="flex flex-col w-full items-center gap-10 px-12 py-12 bg-[#08030d]" id="team-members">
         <div className="w-[768px] flex flex-col items-center gap-4">
           <div className="flex flex-col items-center gap-1 self-stretch w-full">
             <h2 className="self-stretch heading-h4 text-center text-white">

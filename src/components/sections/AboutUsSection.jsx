@@ -4,7 +4,7 @@
 // Componente ExperienceSection
 const ExperienceSection = () => {
   return (
-    <section className="w-full flex flex-col items-start gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-20 md:px-16 lg:px-28 bg-[#0c0412]" id="sobre-nosotros">
+    <section className="w-full flex flex-col items-start gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-20 md:px-16 lg:px-28 bg-[#08030d]" id="sobre-nosotros">
       <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 w-full">
         {/* Contenido de texto */}
         <div className="flex-1 flex flex-col items-start gap-6">

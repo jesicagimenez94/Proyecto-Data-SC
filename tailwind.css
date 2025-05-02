@@ -324,13 +324,15 @@
 }
 
   html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    background-color: #08030d;
   }
 
   body {
+    background-color: #08030d;
     @apply mx-[var(--space-x)];
   }
 
   .layout {
-    @apply max-w-[var(--max-width)] mx-auto;
+    @apply max-w-[var(--max-width)] mx-auto px-[var(--space-x)];
   }

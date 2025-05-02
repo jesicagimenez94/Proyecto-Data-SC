@@ -10,7 +10,7 @@ import {
 // Componente TestimonialSection
 const TestimonialSection = () => {
   return (
-    <section className="flex flex-col w-full items-center gap-20 px-16 py-28 bg-[#222124]">
+    <section className="flex flex-col w-full items-center gap-20 px-16 py-28 bg-[#08030d]">
       <div className="flex flex-col w-[768px] items-center gap-8">
         <img
           className="w-[120px] h-12"
