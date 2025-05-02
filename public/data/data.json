@@ -8,108 +8,137 @@
         {
             "id": 101,
             "text": "Servicios",
-            "href": "/#services"
+            "href": "/#servicios"
         },
         {
             "id": 102,
             "text": "Proyectos",
-            "href": "/#projects"
+            "href": "/#proyectos"
         },
         {
             "id":103,
             "text": "Nosotros",
-            "href":"/#aboutus"
+            "href":"/#sobre-nosotros"
+        },
+        {
+            "id": 104,
+            "text": "Team Members",
+            "href": "/#team-members"
         }
     ],
     "features": [
         {
             "id": 201,
-            "title": "Business Intelligence",
-            "description": "Datos que Impulsan el Éxito Transformamos datos en conocimiento accionable mediante dashboards interactivos, reportes dinámicos y análisis predictivos. Descubre patrones ocultos y toma decisiones informadas con nuestras soluciones de Power BI."
+            "title": "Innovative data analytics solutions",
+            "description": "LincePulce offers advanced data analytics services that empower businesses to make informed decisions. By harnessing the power of big data, we help organizations uncover valuable insights and optimize their operations for success."
         },
         {
             "id": 202,
-            "title": "Soporte Técnico",
-            "description": "Seguridad y Continuidad Mantenemos tu infraestructura tecnológica operativa y segura. Con soporte proactivo y atención inmediata, resolvemos incidencias y optimizamos el rendimiento de tus sistemas."
+            "title": "Customized business intelligence tools",
+            "description": "LincePulce offers customized business intelligence tools that enhance decision-making. These tools provide seamless data visualization, real-time insights, and intuitive reporting, allowing your team to access and analyze critical information efficiently."
         },
         {
             "id": 203,
-            "title": "Desarrollo de Software",
-            "description": "Creando el Futuro Diseñamos y desarrollamos aplicaciones robustas, escalables y seguras a la medida de t us necesidades. Desde plataformas web hasta integraciones complejas, nuestra experiencia garantiza productos innovadores y eficientes."
+            "title": "Comprehensive data management service",
+            "description": "Our Data Management Service provides an efficient solution for organizing, storing, and analyzing your data. It ensures security, accessibility, and maintenance at every stage. From collection to reporting, our service simplifies the process, allowing informed decisions based on accurate information."
         }
+
     ],
     "teamMembers": [
         {
-            "image": "public/placeholder-image-11.png"
+            "name": "Jesica Gimenez",
+            "jobTitle": "Product Owner",
+            "description": "Apasionada por la tecnología y la innovación, Jesica es una experta en gestión de proyectos y desarrollo de software. Su enfoque centrado en el cliente y su capacidad para liderar equipos hacen que cada proyecto sea un éxito.",
+            "image": "public/Jesica.jpeg",
+            "linkedin": "https://www.linkedin.com/in/jesica-gimenez/"
         },
         {
-            "image": "public/placeholder-image-12.png"
+            "name": "Mauro Ciancioci",
+            "jobTitle": "Team Leader",
+            "description": "Con una sólida formación en metodologías ágiles, Mauro es un facilitador excepcional. Su habilidad para guiar equipos y fomentar la colaboración asegura que cada proyecto avance de manera eficiente y efectiva.",
+            "image": "public/Mauro.png",
+            "linkedin": "https://www.linkedin.com/in/mauro-ciancioci/"
         },
         {
-            "image": "public/placeholder-image-13.png"
+            "name": "Pablo Torrez",
+            "jobTitle": "Full Stack Developer",
+            "description": "Pablo es un desarrollador full stack con una pasión por la creación de soluciones innovadoras. Su experiencia abarca desde el desarrollo front-end hasta la implementación de back-end, lo que le permite abordar proyectos de manera integral.",
+            "image": "public/Pablo.jpeg",
+            "linkedin": "https://www.linkedin.com/in/pablo-torrez-33a80324b/"
         },
         {
-            "image": "public/placeholder-image-14.png"
+            "name": "Joel Barrientos",
+            "jobTitle": "Full Stack Developer",
+            "description": "Joel es un desarrollador full stack con un enfoque en la creación de aplicaciones web escalables y eficientes. Su experiencia en diversas tecnologías le permite abordar desafíos complejos con confianza y creatividad.",
+            "image": "public/joel.jpeg",
+            "linkedin": "https://www.linkedin.com/in/barrientossjoel/"
         },
         {
-            "image": "public/placeholder-image-15.png"
+            "name": "Javier Cohen",
+            "jobTitle": "Frontend Developer",
+            "description": "Javier es un desarrollador frontend apasionado por la creación de interfaces de usuario atractivas y funcionales. Su atención al detalle y su comprensión de la experiencia del usuario garantizan que cada proyecto sea visualmente impactante y fácil de usar.",
+            "image": "public/Javier.jpeg",
+            "linkedin": "https://www.linkedin.com/in/javier-cohen/"
         },
         {
-            "image": "public/placeholder-image-16.png"
+            "name": "Demian Marcos Garcia",
+            "jobTitle": "Backend Developer",
+            "description": "Demian es un desarrollador backend con una sólida comprensión de la arquitectura de sistemas y la optimización del rendimiento. Su enfoque en la escalabilidad y la seguridad asegura que las aplicaciones funcionen sin problemas incluso bajo alta carga.",
+            "image": "public/Demian.jpeg",
+            "linkedin": "https://www.linkedin.com/in/marcos-demian-garcia/"
         }
     ],
     "footerLinks": [
         {
             "id": 401,
-            "text": "Servicios",
-            "href": "/#services"
+            "text": "Inicio",
+            "href": "/"
         },
         {
             "id": 402,
-            "text": "Proyectos",
-            "href": "/#projects"
+            "text": "Servicios",
+            "href": "/#servicios"
         },
         {
             "id": 403,
-            "text": "Acerca de",
-            "href": "/#aboutus"
+            "text": "Proyectos",
+            "href": "/#proyectos"
         },
         {
             "id": 404,
-            "text": "Link Four",
-            "href": "/#link-four"
+            "text": "Nosotros",
+            "href":"/#sobre-nosotros"
         },
         {
             "id": 405,
-            "text": "Link Five",
-            "href": "/#link-five"
+            "text": "Team Members",
+            "href": "/#team-members"
         }
     ],
     "socialIcons": [
         {
             "id": 501,
-            "src": "public/icon---facebook.svg",
-            "alt": "Icon facebook"
+            "src": "public/icon---instagram-white.svg",
+            "alt": "Icon instagram",
+            "url": "https://www.instagram.com/"
         },
         {
             "id": 502,
-            "src": "public/icon---instagram.svg",
-            "alt": "Icon instagram"
+            "src": "public/icon---x-white.svg",
+            "alt": "Icon x",
+            "url": "https://x.com/"
         },
         {
             "id": 503,
-            "src": "public/icon---x.svg",
-            "alt": "Icon x"
+            "src": "public/icon---linkedin-white.svg",
+            "alt": "Icon linkedin",
+            "url": "https://www.linkedin.com/"
         },
         {
             "id": 504,
-            "src": "public/icon---linkedin.svg",
-            "alt": "Icon linkedin"
-        },
-        {
-            "id": 505,
-            "src": "public/icon---youtube.svg",
-            "alt": "Icon youtube"
+            "src": "public/icon---youtube-white.svg",
+            "alt": "Icon youtube",
+            "url": "https://www.youtube.com/"
         }
     ]
 }

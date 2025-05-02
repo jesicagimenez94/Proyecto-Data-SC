@@ -1,46 +1,29 @@
-//////////////////////////////////////////////////////////
-// Importaciones
-
 import { Separator } from "../../components/ui/Separator";
-import { useContent } from "../../context/ContentProvider"; // Importando el hook useContent
+import { useContent } from "../../context/ContentProvider";
 
-//////////////////////////////////////////////////////////
-// Componente Footer
 export default function Footer() {
-  // Esto sirve para obtener los datos del JSON que cargamos en el ContentProvider
-  // Se usa "|| {}" para asegurarnos de que, si useContent() devuelve null o undefined
-  // no intentemos hacer destructuring de un valor que no existe, evitando errores.
-  // Además, asignamos un array vacío como valor por defecto ([]) para que
-  // en caso de que estas propiedades no existan en el contexto, la aplicación
-  // no falle al intentar mapearlas o usarlas en la UI.
   const { footerLinks = [], socialIcons = [] } = useContent() || {};
 
   return (
     <>
-      <footer className="flex w-full gap-20 px-16 py-20 bg-white flex-col items-center">
+      <footer className="flex w-full gap-10 px-16 py-16 bg-[var(--background-footer)] flex-col items-center">
         <div className="flex items-center gap-8 self-stretch w-full">
-          {/* Logo */}
           <div className="flex flex-col items-start gap-6 flex-1">
             <img
-              className="w-[84px] h-9"
+              className="w-[100px] h-[100px]"
               alt="Company logo"
-              src="public/company-logo.svg"
+              src="public/estelar-logo-500x500.png"
             />
           </div>
-
-          {/* Footer Links */}
           <FooterLinks links={footerLinks} />
-
-          {/* Social Icons */}
           <SocialIcons icons={socialIcons} />
         </div>
 
         <div className="flex flex-col items-center gap-8 self-stretch w-full">
           <Separator className="w-full h-px" />
-
           <div className="flex items-start gap-6">
-            <span className="font-text-small-normal text-[#08030d] text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)]">
-              © 2024 LincePulce. All rights reserved.
+            <span className="font-text-small-normal text-white text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)]">
+              © 2024 EstelarCode. All rights reserved.
             </span>
 
             <FooterLink href="#">Privacy Policy</FooterLink>
@@ -60,7 +43,7 @@ const FooterLinks = ({ links }) => {
       {links?.map((link, index) => (
         <a
           key={index}
-          className="font-text-small-semi-bold text-[#08030d] text-[length:var(--text-small-semi-bold-font-size)] underline tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] [font-style:var(--text-small-semi-bold-font-style)]"
+          className="font-text-small-semi-bold text-white text-[length:var(--text-small-semi-bold-font-size)] underline-none tracking-[var(--text-small-semi-bold-letter-spacing)] leading-[var(--text-small-semi-bold-line-height)] [font-style:var(--text-small-semi-bold-font-style)]"
           href={link.href}
         >
           {link.text}
@@ -70,23 +53,23 @@ const FooterLinks = ({ links }) => {
   );
 };
 
-// Componente para renderizar los iconos sociales del footer
 const SocialIcons = ({ icons }) => {
   return (
     <div className="flex items-center justify-end gap-3 flex-1">
       {icons?.map((icon, index) => (
-        <img key={index} className="w-6 h-6" alt={icon.alt} src={icon.src} />
+        <a href={icon.url}>
+          <img key={index} className="w-6 h-6" alt={icon.alt} src={icon.src} />
+        </a>
       ))}
     </div>
   );
 };
 
-// Componente reutilizable para los enlaces del footer
 const FooterLink = ({ href, children }) => {
   return (
     <a
       href={href}
-      className="font-text-small-link text-[#08030d] text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline [font-style:var(--text-small-link-font-style)]"
+      className="font-text-small-link text-white text-[length:var(--text-small-link-font-size)] tracking-[var(--text-small-link-letter-spacing)] leading-[var(--text-small-link-line-height)] underline-none [font-style:var(--text-small-link-font-style)]"
     >
       {children}
     </a>
