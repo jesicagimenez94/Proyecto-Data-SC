@@ -1,84 +1,238 @@
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-  .all-\[unset\] {
-    all: unset;
-  }
+    /* Desktop Headings */
+    .heading-h1 {
+      font-family: var(--heading-d-h1-font-family);
+      font-size: var(--heading-d-h1-font-size);
+      font-style: var(--heading-d-h1-font-style);
+      font-weight: var(--heading-d-h1-font-weight);
+      letter-spacing: var(--heading-d-h1-letter-spacing);
+      line-height: var(--heading-d-h1-line-height);
+    }
+    .heading-h2 {
+      font-family: var(--heading-d-h2-font-family);
+      font-size: var(--heading-d-h2-font-size);
+      font-style: var(--heading-d-h2-font-style);
+      font-weight: var(--heading-d-h2-font-weight);
+      letter-spacing: var(--heading-d-h2-letter-spacing);
+      line-height: var(--heading-d-h2-line-height);
+    }
+    .heading-h3 {
+      font-family: var(--heading-d-h3-font-family);
+      font-size: var(--heading-d-h3-font-size);
+      font-style: var(--heading-d-h3-font-style);
+      font-weight: var(--heading-d-h3-font-weight);
+      letter-spacing: var(--heading-d-h3-letter-spacing);
+      line-height: var(--heading-d-h3-line-height);
+    }
+    .heading-h4 {
+      font-family: var(--heading-d-h4-font-family);
+      font-size: var(--heading-d-h4-font-size);
+      font-style: var(--heading-d-h4-font-style);
+      font-weight: var(--heading-d-h4-font-weight);
+      letter-spacing: var(--heading-d-h4-letter-spacing);
+      line-height: var(--heading-d-h4-line-height);
+    }
+    .heading-h5 {
+      font-family: var(--heading-d-h5-font-family);
+      font-size: var(--heading-d-h5-font-size);
+      font-style: var(--heading-d-h5-font-style);
+      font-weight: var(--heading-d-h5-font-weight);
+      letter-spacing: var(--heading-d-h5-letter-spacing);
+      line-height: var(--heading-d-h5-line-height);
+    }
+    .heading-tagline {
+      font-family: var(--heading-d-tagline-font-family);
+      font-size: var(--heading-d-tagline-font-size);
+      font-style: var(--heading-d-tagline-font-style);
+      font-weight: var(--heading-d-tagline-font-weight);
+      letter-spacing: var(--heading-d-tagline-letter-spacing);
+      line-height: var(--heading-d-tagline-line-height);
+    }
+    /* Mobile Headings */
+    .heading-m-h1 {
+      font-family: var(--heading-m-h1-font-family);
+      font-size: var(--heading-m-h1-font-size);
+      font-style: var(--heading-m-h1-font-style);
+      font-weight: var(--heading-m-h1-font-weight);
+      letter-spacing: var(--heading-m-h1-letter-spacing);
+      line-height: var(--heading-m-h1-line-height);
+    }
+    .heading-m-h2 {
+      font-family: var(--heading-m-h2-font-family);
+      font-size: var(--heading-m-h2-font-size);
+      font-style: var(--heading-m-h2-font-style);
+      font-weight: var(--heading-m-h2-font-weight);
+      letter-spacing: var(--heading-m-h2-letter-spacing);
+      line-height: var(--heading-m-h2-line-height);
+    }
+    .heading-m-h3 {
+      font-family: var(--heading-m-h3-font-family);
+      font-size: var(--heading-m-h3-font-size);
+      font-style: var(--heading-m-h3-font-style);
+      font-weight: var(--heading-m-h3-font-weight);
+      letter-spacing: var(--heading-m-h3-letter-spacing);
+      line-height: var(--heading-m-h3-line-height);
+    }
+    .heading-m-h4 {
+      font-family: var(--heading-m-h4-font-family);
+      font-size: var(--heading-m-h4-font-size);
+      font-style: var(--heading-m-h4-font-style);
+      font-weight: var(--heading-m-h4-font-weight);
+      letter-spacing: var(--heading-m-h4-letter-spacing);
+      line-height: var(--heading-m-h4-line-height);
+    }
+    .heading-m-h5 {
+      font-family: var(--heading-m-h5-font-family);
+      font-size: var(--heading-m-h5-font-size);
+      font-style: var(--heading-m-h5-font-style);
+      font-weight: var(--heading-m-h5-font-weight);
+      letter-spacing: var(--heading-m-h5-letter-spacing);
+      line-height: var(--heading-m-h5-line-height);
+    }
+    /* Text Styles */
+    .text-large-semi-bold {
+      font-family: var(--text-large-semi-bold-font-family);
+      font-size: var(--text-large-semi-bold-font-size);
+      font-style: var(--text-large-semi-bold-font-style);
+      font-weight: var(--text-large-semi-bold-font-weight);
+      letter-spacing: var(--text-large-semi-bold-letter-spacing);
+      line-height: var(--text-large-semi-bold-line-height);
+    }
+    .text-medium-normal {
+      font-family: var(--text-medium-normal-font-family);
+      font-size: var(--text-medium-normal-font-size);
+      font-style: var(--text-medium-normal-font-style);
+      font-weight: var(--text-medium-normal-font-weight);
+      letter-spacing: var(--text-medium-normal-letter-spacing);
+      line-height: var(--text-medium-normal-line-height);
+    }
+    .text-regular-normal {
+      font-family: var(--text-regular-normal-font-family);
+      font-size: var(--text-regular-normal-font-size);
+      font-style: var(--text-regular-normal-font-style);
+      font-weight: var(--text-regular-normal-font-weight);
+      letter-spacing: var(--text-regular-normal-letter-spacing);
+      line-height: var(--text-regular-normal-line-height);
+    }
+    .text-regular-medium {
+      font-family: var(--text-regular-medium-font-family);
+      font-size: var(--text-regular-medium-font-size);
+      font-style: var(--text-regular-medium-font-style);
+      font-weight: var(--text-regular-medium-font-weight);
+      letter-spacing: var(--text-regular-medium-letter-spacing);
+      line-height: var(--text-regular-medium-line-height);
+    }
+    .text-regular-semi-bold {
+      font-family: var(--text-regular-semi-bold-font-family);
+      font-size: var(--text-regular-semi-bold-font-size);
+      font-style: var(--text-regular-semi-bold-font-style);
+      font-weight: var(--text-regular-semi-bold-font-weight);
+      letter-spacing: var(--text-regular-semi-bold-letter-spacing);
+      line-height: var(--text-regular-semi-bold-line-height);
+    }
+    .text-small-normal {
+      font-family: var(--text-small-normal-font-family);
+      font-size: var(--text-small-normal-font-size);
+      font-style: var(--text-small-normal-font-style);
+      font-weight: var(--text-small-normal-font-weight);
+      letter-spacing: var(--text-small-normal-letter-spacing);
+      line-height: var(--text-small-normal-line-height);
+    }
+    .text-small-semi-bold {
+      font-family: var(--text-small-semi-bold-font-family);
+      font-size: var(--text-small-semi-bold-font-size);
+      font-style: var(--text-small-semi-bold-font-style);
+      font-weight: var(--text-small-semi-bold-font-weight);
+      letter-spacing: var(--text-small-semi-bold-letter-spacing);
+      line-height: var(--text-small-semi-bold-line-height);
+    }
+    .text-small-link {
+      font-family: var(--text-small-link-font-family);
+      font-size: var(--text-small-link-font-size);
+      font-style: var(--text-small-link-font-style);
+      font-weight: var(--text-small-link-font-weight);
+      letter-spacing: var(--text-small-link-letter-spacing);
+      line-height: var(--text-small-link-line-height);
+    }
 }
 
 :root {
   --background-footer: #08030D;
   --background-section-gray: #141218;
   --input-background: #FFFFFF0D;
-  --heading-desktop-h1-font-family: "Orbitron", Helvetica;
-  --heading-desktop-h1-font-size: 80px;
-  --heading-desktop-h1-font-style: normal;
-  --heading-desktop-h1-font-weight: 400;
-  --heading-desktop-h1-letter-spacing: -0.72px;
-  --heading-desktop-h1-line-height: 120.00000762939453%;
-  --heading-desktop-h2-font-family: "Orbitron", Helvetica;
-  --heading-desktop-h2-font-size: 52px;
-  --heading-desktop-h2-font-style: normal;
-  --heading-desktop-h2-font-weight: 400;
-  --heading-desktop-h2-letter-spacing: -0.52px;
-  --heading-desktop-h2-line-height: 120.00000762939453%;
-  --heading-desktop-h3-font-family: "Orbitron", Helvetica;
-  --heading-desktop-h3-font-size: 44px;
-  --heading-desktop-h3-font-style: normal;
-  --heading-desktop-h3-font-weight: 400;
-  --heading-desktop-h3-letter-spacing: -0.44px;
-  --heading-desktop-h3-line-height: 120.00000762939453%;
-  --heading-desktop-h4-font-family: "Orbitron", Helvetica;
-  --heading-desktop-h4-font-size: 36px;
-  --heading-desktop-h4-font-style: normal;
-  --heading-desktop-h4-font-weight: 400;
-  --heading-desktop-h4-letter-spacing: -0.36px;
-  --heading-desktop-h4-line-height: 130%;
-  --heading-desktop-h5-font-family: "Orbitron", Helvetica;
-  --heading-desktop-h5-font-size: 28px;
-  --heading-desktop-h5-font-style: normal;
-  --heading-desktop-h5-font-weight: 400;
-  --heading-desktop-h5-letter-spacing: -0.2800000000000001px;
-  --heading-desktop-h5-line-height: 140%;
 
-  --heading-desktop-tagline-font-family: "DM Sans", Helvetica;
-  --heading-desktop-tagline-font-size: 16px;
-  --heading-desktop-tagline-font-style: normal;
-  --heading-desktop-tagline-font-weight: 600;
-  --heading-desktop-tagline-letter-spacing: 0px;
-  --heading-desktop-tagline-line-height: 150%;
+  --heading-d-h1-font-family: "Orbitron", Helvetica;
+  --heading-d-h1-font-size: 64px;
+  --heading-d-h1-font-style: normal;
+  --heading-d-h1-font-weight: 400;
+  --heading-d-h1-letter-spacing: -0.70px;
+  --heading-d-h1-line-height: 120%;
+  --heading-d-h2-font-family: "Orbitron", Helvetica;
+  --heading-d-h2-font-size: 52px;
+  --heading-d-h2-font-style: normal;
+  --heading-d-h2-font-weight: 400;
+  --heading-d-h2-letter-spacing: -0.50px;
+  --heading-d-h2-line-height: 120%;
+  --heading-d-h3-font-family: "Orbitron", Helvetica;
+  --heading-d-h3-font-size: 44px;
+  --heading-d-h3-font-style: normal;
+  --heading-d-h3-font-weight: 400;
+  --heading-d-h3-letter-spacing: -0.44px;
+  --heading-d-h3-line-height: 120%;
+  --heading-d-h4-font-family: "Orbitron", Helvetica;
+  --heading-d-h4-font-size: 36px;
+  --heading-d-h4-font-style: normal;
+  --heading-d-h4-font-weight: 400;
+  --heading-d-h4-letter-spacing: -0.36px;
+  --heading-d-h4-line-height: 130%;
+  --heading-d-h5-font-family: "Orbitron", Helvetica;
+  --heading-d-h5-font-size: 28px;
+  --heading-d-h5-font-style: normal;
+  --heading-d-h5-font-weight: 400;
+  --heading-d-h5-letter-spacing: -0.28px;
+  --heading-d-h5-line-height: 140%;
+
+  --heading-d-tagline-font-family: "DM Sans", Helvetica;
+  --heading-d-tagline-font-size: 16px;
+  --heading-d-tagline-font-style: normal;
+  --heading-d-tagline-font-weight: 600;
+  --heading-d-tagline-letter-spacing: 0px;
+  --heading-d-tagline-line-height: 150%;
   
-  --heading-mobile-h1-font-family: "Orbitron", Helvetica;
-  --heading-mobile-h1-font-size: 44px;
-  --heading-mobile-h1-font-style: normal;
-  --heading-mobile-h1-font-weight: 400;
-  --heading-mobile-h1-letter-spacing: -0.44px;
-  --heading-mobile-h1-line-height: 120.00000762939453%;
-  --heading-mobile-h2-font-family: "Orbitron", Helvetica;
-  --heading-mobile-h2-font-size: 40px;
-  --heading-mobile-h2-font-style: normal;
-  --heading-mobile-h2-font-weight: 400;
-  --heading-mobile-h2-letter-spacing: -0.4px;
-  --heading-mobile-h2-line-height: 120.00000762939453%;
-  --heading-mobile-h3-font-family: "Orbitron", Helvetica;
-  --heading-mobile-h3-font-size: 32px;
-  --heading-mobile-h3-font-style: normal;
-  --heading-mobile-h3-font-weight: 400;
-  --heading-mobile-h3-letter-spacing: -0.32px;
-  --heading-mobile-h3-line-height: 120.00000762939453%;
-  --heading-mobile-h4-font-family: "Orbitron", Helvetica;
-  --heading-mobile-h4-font-size: 24px;
-  --heading-mobile-h4-font-style: normal;
-  --heading-mobile-h4-font-weight: 400;
-  --heading-mobile-h4-letter-spacing: -0.24px;
-  --heading-mobile-h4-line-height: 130%;
-  --heading-mobile-h5-font-family: "Orbitron", Helvetica;
-  --heading-mobile-h5-font-size: 20px;
-  --heading-mobile-h5-font-style: normal;
-  --heading-mobile-h5-font-weight: 400;
-  --heading-mobile-h5-letter-spacing: -0.2px;
-  --heading-mobile-h5-line-height: 140%;
+  --heading-m-h1-font-family: "Orbitron", Helvetica;
+  --heading-m-h1-font-size: 44px;
+  --heading-m-h1-font-style: normal;
+  --heading-m-h1-font-weight: 400;
+  --heading-m-h1-letter-spacing: -0.44px;
+  --heading-m-h1-line-height: 120%;
+  --heading-m-h2-font-family: "Orbitron", Helvetica;
+  --heading-m-h2-font-size: 40px;
+  --heading-m-h2-font-style: normal;
+  --heading-m-h2-font-weight: 400;
+  --heading-m-h2-letter-spacing: -0.4px;
+  --heading-m-h2-line-height: 120%;
+  --heading-m-h3-font-family: "Orbitron", Helvetica;
+  --heading-m-h3-font-size: 32px;
+  --heading-m-h3-font-style: normal;
+  --heading-m-h3-font-weight: 400;
+  --heading-m-h3-letter-spacing: -0.32px;
+  --heading-m-h3-line-height: 120%;
+  --heading-m-h4-font-family: "Orbitron", Helvetica;
+  --heading-m-h4-font-size: 24px;
+  --heading-m-h4-font-style: normal;
+  --heading-m-h4-font-weight: 400;
+  --heading-m-h4-letter-spacing: -0.24px;
+  --heading-m-h4-line-height: 130%;
+  --heading-m-h5-font-family: "Orbitron", Helvetica;
+  --heading-m-h5-font-size: 20px;
+  --heading-m-h5-font-style: normal;
+  --heading-m-h5-font-weight: 400;
+  --heading-m-h5-letter-spacing: -0.2px;
+  --heading-m-h5-line-height: 140%;
 
   --text-large-semi-bold-font-family: "DM Sans", Helvetica;
   --text-large-semi-bold-font-size: 22px;
@@ -88,7 +242,7 @@
   --text-large-semi-bold-line-height: 150%;
 
   --text-medium-normal-font-family: "DM Sans", Helvetica;
-  --text-medium-normal-font-size: 18px;
+  --text-medium-normal-font-size: 14px;
   --text-medium-normal-font-style: normal;
   --text-medium-normal-font-weight: 400;
   --text-medium-normal-letter-spacing: 0px;
@@ -135,14 +289,10 @@
   --text-small-semi-bold-font-weight: 600;
   --text-small-semi-bold-letter-spacing: 0px;
   --text-small-semi-bold-line-height: 150%;
-}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+    --space-x: clamp(1rem, 5vw, 4rem);
+    --max-width: 1200px;
 
-@layer base {
-  :root {
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
 
@@ -170,56 +320,17 @@
     --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --ring: 215 20.2% 65.1%;
-
-    --radius: 0.5rem;
-  }
-
-  .dark {
-    --background: 224 71% 4%;
-    --foreground: 213 31% 91%;
-
-    --muted: 223 47% 11%;
-    --muted-foreground: 215.4 16.3% 56.9%;
-
-    --accent: 216 34% 17%;
-    --accent-foreground: 210 40% 98%;
-
-    --popover: 224 71% 4%;
-    --popover-foreground: 215 20.2% 65.1%;
-
-    --border: 216 34% 17%;
-    --input: 216 34% 17%;
-
-    --card: transparent;
-    --card-foreground: 213 31% 91%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 1.2%;
-
-    --secondary: 222.2 47.4% 11.2%;
-    --secondary-foreground: 210 40% 98%;
-
-    --destructive: 0 63% 31%;
-    --destructive-foreground: 210 40% 98%;
-
-    --ring: 216 34% 17%;
-
-    --radius: 0.5rem;
-  }
+    --radius: 0.5rem; 
 }
-
-@layer base {
-  * {
-    @apply border-border;
-  }
 
   html {
     scroll-behavior: smooth
   }
 
   body {
-    @apply bg-background text-foreground;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    @apply mx-[var(--space-x)];
   }
-}
+
+  .layout {
+    @apply max-w-[var(--max-width)] mx-auto;
+  }
