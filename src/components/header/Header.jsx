@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useContent } from "../../context/ContentProvider";
+import { useState } from "react";
+import { useContent } from "../../context/ContentProvider";
 import { ChevronDownIcon } from "lucide-react";
 import {
   NavigationMenu,
@@ -7,10 +9,12 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "../../components/ui/NavigationMenu";
+
 import Button from "../../components/ui/button";
 
 export default function Header() {
   const { navLinks = [] } = useContent() || {};
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
@@ -24,18 +28,21 @@ export default function Header() {
               alt="Company logo"
               src="public/logos/web_square_500x500.png"
             />
-          </div>
+        </div>
 
+          {/* Menú para escritorio */}
+          <div className="hidden lg:flex items-center justify-between gap-6">
           {/* Menú para escritorio */}
           <div className="hidden lg:flex items-center justify-between gap-6">
             <NavigationMenu>
               <NavigationMenuList className="flex items-center gap-10">
                 {navLinks.map((item, index) => (
+                {navLinks.map((item, index) => (
                   <NavigationMenuItem key={index}>
                     <NavigationMenuLink asChild>
                       <a
                         href={item.href}
-                        className="text-white hover:underline text-md transition-all"
+                        className="text-regular-normal text-white hover:underline text-md transition-all"
                       >
                         {item.text}
                       </a>
@@ -53,7 +60,6 @@ export default function Header() {
                 <span className="font-medium">ESP</span>
                 <ChevronDownIcon className="w-4 h-4" />
               </Button>
-
               <Button
                 className="px-5 py-2 bg-[#a33cfa] text-white rounded-full font-medium shadow-md"
                 href="#form-section"
@@ -78,12 +84,13 @@ export default function Header() {
 
         {/* Menú mobile desplegable */}
         {isNavOpen && (
-          <div
+        <div
           className={`absolute top-0 left-0 w-full h-screen bg-black/100 flex flex-col items-center justify-center z-[999] gap-8 text-white text-xl transition-all duration-300 ease-in-out transform ${
             isNavOpen
               ? "opacity-100 scale-100 visible pointer-events-auto"
               : "opacity-0 scale-95 invisible pointer-events-none"
-          }`}
+            }
+         `}
         >
           <button
             className="absolute top-6 right-6 text-white text-3xl"
@@ -91,7 +98,6 @@ export default function Header() {
           >
             ×
           </button>
-        
           {navLinks.map((item, index) => (
             <a
               key={index}
@@ -102,7 +108,7 @@ export default function Header() {
               {item.text}
             </a>
           ))}
-        
+
           <Button
             variant="outline"
             className="px-5 py-2 bg-white text-black rounded-full flex items-center gap-2 shadow-md"
@@ -110,7 +116,7 @@ export default function Header() {
             <span className="font-medium">ESP</span>
             <ChevronDownIcon className="w-4 h-4" />
           </Button>
-        
+          
           <Button
             className="px-5 py-2 bg-[#a33cfa] text-white rounded-full font-medium shadow-md"
             href="#form-section"
@@ -118,7 +124,7 @@ export default function Header() {
             Contacto
           </Button>
         </div>
-        )}
+         )}
       </header>
     </>
   );

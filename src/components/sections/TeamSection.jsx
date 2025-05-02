@@ -17,17 +17,17 @@ const TeamSection = () => {
 
   return (
     <>
-      <section className="flex flex-col w-full items-center gap-10 px-12 py-12 bg-[#0c0412]" id="team-members">
+      <section className="flex flex-col w-full items-center gap-10 px-12 py-12 bg-[#08030d]" id="team-members">
         <div className="w-[768px] flex flex-col items-center gap-4">
           <div className="flex flex-col items-center gap-1 self-stretch w-full">
-            <h2 className="self-stretch text-[length:var(--heading-desktop-h2-font-size)] text-center tracking-[var(--heading-desktop-h2-letter-spacing)] leading-[var(--heading-desktop-h2-line-height)] font-heading-desktop-h2 text-[#E0CFF7] [font-style:var(--heading-desktop-h2-font-style)]">
+            <h2 className="self-stretch heading-h4 text-center text-white">
               Nuestro Equipo
             </h2>
 
-            <p className="text-[#E0CFF7] text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] self-stretch font-text-medium-normal tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)]">
+            <p className="text-regular-normal text-center text-white">
               Somos un equipo apasionado por la tecnología, con experiencia en desarrollo, infraestructura y consultoría. 
             </p>
-            <p className="text-[#E0CFF7] text-[length:var(--text-medium-normal-font-size)] text-center leading-[var(--text-medium-normal-line-height)] self-stretch font-text-medium-normal tracking-[var(--text-medium-normal-letter-spacing)] [font-style:var(--text-medium-normal-font-style)]">
+            <p className="text-regular-normal text-center text-white">
             Nos mueve la innovación, el aprendizaje constante y el trabajo colaborativo para crear soluciones eficientes y a medida de cada cliente.
             </p>
             

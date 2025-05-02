@@ -15,15 +15,12 @@ export default function Footer() {
               src="public/estelar-logo-500x500.png"
             />
           </div>
-
           <FooterLinks links={footerLinks} />
-
           <SocialIcons icons={socialIcons} />
         </div>
 
         <div className="flex flex-col items-center gap-8 self-stretch w-full">
           <Separator className="w-full h-px" />
-
           <div className="flex items-start gap-6">
             <span className="font-text-small-normal text-white text-[length:var(--text-small-normal-font-size)] tracking-[var(--text-small-normal-letter-spacing)] leading-[var(--text-small-normal-line-height)] [font-style:var(--text-small-normal-font-style)]">
               © 2024 EstelarCode. All rights reserved.

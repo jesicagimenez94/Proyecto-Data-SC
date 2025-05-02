@@ -67,15 +67,15 @@ export default function FormularioSection() {
   };
 
   return (
-    <section className="flex flex-col w-full items-start gap-20 px-16 py-16 bg-[var(--background-section-gray)]" id="form-section">
+    <section className="flex flex-col w-full items-start gap-20 px-16 py-16 bg-[#08030d]]" id="form-section">
       <div className="max-w">
         <div className="rounded-lg overflow-hidden">
           <div className="md:flex">
             <div className="md:w-1/2 p-8">
-              <h2 className="text-[length:var(--heading-desktop-h2-font-size)] text-white [font-family:var(--heading-desktop-h2-font-family)]">
+              <h2 className="heading-h4  text-white ">
                 Contáctanos
               </h2>
-              <p className="text-white text-[length:var(--text-medium-normal-font-size)] leading-[var(--text-medium-normal-line-height)]">
+              <p className="text-regular-normal  text-white ">
                 Si tienes alguna consulta o deseas conocer más sobre nuestros
                 servicios, completa el formulario y nos pondremos en contacto
                 contigo lo antes posible.
@@ -83,15 +83,15 @@ export default function FormularioSection() {
               <ul>
                 <li className="flex items-center my-4">
                   <img src="public/mail.svg" alt="" />
-                  <p className="text-white ml-2">mailfake@gmail.com</p>
+                  <p className="text-regular-normal  text-white  ml-2">mailfake@gmail.com</p>
                 </li>
                 <li className="flex items-center my-4">
                   <img src="public/phone.svg" alt="" />
-                  <p className="text-white ml-2">+54XXXXXXXX</p>
+                  <p className="text-regular-normal text-white ml-2">+54XXXXXXXX</p>
                 </li>
                 <li className="flex items-center my-4">
                   <img src="public/location.svg" alt="" />
-                  <p className="text-white ml-2">XXXX, Buenos Aires, Argentina</p>
+                  <p className="text-regular-normal text-white ml-2">XXXX, Buenos Aires, Argentina</p>
                 </li>
               </ul>
             </div>
@@ -103,7 +103,7 @@ export default function FormularioSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                   </svg>
                   <div>
-                    <p className="font-medium">¡Mensaje enviado con éxito!</p>
+                    <p className="text-regular-normal">¡Mensaje enviado con éxito!</p>
                     <p className="text-sm">Te responderemos a la brevedad.</p>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ export default function FormularioSection() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                   <div>
-                    <p className="font-medium">Error al enviar el mensaje</p>
+                    <p className="text-regular-normal">Error al enviar el mensaje</p>
                     <p className="text-sm">{serverState.error}</p>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ export default function FormularioSection() {
                 <div>
                   <label
                     htmlFor="nombre"
-                    className="block text-white text-[length:var(--text-small-semi-bold-font-size)] leading-[var(--text-medium-normal-line-height)]"
+                    className="text-regular-normal  text-white"
                   >
                     Nombre completo
                   </label>
@@ -147,7 +147,7 @@ export default function FormularioSection() {
                 <div>
                   <label
                     htmlFor="correo"
-                    className="block text-white text-[length:var(--text-small-semi-bold-font-size)] leading-[var(--text-medium-normal-line-height)]"
+                    className="text-regular-normal  text-white"
                   >
                     Correo electrónico
                   </label>
@@ -169,7 +169,7 @@ export default function FormularioSection() {
                 <div>
                   <label
                     htmlFor="mensaje"
-                    className="block text-white text-[length:var(--text-small-semi-bold-font-size)] leading-[var(--text-medium-normal-line-height)]"
+                    className="text-regular-normal  text-white"
                   >
                     Mensaje
                   </label>
@@ -200,7 +200,7 @@ export default function FormularioSection() {
                   <div className="ml-3 text-sm">
                     <label
                       htmlFor="terminos"
-                      className="font-medium text-white"
+                      className="text-regular-normal  text-white"
                     >
                       Acepto los términos y condiciones
                     </label>
@@ -214,7 +214,7 @@ export default function FormularioSection() {
                   <button
                     type="submit"
                     disabled={serverState.loading}
-                    className="px-5 py-2 rounded-[100px] font-medium flex items-center justify-center gap-2 transition-all duration-300 border-transparent bg-[#a33cfa] text-white w-full hover:bg-[#8a2be2] disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="px-5 py-2 rounded-[100px] font-medium flex items-center justify-center gap-2 transition-all duration-300 border-transparent bg-[#a33cfa] font-text-regular-normal text-white w-full hover:bg-[#8a2be2] disabled:opacity-70 disabled:cursor-not-allowed"
                   >
                     {serverState.loading ? (
                       <>

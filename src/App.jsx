@@ -1,7 +1,6 @@
 //////////////////////////////////////////////////////////
 // Importaciones
 import { Home } from "./page";
-// import { MobileViewSection } from "./screens/MobileViewSection/MobileViewSection";
 import { ContentProvider } from "./context/ContentProvider";
 import MainLayout from "./layout/MainLayout";
 
@@ -15,7 +14,7 @@ const App = () => {
   return (
     <ContentProvider>
       <MainLayout>
-        <Home />
+          <Home />
       </MainLayout>
     </ContentProvider>
   );
