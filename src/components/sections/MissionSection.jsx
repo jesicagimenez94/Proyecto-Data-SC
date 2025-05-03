@@ -13,7 +13,7 @@ const MissionSection = () => {
           {/* Contenido de texto */}
           <div className="flex flex-col items-start gap-8 flex-1">
             <div className="flex flex-col items-start gap-6 w-full">
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-[var(--heading-desktop-h2-letter-spacing)] leading-[var(--heading-desktop-h2-line-height)] font-heading-desktop-h2 text-[#E0CFF7]">
+              <h2 className="heading-h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl text-[#E0CFF7]">
                 Nuestra misión
               </h2>
               <p className="text-regular-normal text-sm sm:text-sm md:text-base lg:text-base text-[#b2a9be]">

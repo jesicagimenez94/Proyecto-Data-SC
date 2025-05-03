@@ -18,7 +18,7 @@ const TestimonialSection = () => {
           src="public/placeholder-logo.svg"
         />
 
-        <blockquote className="text-regular-normal text-sm sm:text-sm md:text-base lg:text-base text-center text-[#eeeeee] ">
+        <blockquote className="text-regular-normal text-sm sm:text-sm md:text-base lg:text-base text-center w-full max-w-3xl text-[#eeeeee] ">
           “We are truly impressed with the results we achieved! The team’s expertise made a significant difference in our project. They were responsive, professional, and dedicated to exceeding our expectations. It was a fantastic collaboration that led us to success!”
         </blockquote>
 

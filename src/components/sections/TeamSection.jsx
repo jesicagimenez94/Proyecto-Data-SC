@@ -24,10 +24,10 @@ const TeamSection = () => {
               Nuestro Equipo
             </h2>
 
-            <p className="text-regular-normal text-center mb-3 text-white">
+            <p className="text-medium-normal text-center w-full max-w-4xl mb-3 text-white">
               Somos un equipo apasionado por la tecnología, con experiencia en desarrollo, infraestructura y consultoría. 
             </p>
-            <p className="text-regular-normal text-center mb-8 text-[#b2a9be]">
+            <p className="text-regular-normal text-center w-full max-w-2xl mb-8 text-[#b2a9be]">
             Nos mueve la innovación, el aprendizaje constante y el trabajo colaborativo para crear soluciones eficientes y a medida de cada cliente.
             </p>
             

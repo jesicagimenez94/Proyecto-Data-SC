@@ -14,13 +14,13 @@ const Projects = () => {
     <>
       {/* Features Section */}
       <section className="w-full items-center gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-1 md:px-16 lg:px-28 flex flex-col bg-[#08030d]" id="proyectos">
-        <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center tracking-[var(--heading-desktop-h3-letter-spacing)] leading-[var(--heading-desktop-h3-line-height)] font-heading-desktop-h3 text-[#E0CFF7]">
+        <h3 className="heading-desktop-h3 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center text-[#E0CFF7]">
           Proyectos
         </h3>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[var(--text-medium-normal-line-height)] text-center text-[#E0CFF7]">
+        <p className="text-medium-normal text-sm sm:text-base md:text-lg lg:text-xl text-center text-[#E0CFF7]">
           En EstelarCode la tecnología no es sólo nuestra herramienta, es nuestra pasión.
         </p>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[var(--text-medium-normal-line-height)] text-center text-[#E0CFF7] mb-8">
+        <p className="text-medium-normal text-sm sm:text-base md:text-lg lg:text-xl  text-center text-[#E0CFF7] mb-8">
           Conocé nuestros servicios y llevá tu negocio al próximo nivel.
         </p>
 
