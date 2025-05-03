@@ -17,17 +17,17 @@ const TeamSection = () => {
 
   return (
     <>
-      <section className="flex flex-col w-full items-center gap-10 px-12 py-12 bg-[#08030d]" id="team-members">
-        <div className="w-[768px] flex flex-col items-center gap-4">
+      <section className="flex flex-col w-full items-center gap-10 px-12 py-20 bg-[#08030d]" id="team-members">
+        <div className="w-fill flex flex-col items-center gap-4">
           <div className="flex flex-col items-center gap-1 self-stretch w-full">
-            <h2 className="self-stretch heading-h4 text-center text-white">
+            <h2 className="self-stretch heading-h4 text-center mb-6 text-white">
               Nuestro Equipo
             </h2>
 
-            <p className="text-regular-normal text-center text-white">
+            <p className="text-regular-normal text-center mb-3 text-white">
               Somos un equipo apasionado por la tecnología, con experiencia en desarrollo, infraestructura y consultoría. 
             </p>
-            <p className="text-regular-normal text-center text-white">
+            <p className="text-regular-normal text-center mb-8 text-[#b2a9be]">
             Nos mueve la innovación, el aprendizaje constante y el trabajo colaborativo para crear soluciones eficientes y a medida de cada cliente.
             </p>
             
@@ -52,16 +52,16 @@ const TeamSection = () => {
 
                   <div className="flex flex-col items-center gap-4 self-stretch w-full">
                     <div className="flex flex-col items-center self-stretch w-full">
-                      <h4 className="self-stretch font-text-large-semi-bold text-[#E0CFF7] text-[length:var(--text-large-semi-bold-font-size)] text-center tracking-[var(--text-large-semi-bold-letter-spacing)] leading-[var(--text-large-semi-bold-line-height)] [font-style:var(--text-large-semi-bold-font-style)]">
+                      <h4 className="text-medium-normal text-center text-[#e0d5ee]">
                         {member.name}
                       </h4>
 
-                      <p className="self-stretch font-text-medium-normal text-[#a03df4] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                      <p className="text-small-normal text-center text-[#a03df4]">
                         {member.jobTitle}
                       </p>
                     </div>
 
-                    <p className="font-text-regular-normal text-[length:var(--text-regular-normal-font-size)] text-center leading-[var(--text-regular-normal-line-height)] self-stretch text-[#E0CFF7] tracking-[var(--text-regular-normal-letter-spacing)] [font-style:var(--text-regular-normal-font-style)]">
+                    <p className="text-regular-normal line-clamp-6 md:line-clamp-none text-clip text-center text-[#c7bcd6]">
                       {member.description}
                     </p>
                   </div>
@@ -122,16 +122,16 @@ const TeamSection = () => {
 
                   <div className="flex flex-col items-center gap-4 self-stretch w-full">
                     <div className="flex flex-col items-center self-stretch w-full">
-                      <h4 className="self-stretch font-text-large-semi-bold text-[#E0CFF7] text-[length:var(--text-large-semi-bold-font-size)] text-center tracking-[var(--text-large-semi-bold-letter-spacing)] leading-[var(--text-large-semi-bold-line-height)] [font-style:var(--text-large-semi-bold-font-style)]">
+                      <h4 className="text-medium-normal text-center text-[#e0d5ee]">
                         {member.name}
                       </h4>
 
-                      <p className="self-stretch font-text-medium-normal text-[#a03df4] text-[length:var(--text-medium-normal-font-size)] text-center tracking-[var(--text-medium-normal-letter-spacing)] leading-[var(--text-medium-normal-line-height)] [font-style:var(--text-medium-normal-font-style)]">
+                      <p className="text-small-normal text-center text-[#a03df4]">
                         {member.jobTitle}
                       </p>
                     </div>
 
-                    <p className="font-text-regular-normal text-[length:var(--text-regular-normal-font-size)] text-center leading-[var(--text-regular-normal-line-height)] self-stretch text-[#E0CFF7] tracking-[var(--text-regular-normal-letter-spacing)] [font-style:var(--text-regular-normal-font-style)]">
+                    <p className="text-regular-normal line-clamp-6 md:line-clamp-none text-clip text-center text-[#c7bcd6]">
                       {member.description}
                     </p>
                   </div>

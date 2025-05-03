@@ -72,10 +72,10 @@ export default function FormularioSection() {
         <div className="rounded-lg overflow-hidden">
           <div className="md:flex">
             <div className="md:w-1/2 p-8">
-              <h2 className="heading-h4  text-white ">
+              <h2 className="heading-h4 mb-6 text-white ">
                 Contáctanos
               </h2>
-              <p className="text-regular-normal  text-white ">
+              <p className="text-regular-normal  text-[#e0d5ee] ">
                 Si tienes alguna consulta o deseas conocer más sobre nuestros
                 servicios, completa el formulario y nos pondremos en contacto
                 contigo lo antes posible.

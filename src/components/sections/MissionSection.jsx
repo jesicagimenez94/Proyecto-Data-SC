@@ -4,8 +4,8 @@ import { ChevronRightIcon } from "lucide-react";
 import Button from "../ui/button";
 
 //////////////////////////////////////////////////////////
-// Componente BenefitsSection
-const BenefitsSection = () => {
+// Componente MissionSection
+const MissionSection = () => {
   return (
     <>
       <section className="w-full items-start gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-20 md:px-16 lg:px-28 flex flex-col bg-[#08030d]">
@@ -16,7 +16,7 @@ const BenefitsSection = () => {
               <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl tracking-[var(--heading-desktop-h2-letter-spacing)] leading-[var(--heading-desktop-h2-line-height)] font-heading-desktop-h2 text-[#E0CFF7]">
                 Nuestra misión
               </h2>
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[var(--text-medium-normal-line-height)] text-[#E0CFF7]">
+              <p className="text-regular-normal text-sm sm:text-sm md:text-base lg:text-base text-[#b2a9be]">
                 En EstelarCode creemos que la tecnología no solo debe resolver problemas, sino también potenciar oportunidades. Nuestra misión es brindar soluciones digitales innovadoras, eficientes a medida que ayuden a empresas y personas a crecer, optimizar sus procesos y adaptarse al mundo digital de forma simple y efectiva. Trabajamos con pasión, transparencia y compromiso, buscando siempre superar las expectativas de nuestros clientes y acompañarlos en cada paso de su evolución tecnológica.
               </p>
             </div>
@@ -57,4 +57,4 @@ const BenefitsSection = () => {
   );
 };
 
-export default BenefitsSection;
+export default MissionSection;

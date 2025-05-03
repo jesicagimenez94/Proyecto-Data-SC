@@ -28,9 +28,9 @@ export function ServiceCard({ title, description, backgroundPattern, url }: Serv
 
       {/* Content */}
       <div className="relative z-10 flex flex-col h-full">
-        <h2 className="text-[#ffffff] text-3xl md:text-4xl font-light mb-6 tracking-wider">{title}</h2>
+        <h2 className="text-[#E0CFF7] text-regular-normal text-xl md:text-2xl mb-6 tracking-wider">{title}</h2>
 
-        <p className="text-[#f2f2f2]/80 mb-8 text-sm md:text-base flex-grow">{description}</p>
+        <p className="text-small-normal text-[#f2f2f2]/80 mb-8 text-sm md:text-base flex-grow">{description}</p>
 
         <a href={url} className="inline-flex items-center text-[#a33cfa] group mt-auto w-fit">
           <span className="mr-1">Conoce más</span>
