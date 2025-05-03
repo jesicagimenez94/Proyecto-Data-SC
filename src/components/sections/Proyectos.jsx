@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
+import '../../../src/styles/Proyectos.css';
 
 //////////////////////////////////////////////////////////
 // Componente FeaturesSection
@@ -24,21 +25,21 @@ const Proyectos = () => {
   return (
     <>
       {/* Features Section */}
-      <section className="w-full items-center gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-1 md:px-16 lg:px-28 flex flex-col bg-[#141118]">
-        <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center tracking-[var(--heading-desktop-h3-letter-spacing)] leading-[var(--heading-desktop-h3-line-height)] font-heading-desktop-h3 text-[#E0CFF7]">
+      <section className="section-proyectos">
+        <h3 className="proyectos-title">
           Proyectos
         </h3>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[var(--text-medium-normal-line-height)] text-center text-[#E0CFF7]">
+        <p className="proyectos-description">
           En EstelarCode la tecnología no es sólo nuestra herramienta, es nuestra pasión.
         </p>
-        <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-[var(--text-medium-normal-line-height)] text-center text-[#E0CFF7] mb-8">
+        <p className="proyectos-description proyectos-description-mb">
           Conocé nuestros servicios y llevá tu negocio al próximo nivel.
         </p>
 
         {/* Swiper Carousel */}
-        <div className="w-full max-w-[90%] mx-auto relative">
+        <div className="swiper-container">
           <Swiper
-            slidesPerView={1}
+            slidesPerView="auto"
             direction="horizontal"
             spaceBetween={30}
             pagination={{
@@ -47,61 +48,39 @@ const Proyectos = () => {
             }}
             navigation={true}
             modules={[Pagination, Navigation]}
-            className="mySwiper h-auto"
+            className="mySwiper"
             loop={true}
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-                spaceBetween: 20
-              },
-              450: {
-                slidesPerView: 1,
-                spaceBetween: 20
-              },
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 30
-              },
-              1024: {
-                slidesPerView: 3,
-                spaceBetween: 30
-              }
-            }}
+            centeredSlides={false}
+            slideVisibleClass="swiper-slide-visible"
           >
             {displayFeatures.map((feature, index) => (
-              <SwiperSlide key={index} className="h-auto mb-8">
-                <Card
-                  className="flex flex-col w-full h-[500px] mx-auto bg-cover bg-center bg-no-repeat border-none shadow-none transition-transform duration-300 hover:scale-105"
-                  style={{
-                    backgroundImage: `url(${feature.backgroundImage})`,
-                    backgroundSize: "cover",
-                  }}
-                >
-                  <CardContent className="flex flex-col justify-between p-4 sm:p-8 bg-black/50 rounded-xl h-full">
+              <SwiperSlide key={index} className="swiper-slide-custom">
+                <Card className={`proyectos-card proyecto-bg-${index}`}>
+                  <CardContent className="proyectos-card-content">
                     {/* Contenido superior */}
-                    <div className="flex flex-col items-center gap-6 text-center">
-                      <div className="h-[80px] flex items-center justify-center">
-                        <h5 className="text-xl sm:text-2xl md:text-3xl text-center text-white line-clamp-2 font-bold">
+                    <div className="card-top-content">
+                      <div className="card-title-container">
+                        <h5 className="card-title">
                           {feature.title}
                         </h5>
                       </div>
-                      <div className="flex-1 w-full min-w-[318px] overflow-y-auto">
-                        <p className="text-sm sm:text-base md:text-lg text-center text-white">
+                      <div className="card-description-container">
+                        <p className="card-description">
                           {feature.description}
                         </p>
                       </div>
                     </div>
 
                     {/* Botón */}
-                    <div className="flex items-center justify-center mt-6">
+                    <div className="card-button-container">
                       <Button
                         variant="link"
-                        className="rounded-[100px] overflow-hidden p-0 bg-[#f2f2f2] hover:bg-[#e0e0e0] transition-colors"
+                        className="card-button"
                       >
-                        <span className="text-sm sm:text-base md:text-lg text-[#08030d]">
-                          Button
+                        <span className="button-text">
+                          Ver más
                         </span>
-                        <ChevronRightIcon className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-[#08030d]" />
+                        <ChevronRightIcon className="button-icon" />
                       </Button>
                     </div>
                   </CardContent>
@@ -111,19 +90,6 @@ const Proyectos = () => {
           </Swiper>
         </div>
       </section>
-      <style jsx global>{`
-        .swiper-button-next,
-        .swiper-button-prev {
-          color: #a03df4 !important;
-        }
-        .swiper-button-next::after,
-        .swiper-button-prev::after {
-          font-size: 50px !important;
-        }
-        .swiper-pagination-bullet-active {
-          background: #a03df4 !important;
-        }
-      `}</style>
     </>
   );
 };

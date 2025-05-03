@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////
 // Importaciones
-import './styles/global.css';
+//import './styles/global.css';
 import { DesktopViewSection } from "./screens/DesktopViewSection/DesktopViewSection";
 // import { MobileViewSection } from "./screens/MobileViewSection/MobileViewSection";
 import { ContentProvider } from "./context/ContentProvider";
