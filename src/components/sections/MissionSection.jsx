@@ -17,7 +17,7 @@ const MissionSection = () => {
                 Nuestra misión
               </h2>
               <p className="text-regular-normal text-sm sm:text-sm md:text-base lg:text-base text-[#b2a9be]">
-                En EstelarCode creemos que la tecnología no solo debe resolver problemas, sino también potenciar oportunidades. Nuestra misión es brindar soluciones digitales innovadoras, eficientes a medida que ayuden a empresas y personas a crecer, optimizar sus procesos y adaptarse al mundo digital de forma simple y efectiva. Trabajamos con pasión, transparencia y compromiso, buscando siempre superar las expectativas de nuestros clientes y acompañarlos en cada paso de su evolución tecnológica.
+                En EstelarCode creemos que la tecnología no solo debe resolver problemas, sino también potenciar oportunidades. Nuestra misión es brindar soluciones digitales innovadoras, eficientes a medida que ayuden a empresas y personas a crecer, optimizar sus procesos y adaptarse al mundo digital de forma simple y efectiva. Buscamos siempre superar las expectativas de nuestros clientes y acompañarlos en cada paso de su evolución tecnológica.
               </p>
             </div>
 

@@ -9,17 +9,17 @@ const ExperienceSection = () => {
         {/* Contenido de texto */}
         <div className="flex-1 flex flex-col items-start gap-6">
           <h3 className="heading-h5 text-[#E0CFF7]">
-            Sobre nosotros
+            Nos preocupamos por nuestro trabajo
           </h3>
           <p className="text-regular-normal text-[#b2a9be]">
-            En EstelarCode llevamos la inteligencia de los datos, el desarrollo de software y el soporte técnico al siguiente nivel. Con un equipo de expertos apasionados por la tecnología, ofrecemos soluciones avanzadas para optimizar procesos, impulsar el crecimiento y mejorar la toma de decisiones en tu empresa.
+            Llevamos la inteligencia de los datos, el desarrollo de software y el soporte técnico al siguiente nivel. Ofrecemos soluciones avanzadas para optimizar procesos, impulsar el crecimiento y mejorar la toma de decisiones en tu empresa.
           </p>
 
           {/* Lista de beneficios */}
           <div className="w-full flex flex-col gap-4 py-2">
             {[
-              "EstelarCode se destaca por su capacidad de proporcionar soluciones de datos personalizadas que atienden las necesidades de cada cliente, garantizando el máximo impacto y eficacia.",
-              "Nuestras estrategias analíticas transforman datos complejos en información procesable",
+              "Soluciones de datos personalizadas que se ajustan a vos, garantizando el máximo impacto y eficacia.",
+              "Transforma datos complejos en información procesable con nuestras estrategias analíticas",
               "Integración perfecta y soporte personalizado",
             ].map((text, index) => (
               <div key={index} className="w-full flex items-start gap-4">

@@ -15,9 +15,11 @@ import ScrollToTopButton from "./components/ui/ScrollToTopButton";
 //////////////////////////////////////////////////////////
 // Componente Home (DesktopViewSection)
 export const Home = () => {
+  
   return (
+    <>
+    <HeroSection />
     <div className="layout flex flex-col items-start w-full">
-      <HeroSection />
       <ServicesSection />
       <ExperienceSection />
       <Projects />
@@ -29,5 +31,6 @@ export const Home = () => {
       <FormularioSection />
       <ScrollToTopButton />
     </div>
+    </>
   );
 };

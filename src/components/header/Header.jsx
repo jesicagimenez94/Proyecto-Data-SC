@@ -16,7 +16,7 @@ export default function Header() {
   return (
     <>
       <header className="fixed top-4 z-50 w-full flex justify-center">
-        <div className="flex h-[72px] items-center justify-between px-10 w-full max-w-[1650px] bg-[#000]/60 backdrop-blur-md rounded-full">
+        <div className="flex h-[72px] items-center justify-between px-10 w-full max-w-[80%] bg-[#000]/60 backdrop-blur-md rounded-full">
           {/* Logo */}
           <div className="flex items-center">
             <img

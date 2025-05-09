@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="flex w-full gap-10 px-16 py-16 bg-[var(--background-footer)] flex-col items-center">
+      <footer className="flex justify-center w-full md:max-w-[60%] lg:max-w-[90%] gap-10 px-16 py-16 bg-[var(--background-footer)] flex-col items-center">
         <div className="flex items-center gap-8 self-stretch w-full">
           <div className="flex flex-col items-start gap-6 flex-1">
             <img
