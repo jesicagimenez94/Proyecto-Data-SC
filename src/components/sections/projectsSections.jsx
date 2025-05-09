@@ -31,7 +31,7 @@ const backgroundImages = [
   return (
     <>
       {/* Features Section */}
-      <section className="w-full items-center gap-6 px-4 sm:px-8 md:px-16 lg:px-28 py-16 flex flex-col bg-[#08030d]" id="proyectos">
+      <section className="w-full items-center gap-4 px-4 sm:px-8 md:px-16 lg:px-28 py-16 flex flex-col bg-[#08030d]" id="proyectos">
         <h3 className="heading-h3 text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center mb-6 text-[#E0CFF7]"> 
           Proyectos
         </h3>
@@ -66,17 +66,17 @@ const backgroundImages = [
           {displayFeatures.map((feature, index) => (
             <SwiperSlide key={index} className="w-[400px] h-auto mb-8">
               <Card className= "w-full h-[500px] bg-cover bg-center bg-no-repeat border-none shadow-none transition-transform duration-300 hover:scale-105" style={{ backgroundImage: `url(${backgroundImages[index]})` }}>
-                <CardContent className="flex flex-col justify-between flex-grow p-4 sm:p-6 md:p-8 bg-black/50 rounded-xl min-h-[20rem] sm:min-h-[20rem] lg:min-h-[25rem]">
 
+                <CardContent className="flex flex-col justify-between flex-grow p-4 sm:p-6 md:p-8 bg-black/50 rounded-xl min-h-[20rem] sm:min-h-[20rem] lg:min-h-[25rem]">
                   {/* Contenido superior */}
                   <div className="flex flex-col items-center gap-4 sm:gap-6 flex-grow">
                     <div className="h-[60px] sm:h-[80px] flex items-center justify-center">
-                      <h5 className="text-medium-normal text-base sm:text-lg md:text-xl lg:text-2xl text-center text-white">
+                      <h5 className="text-medium-normal text-base sm:text-base md:text-base lg:text-lg text-center text-white">
                         {feature.title}
                       </h5>
                     </div>
                   <div className="flex items-center justify-center flex-grow">
-                    <p className="text-regular-normal w-full lg:max-w-[80%]  text-sm sm:text-sm md:text-base lg:text-lg text-center line-clamp-5 overflow-hidden text-white">
+                    <p className="text-regular-normal w-full lg:max-w-[80%] text-sm sm:text-sm md:text-base lg:text-base text-center line-clamp-5 overflow-hidden text-white">
                       {feature.description}
                     </p>
                   </div>
