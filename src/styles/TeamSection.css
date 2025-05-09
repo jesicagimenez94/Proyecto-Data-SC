@@ -1,0 +1,361 @@
+/* TeamSection.css */
+
+/* Estructura principal */
+.team-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 3rem;
+    background-color: #0c0412;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos del encabezado */
+  .team-header {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .team-header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .team-title {
+    align-self: stretch;
+    text-align: center;
+    letter-spacing: var(--heading-desktop-h2-letter-spacing);
+    line-height: var(--heading-desktop-h2-line-height);
+    font-size: var(--heading-desktop-h2-font-size);
+    font-family: var(--heading-desktop-h2-font-family);
+    font-style: var(--heading-desktop-h2-font-style);
+    color: #E0CFF7;
+    margin: 0;
+  }
+  
+  .team-description {
+    color: #E0CFF7;
+    font-size: var(--text-medium-normal-font-size);
+    text-align: center;
+    line-height: var(--text-medium-normal-line-height);
+    align-self: stretch;
+    font-family: var(--text-medium-normal-font-family);
+    letter-spacing: var(--text-medium-normal-letter-spacing);
+    font-style: var(--text-medium-normal-font-style);
+    margin: 0.5rem 0;
+  }
+  
+  /* Grid de tarjetas */
+  .team-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    align-self: stretch;
+    flex: 1;
+    width: 100%;
+  }
+  
+  .team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1400px; /* Aumentado para acomodar 3 tarjetas */
+    margin: 0 auto;
+  }
+  
+  .team-card {
+    flex: 0 0 calc(33.33% - 2rem); /* Por defecto 3 tarjetas por fila en pantallas grandes */
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    min-width: 280px;
+    max-width: 350px; /* Ajustado para 3 tarjetas por fila */
+    margin: 0 0 2rem 0;
+  }
+  
+  .team-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0 0 3rem; /* Padding inferior para dejar espacio para los iconos */
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  /* Estructura para mantener LinkedIn al mismo nivel */
+  .team-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 450px; /* Altura mínima para todas las tarjetas */
+  }
+  
+  .team-member-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+  }
+  
+  .team-member-image {
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  }
+  
+  .team-member-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+  }
+  
+  .team-member-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+  }
+  
+  .team-member-name {
+    align-self: stretch;
+    font-family: var(--text-large-semi-bold-font-family);
+    color: #E0CFF7;
+    font-size: var(--text-large-semi-bold-font-size);
+    text-align: center;
+    letter-spacing: var(--text-large-semi-bold-letter-spacing);
+    line-height: var(--text-large-semi-bold-line-height);
+    font-style: var(--text-large-semi-bold-font-style);
+    margin: 0;
+  }
+  
+  .team-member-title {
+    align-self: stretch;
+    font-family: var(--text-medium-normal-font-family);
+    color: #a03df4;
+    font-size: var(--text-medium-normal-font-size);
+    text-align: center;
+    letter-spacing: var(--text-medium-normal-letter-spacing);
+    line-height: var(--text-medium-normal-line-height);
+    font-style: var(--text-medium-normal-font-style);
+    margin: 0.25rem 0 0;
+  }
+  
+  .team-member-description {
+    font-family: var(--text-regular-normal-font-family);
+    font-size: var(--text-regular-normal-font-size);
+    text-align: center;
+    line-height: var(--text-regular-normal-line-height);
+    align-self: stretch;
+    color: #E0CFF7;
+    letter-spacing: var(--text-regular-normal-letter-spacing);
+    font-style: var(--text-regular-normal-font-style);
+    margin: 0;
+    overflow-y: auto;
+    max-height: 150px; /* Altura máxima para la descripción */
+  }
+  
+  /* Social links - siempre abajo */
+  .team-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.875rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .social-link {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .social-icon,
+  .linkedin-icon {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .linkedin-icon {
+    color: #0A66C2;
+  }
+  
+  /* Sección de hiring */
+  .hiring-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: auto;
+  }
+  
+  .hiring-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 768px;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .hiring-title {
+    align-self: stretch;
+    text-align: center;
+    letter-spacing: var(--heading-desktop-h4-letter-spacing);
+    line-height: var(--heading-desktop-h4-line-height);
+    font-size: var(--heading-desktop-h4-font-size);
+    font-family: var(--heading-desktop-h4-font-family);
+    color: #E0CFF7;
+    font-style: var(--heading-desktop-h4-font-style);
+    margin: 0;
+  }
+  
+  .hiring-description {
+    font-family: var(--text-medium-normal-font-family);
+    font-size: var(--text-medium-normal-font-size);
+    text-align: center;
+    line-height: var(--text-medium-normal-line-height);
+    align-self: stretch;
+    color: #E0CFF7;
+    letter-spacing: var(--text-medium-normal-letter-spacing);
+    font-style: var(--text-medium-normal-font-style);
+    margin: 0;
+  }
+  
+  .hiring-button-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 250px;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .hiring-button {
+    padding: 1rem;
+    border-radius: 100px;
+    border-color: transparent;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    background-color: #a03df4;
+    width: 100%;
+  }
+  
+  .button-text {
+    font-family: var(--text-regular-medium-font-family);
+    color: #f2f2f2;
+    font-size: var(--text-regular-medium-font-size);
+    letter-spacing: var(--text-regular-medium-letter-spacing);
+    line-height: var(--text-regular-medium-line-height);
+    font-style: var(--text-regular-medium-font-style);
+  }
+  
+  /* Media queries para responsividad */
+  @media (max-width: 1280px) {
+    .team-row {
+      gap: 1.5rem;
+    }
+    
+    .team-card {
+      max-width: 320px;
+    }
+  }
+  
+  /* Tablets y pantallas medianas: 2 tarjetas por fila */
+  @media (max-width: 1024px) {
+    .team-card {
+      flex: 0 0 calc(50% - 1.5rem);
+      max-width: 350px;
+    }
+  }
+  
+  /* Tablets más pequeñas: 2 tarjetas por fila */
+  @media (max-width: 900px) {
+    .team-section {
+      padding: 2rem 1.5rem;
+    }
+    
+    .team-card {
+      flex: 0 0 calc(50% - 1.5rem);
+      max-width: 350px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .team-section {
+      padding: 2rem 1rem;
+    }
+    
+    .team-header {
+      max-width: 100%;
+    }
+    
+    .team-card-content {
+      min-height: 400px;
+    }
+    
+    .team-member-image {
+      width: 8rem;
+      height: 8rem;
+    }
+    
+    .team-member-description {
+      max-height: 120px;
+    }
+    
+    .hiring-content,
+    .hiring-button-container {
+      max-width: 100%;
+    }
+  }
+  
+  /* Móviles: 1 tarjeta por fila */
+  @media (max-width: 480px) {
+    .team-section {
+      padding: 1.5rem 1rem;
+    }
+    
+    .team-card {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    
+    .team-member-image {
+      width: 7rem;
+      height: 7rem;
+    }
+  }

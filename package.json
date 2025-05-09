@@ -24,8 +24,13 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.56.0",
     "react-router-dom": "^6.8.1",
+<<<<<<< HEAD
+    "swiper": "^11.2.6",
+    "tailwind-merge": "2.5.4"
+=======
     "tailwind-merge": "2.5.4",
     "zod": "^3.24.2"
+>>>>>>> b7adf655b0ef6dfe3a6afefc0e882dc6468b51e7
   },
   "devDependencies": {
     "@vitejs/plugin-react": "4.3.4",
