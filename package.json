@@ -2,8 +2,8 @@
   "version": "1.0.0",
   "source": "./index.html",
   "type": "module",
-  "name": "lincepulce",
-  "description": "Sitio Web de LincePulce",
+  "name": "estelarcode",
+  "description": "Sitio Web de EstelarCode",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -22,7 +22,7 @@
     "lucide-react": "^0.453.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.55.0",
+    "react-hook-form": "^7.56.0",
     "react-router-dom": "^6.8.1",
 <<<<<<< HEAD
     "swiper": "^11.2.6",

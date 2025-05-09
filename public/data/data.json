@@ -8,17 +8,22 @@
         {
             "id": 101,
             "text": "Servicios",
-            "href": "/#services"
+            "href": "/#servicios"
         },
         {
             "id": 102,
             "text": "Proyectos",
-            "href": "/#projects"
+            "href": "/#proyectos"
         },
         {
             "id":103,
             "text": "Nosotros",
-            "href":"/#aboutus"
+            "href":"/#sobre-nosotros"
+        },
+        {
+            "id": 104,
+            "text": "Team Members",
+            "href": "/#team-members"
         }
     ],
     "features": [
@@ -110,28 +115,28 @@
     "footerLinks": [
         {
             "id": 401,
-            "text": "Servicios",
-            "href": "/#services"
+            "text": "Inicio",
+            "href": "/"
         },
         {
             "id": 402,
-            "text": "Proyectos",
-            "href": "/#projects"
+            "text": "Servicios",
+            "href": "/#servicios"
         },
         {
             "id": 403,
-            "text": "Acerca de",
-            "href": "/#aboutus"
+            "text": "Proyectos",
+            "href": "/#proyectos"
         },
         {
             "id": 404,
-            "text": "Link Four",
-            "href": "/#link-four"
+            "text": "Nosotros",
+            "href":"/#sobre-nosotros"
         },
         {
             "id": 405,
-            "text": "Link Five",
-            "href": "/#link-five"
+            "text": "Team Members",
+            "href": "/#team-members"
         }
     ],
     "socialIcons": [

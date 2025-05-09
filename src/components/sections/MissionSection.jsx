@@ -1,14 +1,14 @@
 //////////////////////////////////////////////////////////
 // Importaciones
 import { ChevronRightIcon } from "lucide-react";
-import Button from "../../components/ui/button";
+import Button from "../ui/button";
 
 //////////////////////////////////////////////////////////
 // Componente BenefitsSection
 const BenefitsSection = () => {
   return (
     <>
-      <section className="w-full items-start gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-20 md:px-16 lg:px-28 flex flex-col bg-[#141118]">
+      <section className="w-full items-start gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-20 md:px-16 lg:px-28 flex flex-col bg-[#08030d]">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 w-full">
           {/* Contenido de texto */}
           <div className="flex flex-col items-start gap-8 flex-1">
@@ -26,6 +26,7 @@ const BenefitsSection = () => {
               <Button
                 variant="outline"
                 className="px-6 py-2.5 bg-[#a03df4] rounded-[100px] border-transparent"
+                href="#form-section"
               >
                 <span className="text-sm sm:text-base md:text-lg text-[#E0CFF7] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
                   Contactanos
