@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { useContent } from "../../context/ContentProvider";
-import { useState } from "react";
-import { useContent } from "../../context/ContentProvider";
 import { ChevronDownIcon } from "lucide-react";
 import {
   NavigationMenu,
@@ -14,7 +12,6 @@ import Button from "../../components/ui/button";
 
 export default function Header() {
   const { navLinks = [] } = useContent() || {};
-  const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
@@ -36,7 +33,6 @@ export default function Header() {
           <div className="hidden lg:flex items-center justify-between gap-6">
             <NavigationMenu>
               <NavigationMenuList className="flex items-center gap-10">
-                {navLinks.map((item, index) => (
                 {navLinks.map((item, index) => (
                   <NavigationMenuItem key={index}>
                     <NavigationMenuLink asChild>
@@ -125,6 +121,7 @@ export default function Header() {
           </Button>
         </div>
          )}
+          </div>
       </header>
     </>
   );

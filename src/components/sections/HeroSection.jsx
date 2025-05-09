@@ -14,7 +14,6 @@ const HeroSection = () => {
         <div className="flex flex-col w-[95%] items-center gap-8">
           <div className="flex flex-col items-center gap-6 self-stretch w-full">
             <h1 className="heading-h1 text-[32px] md:text-[56px] text-white text">
-            <h1 className="self-stretch font-heading-desktop-h1 text-white tracking-[var(--heading-desktop-h1-letter-spacing)] leading-[var(--heading-desktop-h1-line-height)] [font-style:var(--heading-desktop-h1-font-style)] text-[40px] md:text-[80px]">
               Impulsamos tu transformación digital
             </h1>
 
@@ -41,6 +40,8 @@ const HeroSection = () => {
           </div>
         </div>
       </section>
+      </div>
+    </section>
     </>
   );
 };
