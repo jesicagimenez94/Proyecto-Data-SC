@@ -39,8 +39,27 @@
         },
         {
             "id": 203,
-            "title": "Comprehensive data management service",
-            "description": "Our Data Management Service provides an efficient solution for organizing, storing, and analyzing your data. It ensures security, accessibility, and maintenance at every stage. From collection to reporting, our service simplifies the process, allowing informed decisions based on accurate information."
+            "title": "Desarrollo de Software",
+            "description": "Creando el Futuro Diseñamos y desarrollamos aplicaciones robustas, escalables y seguras a la medida de t us necesidades. Desde plataformas web hasta integraciones complejas, nuestra experiencia garantiza productos innovadores y eficientes.",
+            "backgroundImage": "public/proyectImg3.png"
+        },
+        {
+            "id": 204,
+            "title": "TARJETA 4",
+            "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+            "backgroundImage": "public/proyectImg3.png"
+        },
+        {
+            "id": 205,
+            "title": "TARJETA 5",
+            "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+            "backgroundImage": "public/proyectImg3.png"
+        },
+        {
+            "id": 206,
+            "title": "TARJETA 6",
+            "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+            "backgroundImage": "public/proyectImg3.png"
         }
 
     ],
@@ -48,45 +67,45 @@
         {
             "name": "Jesica Gimenez",
             "jobTitle": "Product Owner",
-            "description": "Apasionada por la tecnología y la innovación, Jesica es una experta en gestión de proyectos y desarrollo de software. Su enfoque centrado en el cliente y su capacidad para liderar equipos hacen que cada proyecto sea un éxito.",
+            "description": "Jesica lidera proyectos tecnológicos con enfoque en el cliente. Su experiencia en software y gestión de equipos asegura resultados exitosos.",
             "image": "public/Jesica.jpeg",
             "linkedin": "https://www.linkedin.com/in/jesica-gimenez/"
-        },
-        {
+          },
+          {
             "name": "Mauro Ciancioci",
             "jobTitle": "Team Leader",
-            "description": "Con una sólida formación en metodologías ágiles, Mauro es un facilitador excepcional. Su habilidad para guiar equipos y fomentar la colaboración asegura que cada proyecto avance de manera eficiente y efectiva.",
+            "description": "Mauro domina metodologías ágiles y fomenta la colaboración. Su liderazgo guía a los equipos a alcanzar metas de forma eficiente y organizada.",
             "image": "public/Mauro.png",
             "linkedin": "https://www.linkedin.com/in/mauro-ciancioci/"
-        },
-        {
+          },
+          {
             "name": "Pablo Torrez",
             "jobTitle": "Full Stack Developer",
-            "description": "Pablo es un desarrollador full stack con una pasión por la creación de soluciones innovadoras. Su experiencia abarca desde el desarrollo front-end hasta la implementación de back-end, lo que le permite abordar proyectos de manera integral.",
+            "description": "Pablo desarrolla soluciones completas combinando front-end y back-end. Su enfoque integral impulsa la innovación en cada proyecto.",
             "image": "public/Pablo.jpeg",
             "linkedin": "https://www.linkedin.com/in/pablo-torrez-33a80324b/"
-        },
-        {
+          },
+          {
             "name": "Joel Barrientos",
             "jobTitle": "Full Stack Developer",
-            "description": "Joel es un desarrollador full stack con un enfoque en la creación de aplicaciones web escalables y eficientes. Su experiencia en diversas tecnologías le permite abordar desafíos complejos con confianza y creatividad.",
+            "description": "Joel crea aplicaciones web escalables y eficientes. Su dominio de múltiples tecnologías le permite resolver desafíos con creatividad.",
             "image": "public/joel.jpeg",
             "linkedin": "https://www.linkedin.com/in/barrientossjoel/"
-        },
-        {
+          },
+          {
             "name": "Javier Cohen",
             "jobTitle": "Frontend Developer",
-            "description": "Javier es un desarrollador frontend apasionado por la creación de interfaces de usuario atractivas y funcionales. Su atención al detalle y su comprensión de la experiencia del usuario garantizan que cada proyecto sea visualmente impactante y fácil de usar.",
+            "description": "Javier diseña interfaces atractivas y funcionales. Su atención al detalle mejora la experiencia del usuario y resalta el diseño visual.",
             "image": "public/Javier.jpeg",
             "linkedin": "https://www.linkedin.com/in/javier-cohen/"
-        },
-        {
+          },
+          {
             "name": "Demian Marcos Garcia",
             "jobTitle": "Backend Developer",
-            "description": "Demian es un desarrollador backend con una sólida comprensión de la arquitectura de sistemas y la optimización del rendimiento. Su enfoque en la escalabilidad y la seguridad asegura que las aplicaciones funcionen sin problemas incluso bajo alta carga.",
+            "description": "Demian optimiza sistemas backend con foco en rendimiento, escalabilidad y seguridad. Aporta soluciones robustas ante grandes demandas.",
             "image": "public/Demian.jpeg",
             "linkedin": "https://www.linkedin.com/in/marcos-demian-garcia/"
-        }
+          }
     ],
     "footerLinks": [
         {
