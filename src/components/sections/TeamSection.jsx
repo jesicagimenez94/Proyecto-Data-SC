@@ -57,7 +57,7 @@ const TeamSection = () => {
       <section className="team-section">
         <div className="team-header">
           <div className="team-header-content">
-            <h2 className="team-title">Nuestro Equipo</h2>
+            <h2 className="heading-h5 text-center text-white">Nuestro Equipo</h2>
 
             <p className="team-description">
               Somos un equipo apasionado por la tecnología, con experiencia en desarrollo, infraestructura y consultoría. 

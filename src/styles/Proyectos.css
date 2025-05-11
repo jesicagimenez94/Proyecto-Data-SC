@@ -6,7 +6,6 @@
   align-items: center;
   gap: 10px;
   padding: 16px 4px;
-  background-color: #141118;
 }
 
 @media (min-width: 640px) {
@@ -31,7 +30,7 @@
 
 /* Estilos para el título */
 .proyectos-title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   text-align: center;
   letter-spacing: var(--heading-desktop-h3-letter-spacing);
   line-height: var(--heading-desktop-h3-line-height);
