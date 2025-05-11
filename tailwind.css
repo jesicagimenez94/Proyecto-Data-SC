@@ -1,5 +1,4 @@
 @tailwind base;
-@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -184,14 +183,16 @@
   --heading-d-h3-font-weight: 400;
   --heading-d-h3-letter-spacing: -0.44px;
   --heading-d-h3-line-height: 120%;
+
   --heading-d-h4-font-family: "Orbitron", Helvetica;
   --heading-d-h4-font-size: 36px;
   --heading-d-h4-font-style: normal;
   --heading-d-h4-font-weight: 400;
   --heading-d-h4-letter-spacing: -0.36px;
   --heading-d-h4-line-height: 130%;
+
   --heading-d-h5-font-family: "Orbitron", Helvetica;
-  --heading-d-h5-font-size: 28px;
+  --heading-d-h5-font-size: 24px;
   --heading-d-h5-font-style: normal;
   --heading-d-h5-font-weight: 400;
   --heading-d-h5-letter-spacing: -0.28px;
@@ -243,7 +244,7 @@
   --text-large-semi-bold-line-height: 150%;
 
   --text-medium-normal-font-family: "DM Sans", Helvetica;
-  --text-medium-normal-font-size: 14px;
+  --text-medium-normal-font-size: 18px;
   --text-medium-normal-font-style: normal;
   --text-medium-normal-font-weight: 400;
   --text-medium-normal-letter-spacing: 0px;
@@ -291,8 +292,8 @@
   --text-small-semi-bold-letter-spacing: 0px;
   --text-small-semi-bold-line-height: 150%;
 
-    --space-x: clamp(1rem, 5vw, 4rem);
-    --max-width: 1200px;
+    --space-x: clamp(2rem, 10vw, 10rem);
+    --max-width: 1700px;
 
     --background: 0 0% 100%;
     --foreground: 222.2 47.4% 11.2%;
@@ -327,11 +328,6 @@
   html {
     scroll-behavior: smooth;
     background-color: #08030d;
-  }
-
-  body {
-    background-color: #08030d;
-    @apply mx-[var(--space-x)];
   }
 
   .layout {

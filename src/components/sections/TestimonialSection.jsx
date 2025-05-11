@@ -11,14 +11,14 @@ import {
 const TestimonialSection = () => {
   return (
     <section className="flex flex-col w-full items-center gap-20 px-16 py-28 bg-[#08030d]">
-      <div className="flex flex-col w-[768px] items-center gap-8">
+      <div className="flex flex-col w-full items-center gap-8">
         <img
           className="w-[120px] h-12"
           alt="Placeholder logo"
           src="public/placeholder-logo.svg"
         />
 
-        <blockquote className="text-regular-normal text-[#eeeeee] text-center self-stretch">
+        <blockquote className="text-regular-normal text-sm sm:text-sm md:text-base lg:text-base text-center w-full max-w-3xl text-[#eeeeee] ">
           “We are truly impressed with the results we achieved! The team’s expertise made a significant difference in our project. They were responsive, professional, and dedicated to exceeding our expectations. It was a fantastic collaboration that led us to success!”
         </blockquote>
 

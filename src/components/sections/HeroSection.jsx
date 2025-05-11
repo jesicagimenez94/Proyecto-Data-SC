@@ -8,16 +8,14 @@ const HeroSection = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex w-full h-[900px] text-center items-center justify-center [background:linear-gradient(0deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.7)_100%),url(public/background-hero.webp)_50%_50%_/_cover]">
-        <div className="flex flex-col w-[95%] items-center gap-8">
-      <section className="flex w-full h-[900px] text-center items-center justify-center [background:linear-gradient(0deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.7)_100%),url(public/background-hero.webp)_50%_50%_/_cover]">
-        <div className="flex flex-col w-[95%] items-center gap-8">
-          <div className="flex flex-col items-center gap-6 self-stretch w-full">
+      <section className="flex w-full h-[1100px] text-center items-center justify-center py-4 [background:linear-gradient(0deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.7)_100%),url(public/background-hero.webp)_50%_50%_/_cover] ">
+
+        <div className="flex flex-col w-full items-center gap-8">
+          <div className="flex flex-col items-center gap-6 w-full max-w-3xl ">
             <h1 className="heading-h1 text-[32px] md:text-[56px] text-white text">
               Impulsamos tu transformación digital
             </h1>
-
-            <p className=" text-regular-normal  text-white ">
+            <p className=" text-regular-normal text-[#d1c7df] ">
               Innovación, precisión y tecnología a tu alcance.
             </p>
           </div>
