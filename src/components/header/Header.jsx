@@ -101,6 +101,7 @@ export default function Header() {
               </a>
             ))}
 
+<<<<<<< HEAD
             <Button
               variant="outline"
               className="px-5 py-2 bg-white text-black rounded-full flex items-center gap-2 shadow-md"
@@ -117,6 +118,25 @@ export default function Header() {
             </Button>
           </div>
         )}
+=======
+          <Button
+            variant="outline"
+            className="px-5 py-2 bg-white text-black rounded-full flex items-center gap-2 shadow-md"
+          >
+            <span className="font-medium">ESP</span>
+            <ChevronDownIcon className="w-4 h-4" />
+          </Button>
+          
+          <Button
+            className="px-5 py-2 bg-[#a33cfa] text-white rounded-full font-medium shadow-md"
+            href="#form-section"
+          >
+            Contacto
+          </Button>
+        </div>
+         )}
+          </div>
+>>>>>>> origin/main
       </header>
     </>
   );
