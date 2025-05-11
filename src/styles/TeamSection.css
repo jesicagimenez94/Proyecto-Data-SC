@@ -9,7 +9,6 @@
   align-items: center;
   gap: 2.5rem;
   padding: 3rem;
-  background-color: #0c0412;
   box-sizing: border-box;
 }
 
@@ -30,18 +29,6 @@
   gap: 0.25rem;
   align-self: stretch;
   width: 100%;
-}
-
-.team-title {
-  align-self: stretch;
-  text-align: center;
-  letter-spacing: var(--heading-desktop-h2-letter-spacing);
-  line-height: var(--heading-desktop-h2-line-height);
-  font-size: var(--heading-desktop-h2-font-size);
-  font-family: var(--heading-desktop-h2-font-family);
-  font-style: var(--heading-desktop-h2-font-style);
-  color: #E0CFF7;
-  margin: 0;
 }
 
 .team-description {
