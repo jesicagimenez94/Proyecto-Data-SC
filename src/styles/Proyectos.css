@@ -143,27 +143,27 @@
 
 /* Generamos clases dinámicas para cada background - En un caso real deberías agregarlas dinámicamente */
 .proyecto-bg-0 {
-  background-image: url('/public/proyectImg1.png');
+  background-image: url('/public/proyectImg1.webp');
 }
 
 .proyecto-bg-1 {
-  background-image: url('/public/proyectImg2.png');
+  background-image: url('/public/proyectImg2.webp');
 }
 
 .proyecto-bg-2 {
-  background-image: url('/public/proyectImg3.png');
+  background-image: url('/public/proyectImg3.webp');
 }
 
 .proyecto-bg-3 {
-  background-image: url('/public/proyectImg1.png');
+  background-image: url('/public/proyectImg1.webp');
 }
 
 .proyecto-bg-4 {
-  background-image: url('/public/proyectImg2.png');
+  background-image: url('/public/proyectImg2.webp');
 }
 
 .proyecto-bg-5 {
-  background-image: url('/public/proyectImg3.png');
+  background-image: url('/public/proyectImg3.webp');
 }
 
 /* Contenido de la tarjeta */
@@ -206,7 +206,7 @@
 
 /* Contenedor del título */
 .card-title-container {
-  height: 60px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,18 +289,17 @@
   border-radius: 100px;
   overflow: hidden;
   padding: 0.5rem 1rem;
-  background-color: #591794;
   transition: background-color 0.3s;
 }
 
 .card-button:hover {
-  background-color: #e0e0e0;
+  background-color: #5e5e5e1a;
 }
 
 /* Texto del botón */
 .button-text {
   font-size: 0.875rem;
-  color: #08030d;
+  color:#dac0fd;
   margin-right: 0.25rem;
 }
 
@@ -320,7 +319,7 @@
 .button-icon {
   width: 1rem;
   height: 1rem;
-  color: #08030d;
+  color:#dac0fd;
 }
 
 @media (min-width: 640px) {

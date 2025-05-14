@@ -24,7 +24,7 @@ const TestimonialSection = () => {
 
         <div className="flex flex-col w-[300px] items-center gap-4">
           <Avatar className="w-16 h-16">
-            <AvatarImage src="public/avatar-image-1.png" alt="Avatar" />
+            <AvatarImage src="public/avatar-image-1.webp" alt="Avatar" />
             <AvatarFallback>NS</AvatarFallback>
           </Avatar>
 

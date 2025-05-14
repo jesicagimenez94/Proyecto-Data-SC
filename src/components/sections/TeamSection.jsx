@@ -57,12 +57,12 @@ const TeamSection = () => {
       <section className="team-section">
         <div className="team-header">
           <div className="team-header-content">
-            <h2 className="heading-h5 text-center text-white">Nuestro Equipo</h2>
+            <h2 className="heading-h5 text-center py-2 md:py-8 text-white">Nuestro Equipo</h2>
 
-            <p className="team-description">
+            <p className="text-regular-normal text-center px-11 text-white">
               Somos un equipo apasionado por la tecnología, con experiencia en desarrollo, infraestructura y consultoría. 
             </p>
-            <p className="team-description">
+            <p className="text-regular-normal text-center px-12 text-[#a79ba8]">
               Nos mueve la innovación, el aprendizaje constante y el trabajo colaborativo para crear soluciones eficientes y a medida de cada cliente.
             </p>
           </div>
@@ -87,7 +87,7 @@ const TeamSection = () => {
 
                       <div className="team-member-details">
                         <div className="team-member-header">
-                          <h4 className="team-member-name">
+                          <h4 className="text-regular-normal text-white">
                             {member.name}
                           </h4>
 
