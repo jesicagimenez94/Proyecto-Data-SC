@@ -1,123 +1,118 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useContent } from "../../context/ContentProvider";
-import { ChevronDownIcon } from "lucide-react";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-} from "../../components/ui/NavigationMenu";
+import { ChevronDownIcon, Menu, X } from "lucide-react";
+// import {
+//   NavigationMenu,
+//   NavigationMenuItem,
+//   NavigationMenuLink,
+//   NavigationMenuList,
+// } from "../../components/ui/NavigationMenu";
 import Button from "../../components/ui/button";
 
 export default function Header() {
   const { navLinks = [] } = useContent() || {};
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  useEffect(() => {
+    document.body.style.overflow = isNavOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isNavOpen]);
+
+  const LanguageButton = (
+    <Button variant="ghost" className="bg-slate-200 text-black rounded-full px-5 py-2 shadow-md flex items-center gap-2">
+      ESP <ChevronDownIcon className="w-4 h-4" />
+    </Button>
+  );
+
+  const ContactButton = (
+    <a
+      href="#form-section"
+      onClick={() => setIsNavOpen(false)}
+      className="bg-[#750cca] hover:bg-[#8a31dd] text-white font-medium rounded-full px-5 py-2 shadow-md transition-colors text-center"
+    >
+      Contacto
+    </a>
+  );
+
   return (
-    <>
-      <header className="fixed top-4 z-50 w-full flex justify-center">
-        <div className="flex h-[72px] items-center justify-between px-10 w-full max-w-[80%] bg-[#000]/60 backdrop-blur-md rounded-full">
-          {/* Logo */}
-          <div className="flex items-center">
+    <header className="fixed top-0 left-0 w-full z-50">
+      <div
+        className="fixed z-[1000] w-[96%] md:w-[53.33%] p-4 md:px-6 md:py-2  transform -translate-x-1/2 bg-opacity-50 rounded-full top-4 left-1/2 bg-zinc-900 backdrop-blur-2xl border border-zinc-800"
+      >
+        <div className="flex items-center justify-between">
+          <div className="flex items-center z-20">
             <img
-              className="h-12 md:h-14 lg:h-16 object-contain"
-              alt="Company logo"
               src="public/logos/web_square_500x500.png"
+              alt="Company logo"
+              className="h-12 md:h-12 lg:h-14 object-contain"
             />
           </div>
 
-          {/* Menú para escritorio */}
-          <div className="hidden lg:flex items-center justify-between gap-6">
-            <NavigationMenu>
-              <NavigationMenuList className="flex items-center gap-10">
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center justify-between flex-1 ml-10">
+            <nav className="flex-1">
+              <ul className="flex items-center justify-center gap-8">
                 {navLinks.map((item, index) => (
-                  <NavigationMenuItem key={index}>
-                    <NavigationMenuLink asChild>
-                      <a
-                        href={item.href}
-                        className="text-regular-normal text-white hover:underline text-md transition-all"
-                      >
-                        {item.text}
-                      </a>
-                    </NavigationMenuLink>
-                  </NavigationMenuItem>
+                  <li key={index}>
+                    <a
+                      href={item.href}
+                      className="text-slate-100 hover:text-[#b459ff] text-[17px] transition-all"
+                    >
+                      {item.text}
+                    </a>
+                  </li>
                 ))}
-              </NavigationMenuList>
-            </NavigationMenu>
-
+              </ul>
+            </nav>
             <div className="flex items-center gap-4">
-              <Button
-                variant="outline"
-                className="px-5 py-2 bg-white text-black rounded-full flex items-center gap-2 shadow-md"
-              >
-                <span className="font-medium">ESP</span>
-                <ChevronDownIcon className="w-4 h-4" />
-              </Button>
-              <Button
-                className="px-5 py-2 bg-[#a33cfa] text-white rounded-full font-medium shadow-md"
-                href="#form-section"
-              >
-                Contacto
-              </Button>
+              {LanguageButton}
+              {ContactButton}
             </div>
           </div>
 
-          {/* Ícono hamburguesa para mobile */}
-          <div className="flex lg:hidden">
-            <div
-              className="space-y-2 cursor-pointer"
-              onClick={() => setIsNavOpen((prev) => !prev)}
-            >
-              <span className="block h-0.5 w-8 bg-white"></span>
-              <span className="block h-0.5 w-8 bg-white"></span>
-              <span className="block h-0.5 w-8 bg-white"></span>
-            </div>
-          </div>
-        </div>
-
-        {/* Menú mobile desplegable */}
-        {isNavOpen && (
-          <div
-            className={`absolute top-0 left-0 w-full h-screen bg-black/100 flex flex-col items-center justify-center z-[999] gap-8 text-white text-xl transition-all duration-300 ease-in-out transform ${
-              isNavOpen
-                ? "opacity-100 scale-100 visible pointer-events-auto"
-                : "opacity-0 scale-95 invisible pointer-events-none"
-            }`}
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden z-20 p-2"
+            onClick={() => setIsNavOpen(!isNavOpen)}
+            aria-label={isNavOpen ? "Cerrar menú" : "Abrir menú"}
           >
-            <button
-              className="absolute top-6 right-6 text-white text-3xl"
-              onClick={() => setIsNavOpen(false)}
-            >
-              ×
-            </button>
+            {isNavOpen ? (
+              <X className="w-6 h-6 text-white" />
+            ) : (
+              <Menu className="w-6 h-6 text-white" />
+            )}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Navigation Menu */}
+      <div
+        className={`fixed inset-0 bg-black bg-opacity-95 backdrop-blur-lg z-10 flex flex-col items-center justify-center transition-all duration-300 ease-in-out lg:hidden ${
+          isNavOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
+        }`}
+      >
+        <nav className="w-full max-w-md px-6">
+          <ul className="flex flex-col items-center gap-8 mb-10">
             {navLinks.map((item, index) => (
-              <a
-                key={index}
-                href={item.href}
-                onClick={() => setIsNavOpen(false)}
-                className="hover:underline"
-              >
-                {item.text}
-              </a>
+              <li key={index} className="w-full text-center">
+                <a
+                  href={item.href}
+                  onClick={() => setIsNavOpen(false)}
+                  className="text-slate-100 hover:text-[#b459ff] text-2xl font-medium block py-2 transition-all"
+                >
+                  {item.text}
+                </a>
+              </li>
             ))}
-
-            <Button
-              variant="outline"
-              className="px-5 py-2 bg-white text-black rounded-full flex items-center gap-2 shadow-md"
-            >
-              <span className="font-medium">ESP</span>
-              <ChevronDownIcon className="w-4 h-4" />
-            </Button>
-
-            <Button
-              className="px-5 py-2 bg-[#a33cfa] text-white rounded-full font-medium shadow-md"
-              href="#form-section"
-            >
-              Contacto
-            </Button>
+          </ul>
+          <div className="flex flex-col items-center gap-5">
+            {LanguageButton}
+            {ContactButton}
           </div>
-        )}
-      </header>
-    </>
+        </nav>
+      </div>
+    </header>
   );
 }
