@@ -4,7 +4,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "../../components/ui/avatar";
+} from "../ui/avatar";
 
 //////////////////////////////////////////////////////////
 // Componente TestimonialSection

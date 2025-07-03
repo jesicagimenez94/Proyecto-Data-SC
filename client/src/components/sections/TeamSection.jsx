@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////
 // Importaciones
-import Button from "../../components/ui/button";
-import { Card, CardContent } from "../../components/ui/Card";
+import Button from "../ui/button";
+import { Card, CardContent } from "../ui/Card";
 import { useContent } from "../../context/ContentProvider";
 import { useState, useEffect } from "react";
 import "../../styles/TeamSection.css";

@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
-import '../../../src/styles/Proyectos.css';
+import '../../styles/Proyectos.css';
 
 //////////////////////////////////////////////////////////
 // Componente FeaturesSection
