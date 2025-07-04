@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="flex w-full h-screen text-center items-center justify-center py-4 [background:linear-gradient(0deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.7)_100%),url(public/background-hero.webp)_50%_50%_/_cover] ">
+      <section className="flex w-full h-screen text-center items-center justify-center py-4 [background:linear-gradient(0deg,rgba(0,0,0,0.7)_0%,rgba(0,0,0,0.7)_100%),url(/background-hero.webp)_50%_50%_/_cover] ">
 
         <div className="flex flex-col w-full items-center gap-8">
           <div className="flex flex-col items-center gap-6 w-full max-w-5xl">

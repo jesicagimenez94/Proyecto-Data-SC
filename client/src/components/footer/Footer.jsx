@@ -12,7 +12,7 @@ export default function Footer() {
             <img
               className="w-[100px] h-[100px]"
               alt="Company logo"
-              src="public/estelar-logo-500x500.png"
+              src="/estelar-logo-500x500.png"
             />
           </div>
           <FooterLinks links={footerLinks} />
@@ -57,7 +57,7 @@ const SocialIcons = ({ icons }) => {
   return (
     <div className="flex items-center justify-end gap-3 flex-1">
       {icons?.map((icon, index) => (
-        <a href={icon.url}>
+        <a href={icon.url} key={icon.id}>
           <img key={index} className="w-6 h-6" alt={icon.alt} src={icon.src} />
         </a>
       ))}

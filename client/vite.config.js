@@ -5,11 +5,15 @@ import { defineConfig } from "vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  publicDir: "./static",
-  base: "./",
+  publicDir: "./public",
+  base: "/",
   css: {
     postcss: {
       plugins: [tailwind()],
     },
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
   }
 })

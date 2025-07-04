@@ -52,7 +52,7 @@ const StatsSection = () => {
           <img
             className="flex-1 h-[540px] object-cover rounded-[40px]"
             alt="Placeholder image"
-            src="public/placeholder-image-20.png"
+            src="/placeholder-image-20.png"
           />
         </div>
       </section>

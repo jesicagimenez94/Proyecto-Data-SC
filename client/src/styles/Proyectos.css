@@ -143,27 +143,27 @@
 
 /* Generamos clases dinámicas para cada background - En un caso real deberías agregarlas dinámicamente */
 .proyecto-bg-0 {
-  background-image: url('/public/proyectImg1.png');
+  background-image: url('/proyectImg1.png');
 }
 
 .proyecto-bg-1 {
-  background-image: url('/public/proyectImg2.png');
+  background-image: url('/proyectImg2.png');
 }
 
 .proyecto-bg-2 {
-  background-image: url('/public/proyectImg3.png');
+  background-image: url('/proyectImg3.png');
 }
 
 .proyecto-bg-3 {
-  background-image: url('/public/proyectImg1.png');
+  background-image: url('/proyectImg1.png');
 }
 
 .proyecto-bg-4 {
-  background-image: url('/public/proyectImg2.png');
+  background-image: url('/proyectImg2.png');
 }
 
 .proyecto-bg-5 {
-  background-image: url('/public/proyectImg3.png');
+  background-image: url('/proyectImg3.png');
 }
 
 /* Contenido de la tarjeta */
