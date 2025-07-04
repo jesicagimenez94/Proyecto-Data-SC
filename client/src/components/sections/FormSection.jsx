@@ -82,15 +82,15 @@ export default function FormularioSection() {
               </p>
               <ul>
                 <li className="flex items-center my-4">
-                  <img src="public/mail.svg" alt="" />
+                  <img src="/mail.svg" alt="" />
                   <p className="text-regular-normal  text-white  ml-2">mailfake@gmail.com</p>
                 </li>
                 <li className="flex items-center my-4">
-                  <img src="public/phone.svg" alt="" />
+                  <img src="/phone.svg" alt="" />
                   <p className="text-regular-normal text-white ml-2">+54XXXXXXXX</p>
                 </li>
                 <li className="flex items-center my-4">
-                  <img src="public/location.svg" alt="" />
+                  <img src="/location.svg" alt="" />
                   <p className="text-regular-normal text-white ml-2">XXXX, Buenos Aires, Argentina</p>
                 </li>
               </ul>

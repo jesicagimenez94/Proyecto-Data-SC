@@ -49,7 +49,7 @@ const MissionSection = () => {
           <img
             className="flex-1 w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[540px] object-cover rounded-[20px] lg:rounded-[40px]"
             alt="Nuestra misión"
-            src="public/nuestra-mision.png"
+            src="/nuestra-mision.png"
           />
         </div>
       </section>

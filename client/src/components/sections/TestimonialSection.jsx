@@ -4,7 +4,7 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "../../components/ui/avatar";
+} from "../../components/ui/Avatar";
 
 //////////////////////////////////////////////////////////
 // Componente TestimonialSection
@@ -15,7 +15,7 @@ const TestimonialSection = () => {
         <img
           className="w-[120px] h-12"
           alt="Placeholder logo"
-          src="public/placeholder-logo.svg"
+          src="/placeholder-logo.svg"
         />
 
         <blockquote className="text-regular-normal text-sm sm:text-sm md:text-base lg:text-base text-center w-full max-w-3xl text-[#eeeeee] ">
@@ -24,7 +24,7 @@ const TestimonialSection = () => {
 
         <div className="flex flex-col w-[300px] items-center gap-4">
           <Avatar className="w-16 h-16">
-            <AvatarImage src="public/avatar-image-1.png" alt="Avatar" />
+            <AvatarImage src="/avatar-image-1.png" alt="Avatar" />
             <AvatarFallback>NS</AvatarFallback>
           </Avatar>
 

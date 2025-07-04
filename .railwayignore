@@ -1,0 +1,6 @@
+client/node_modules/
+client/*.log
+client/.cache/
+client/dist/
+client/build/
+client/.env.local

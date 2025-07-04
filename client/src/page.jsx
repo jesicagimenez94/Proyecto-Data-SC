@@ -4,7 +4,7 @@ import HeroSection from "./components/sections/HeroSection";
 import ExperienceSection from "./components/sections/AboutUsSection";
 import {ServicesSection} from "./components/sections/services/servicesSection";
 import TeamSection from "./components/sections/TeamSection";
-import StatsSection from "./components/sections/statsSection";
+// import StatsSection from "./components/sections/StatsSection";
 import TestimonialSection from "./components/sections/TestimonialSection";
 import MissionSection from "./components/sections/MissionSection";
 import Projects from "./components/sections/projectsSections";

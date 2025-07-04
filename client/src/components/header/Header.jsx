@@ -7,7 +7,7 @@ import { ChevronDownIcon, Menu, X } from "lucide-react";
 //   NavigationMenuLink,
 //   NavigationMenuList,
 // } from "../../components/ui/NavigationMenu";
-import Button from "../../components/ui/button";
+import Button from "../ui/button";
 
 export default function Header() {
   const { navLinks = [] } = useContent() || {};
@@ -44,7 +44,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center z-20">
             <img
-              src="public/logos/web_square_500x500.png"
+              src="/logos/web_square_500x500.png"
               alt="Company logo"
               className="h-12 md:h-12 lg:h-14 object-contain"
             />
