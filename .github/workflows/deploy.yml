@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm install -g railway # instala railwaycli
+      - run: npm i -g @railway/cli # instala railwaycli
       - run: railway up --service=estelar-code
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }} # token para que interactúe con railway
