@@ -7,7 +7,7 @@ import { ChevronDownIcon, Menu, X } from "lucide-react";
 //   NavigationMenuLink,
 //   NavigationMenuList,
 // } from "../../components/ui/NavigationMenu";
-import Button from "../ui/button";
+import Button from "../ui/Button.jsx";
 
 export default function Header() {
   const { navLinks = [] } = useContent() || {};
