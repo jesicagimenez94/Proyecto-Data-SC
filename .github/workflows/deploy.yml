@@ -4,16 +4,24 @@ name: Deploy to Railway
 # triggers: cuando se ejcuta el workflow
 on:
   push:
-    branches: 
-      - main # se ejecuta cuando se hace push a main
+    branches: [main] # se ejecuta cuando se hace push a main
 
 jobs:
   deploy:
     # SO para ejecutar el job (por default)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-      - run: npm i -g @railway/cli # instala railwaycli
-      - run: railway up --service=estelar-code
+      - name: Checkout del código
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Instalar Railway CLI
+        run: npm i -g @railway/cli
+
+      - name: Deploy a Railway
+        # verifica si hay un push
+        if: ${{ github.event_name == 'push' }}
+        run: railway up --service=estelar-code # el nombre del servicio del dashboard de railway
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }} # token para que interactúe con railway
