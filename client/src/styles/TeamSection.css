@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 100vh;
+  min-height: 250px;
   align-items: center;
   gap: 2.5rem;
   padding: 3rem;
@@ -69,23 +69,12 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
-  min-width: 280px;
+  min-width: 200px;
   max-width: 350px; /* Ajustado para 3 tarjetas por fila */
   margin: 0 0 2rem 0;
+  cursor: pointer;
 }
 
-.team-card-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 0 0 3rem; /* Padding inferior para dejar espacio para los iconos */
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-/* Estructura para mantener LinkedIn al mismo nivel */
 .team-card-content {
   display: flex;
   flex-direction: column;
@@ -95,7 +84,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  min-height: 450px; /* Altura mínima para todas las tarjetas */
+  min-height: 200px; /* Altura mínima para todas las tarjetas */
 }
 
 .team-member-info {
@@ -113,6 +102,13 @@
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efecto hover para la imagen */
+.team-card:hover .team-member-image {
+  transform: scale(1.08);
+  box-shadow: 0 30px 60px -12px rgba(160, 61, 244, 0.5);
 }
 
 .team-member-details {
@@ -154,7 +150,15 @@
   letter-spacing: var(--text-medium-normal-letter-spacing);
   line-height: var(--text-medium-normal-line-height);
   font-style: var(--text-medium-normal-font-style);
-  margin: 0.25rem 0 0;
+  margin: 0.25rem 0 0.5rem; /* Reducido el margen inferior */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Efecto hover para el título */
+.team-card:hover .team-member-title {
+  color: #c266ff;
+  text-shadow: 0 0 12px rgba(160, 61, 244, 0.7);
+  transform: scale(1.03);
 }
 
 .team-member-description {
@@ -171,17 +175,14 @@
   max-height: 150px; /* Altura máxima para la descripción */
 }
 
-/* Social links - siempre abajo */
+/* Social links */
 .team-social-links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.875rem;
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-top: 0; /* Eliminar margen superior */
 }
 
 .social-link {
@@ -190,77 +191,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon,
+/* Efecto hover para cada link social */
+.team-card:hover .social-link {
+  transform: scale(1.15);
+}
+
 .linkedin-icon {
   width: 100%;
   height: 100%;
-}
-
-.linkedin-icon {
   color: #0A66C2;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Sección de hiring */
-.hiring-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-  margin-top: auto;
+/* Efecto hover para el icono de LinkedIn */
+.team-card:hover .linkedin-icon {
+  color: #0a8fff;
+  filter: drop-shadow(0 0 10px rgba(10, 102, 194, 0.8));
 }
 
-.hiring-content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 768px;
-  align-items: center;
-  gap: 1rem;
-}
-
-.hiring-title {
-  align-self: stretch;
-  text-align: center;
-  letter-spacing: var(--heading-desktop-h4-letter-spacing);
-  line-height: var(--heading-desktop-h4-line-height);
-  font-size: var(--heading-desktop-h4-font-size);
-  font-family: var(--heading-desktop-h4-font-family);
-  color: #E0CFF7;
-  font-style: var(--heading-desktop-h4-font-style);
-  margin: 0;
-}
-
-.hiring-description {
-  font-family: var(--text-medium-normal-font-family);
-  font-size: var(--text-medium-normal-font-size);
-  text-align: center;
-  line-height: var(--text-medium-normal-line-height);
-  align-self: stretch;
-  color: #E0CFF7;
-  letter-spacing: var(--text-medium-normal-letter-spacing);
-  font-style: var(--text-medium-normal-font-style);
-  margin: 0;
-}
-
-.hiring-button-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 250px;
-  align-items: center;
-  gap: 1rem;
-}
-
-.hiring-button {
-  padding: 1rem;
-  border-radius: 100px;
-  border-color: transparent;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-  background-color: #a03df4;
-  width: 100%;
-}
 
 .button-text {
   font-family: var(--text-regular-medium-font-family);
@@ -269,6 +220,17 @@
   letter-spacing: var(--text-regular-medium-letter-spacing);
   line-height: var(--text-regular-medium-line-height);
   font-style: var(--text-regular-medium-font-style);
+}
+
+.hr-divider {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid rgba(160, 61, 244, 0.4);
+  margin: 2rem 0;
+  box-shadow: 0px 0px 12px 3px rgba(160, 61, 244, 0.4);
+  -webkit-box-shadow: 0px 0px 12px 3px rgba(160, 61, 244, 0.4);
+  -moz-box-shadow: 0px 0px 12px 3px rgba(160, 61, 244, 0.4);
+  border-radius: 20px;
 }
 
 /* Media queries para responsividad */
@@ -328,6 +290,19 @@
   .hiring-button-container {
     max-width: 100%;
   }
+  
+  /* Reducir efectos en móviles para mejor performance */
+  .team-card:hover .team-member-image {
+    transform: scale(1.05);
+  }
+  
+  .team-card:hover .team-member-title {
+    transform: scale(1.02);
+  }
+  
+  .team-card:hover .social-link {
+    transform: scale(1.1);
+  }
 }
 
 /* Móviles: 1 tarjeta por fila */
@@ -344,5 +319,18 @@
   .team-member-image {
     width: 7rem;
     height: 7rem;
+  }
+  
+  /* Efectos más sutiles en móviles */
+  .team-card:hover .team-member-image {
+    transform: scale(1.04);
+  }
+  
+  .team-card:hover .team-member-title {
+    transform: scale(1.01);
+  }
+  
+  .team-card:hover .social-link {
+    transform: scale(1.08);
   }
 }

@@ -54,6 +54,7 @@ const TeamSection = () => {
 
   return (
     <>
+      <hr className="hr-divider" />
       <section className="team-section">
         <div className="team-header">
           <div className="team-header-content">
@@ -94,78 +95,56 @@ const TeamSection = () => {
                           <p className="team-member-title">
                             {member.jobTitle}
                           </p>
+
+                          <div className="team-social-links">
+                            {member.socialLinks?.map((link, linkIndex) => (
+                              <a
+                                key={linkIndex}
+                                href={link.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-link"
+                              >
+                                <img
+                                  alt={`Icon ${link.platform}`}
+                                  src={link.icon}
+                                  className="social-icon"
+                                />
+                              </a>
+                            ))}
+                            {member.linkedin && (
+                              <a
+                                href={member.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-link"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  viewBox="0 0 24 24"
+                                  fill="currentColor"
+                                  className="linkedin-icon"
+                                >
+                                  <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.25 12.27h-3v-5.5c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.6h-3v-11h2.89v1.5h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v6.45z" />
+                                </svg>
+                              </a>
+                            )}
+                          </div>
                         </div>
-
-                        <p className="team-member-description">
+                        
+                        {/* <p className="team-member-description">
                           {member.description}
-                        </p>
+                        </p> */}
                       </div>
-                    </div>
-
-                    <div className="team-social-links">
-                      {member.socialLinks?.map((link, linkIndex) => (
-                        <a
-                          key={linkIndex}
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="social-link"
-                        >
-                          <img
-                            alt={`Icon ${link.platform}`}
-                            src={link.icon}
-                            className="social-icon"
-                          />
-                        </a>
-                      ))}
-                      {/* Ícono de LinkedIn */}
-                      {member.linkedin && (
-                        <a
-                          href={member.linkedin}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="social-link"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                            className="linkedin-icon"
-                          >
-                            <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11.75 20h-3v-11h3v11zm-1.5-12.27c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.25 12.27h-3v-5.5c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.14 1.45-2.14 2.95v5.6h-3v-11h2.89v1.5h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v6.45z" />
-                          </svg>
-                        </a>
-                      )}
                     </div>
                   </CardContent>
                 </Card>
               ))}
             </div>
           ))}
+          <hr className="hr-divider"/>
         </div>
 
-        <div className="hiring-section">
-          <div className="hiring-content">
-            <h4 className="hiring-title">
-              We&apos;re hiring!
-            </h4>
-
-            <p className="hiring-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-          </div>
-
-          <div className="hiring-button-container">
-            <Button
-              variant="outline"
-              className="hiring-button"
-            >
-              <span className="button-text">
-                Open positions
-              </span>
-            </Button>
-          </div>
-        </div>
       </section>
     </>
   )
