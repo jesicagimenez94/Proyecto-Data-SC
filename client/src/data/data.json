@@ -31,62 +31,62 @@
             "id": 201,
             "title": "Innovative data analytics solutions",
             "description": "LincePulce offers advanced data analytics services that empower businesses to make informed decisions. By harnessing the power of big data, we help organizations uncover valuable insights and optimize their operations for success.",
-            "backgroundImage": "/proyectImg1.png"
+            "backgroundImage": "/proyectImg1webp.webp"
         },
         {
             "id": 202,
             "title": "Customized business intelligence tools",
             "description": "LincePulce offers customized business intelligence tools that enhance decision-making. These tools provide seamless data visualization, real-time insights, and intuitive reporting, allowing your team to access and analyze critical information efficiently.",
-            "backgroundImage": "/proyectImg2.png"
+            "backgroundImage": "/proyectImg2webp.webp"
         },
         {
             "id": 203,
             "title": "Desarrollo de Software",
             "description": "Creando el Futuro Diseñamos y desarrollamos aplicaciones robustas, escalables y seguras a la medida de tus necesidades. Desde plataformas web hasta integraciones complejas, nuestra experiencia garantiza productos innovadores y eficientes.",
-            "backgroundImage": "/proyectImg3.png"
+            "backgroundImage": "/proyectImg3webp.webp"
         },
         {
             "id": 204,
             "title": "TARJETA 4",
             "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
-            "backgroundImage": "/proyectImg1.png"
+            "backgroundImage": "/proyectImg1webp.webp"
         },
         {
             "id": 205,
             "title": "TARJETA 5",
             "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
-            "backgroundImage": "/proyectImg2.png"
+            "backgroundImage": "/proyectImg2webp.webp"
         },
         {
             "id": 206,
             "title": "TARJETA 6",
             "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
-            "backgroundImage": "/proyectImg3.png"
+            "backgroundImage": "/proyectImg3webp.webp"
         }
     ],
     "teamMembers": [
         {
             "name": "Jesica Gimenez",
             "jobTitle": "Product Owner",
-            "image": "/Jesica.jpeg",
+            "image": "/jesicawebp.webp",
             "linkedin": "https://www.linkedin.com/in/jesica-gimenez/"
         },
         {
             "name": "Mauro Ciancioci",
             "jobTitle": "Team Leader",
-            "image": "/Mauro.png",
+            "image": "/Maurowebp.webp",
             "linkedin": "https://www.linkedin.com/in/mauro-ciancioci/"
         },
         {
             "name": "Pablo Torrez",
             "jobTitle": "Full Stack Developer",
-            "image": "/Pablo.jpeg",
+            "image": "/Pablowebp.webp",
             "linkedin": "https://www.linkedin.com/in/pablo-torrez-33a80324b/"
         },
         {
             "name": "Joel Barrientos",
             "jobTitle": "Full Stack Developer",
-            "image": "/Joel.jpeg",
+            "image": "/Joelwebp.webp",
             "linkedin": "https://www.linkedin.com/in/barrientossjoel/"
         },
         {
@@ -98,7 +98,7 @@
         {
             "name": "Demian Marcos Garcia",
             "jobTitle": "Backend Developer",
-            "image": "/Demian.jpeg",
+            "image": "/Demianwebp.webp",
             "linkedin": "https://www.linkedin.com/in/marcos-demian-garcia/"
         }
     ],
