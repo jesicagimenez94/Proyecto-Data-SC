@@ -130,8 +130,9 @@
 }
 
 .team-member-name {
+  font-family: "Orbitron", Helvetica;
   align-self: stretch;
-  font-family: var(--text-large-semi-bold-font-family);
+  /* font-family: var(--text-large-semi-bold-font-family); */
   color: #E0CFF7;
   font-size: var(--text-large-semi-bold-font-size);
   text-align: center;
