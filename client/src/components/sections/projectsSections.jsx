@@ -23,7 +23,6 @@ const Proyectos = () => {
 
   return (
     <>
-    <hr className="hr-divider" />
     <section className="section-proyectos">
       <h3 className="heading-h5 text-center text-white">Proyectos</h3>
       <p className="proyectos-description proyectos-description-mb">

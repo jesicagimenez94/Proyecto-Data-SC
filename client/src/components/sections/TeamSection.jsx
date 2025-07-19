@@ -54,7 +54,6 @@ const TeamSection = () => {
 
   return (
     <>
-      <hr className="hr-divider" />
       <section className="team-section">
         <div className="team-header">
           <div className="team-header-content">
@@ -142,7 +141,6 @@ const TeamSection = () => {
               ))}
             </div>
           ))}
-          <hr className="hr-divider"/>
         </div>
 
       </section>

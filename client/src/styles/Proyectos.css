@@ -35,17 +35,6 @@ p.proyectos-description.proyectos-description-mb {
   position: relative;
 }
 
-.hr-divider {
-  width: 100%;
-  border: 0;
-  border-top: 1px solid rgba(160, 61, 244, 0.4);
-  margin: 2rem 0;
-  box-shadow: 0px 0px 19px 3px rgba(160, 61, 244, 0.4);
-  -webkit-box-shadow: 0px 0px 19px 3px rgba(160, 61, 244, 0.4);
-  -moz-box-shadow: 0px 0px 19px 3px rgba(160, 61, 244, 0.4);
-  border-radius: 20px;
-}
-
 @media (min-width: 768px) {
   .section-proyectos {
     gap: 20px;
