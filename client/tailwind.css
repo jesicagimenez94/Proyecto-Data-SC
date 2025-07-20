@@ -8,7 +8,7 @@
   }
 
   p {
-    font-family: "DM Sans", Helvetica;
+    font-family: 'Rajdhani', sans-serif;
   }
 }
 
@@ -208,7 +208,7 @@
   --heading-d-h5-letter-spacing: -0.28px;
   --heading-d-h5-line-height: 140%;
 
-  --heading-d-tagline-font-family: "DM Sans", Helvetica;
+  --heading-d-tagline-font-family: 'Rajdhani', sans-serif;
   --heading-d-tagline-font-size: 16px;
   --heading-d-tagline-font-style: normal;
   --heading-d-tagline-font-weight: 600;
@@ -246,56 +246,56 @@
   --heading-m-h5-letter-spacing: -0.2px;
   --heading-m-h5-line-height: 140%;
 
-  --text-large-semi-bold-font-family: "DM Sans", Helvetica;
+  --text-large-semi-bold-font-family: 'Rajdhani', sans-serif;
   --text-large-semi-bold-font-size: 22px;
   --text-large-semi-bold-font-style: normal;
   --text-large-semi-bold-font-weight: 600;
   --text-large-semi-bold-letter-spacing: 0px;
   --text-large-semi-bold-line-height: 150%;
 
-  --text-medium-normal-font-family: "DM Sans", Helvetica;
+  --text-medium-normal-font-family: 'Rajdhani', sans-serif;
   --text-medium-normal-font-size: 18px;
   --text-medium-normal-font-style: normal;
   --text-medium-normal-font-weight: 400;
   --text-medium-normal-letter-spacing: 0px;
   --text-medium-normal-line-height: 150%;
 
-  --text-regular-medium-font-family: "DM Sans", Helvetica;
+  --text-regular-medium-font-family: 'Rajdhani', sans-serif;
   --text-regular-medium-font-size: 16px;
   --text-regular-medium-font-style: normal;
   --text-regular-medium-font-weight: 500;
   --text-regular-medium-letter-spacing: 0px;
   --text-regular-medium-line-height: 150%;
 
-  --text-regular-normal-font-family: "DM Sans", Helvetica;
+  --text-regular-normal-font-family: 'Rajdhani', sans-serif;
   --text-regular-normal-font-size: 16px;
   --text-regular-normal-font-style: normal;
   --text-regular-normal-font-weight: 400;
   --text-regular-normal-letter-spacing: 0px;
   --text-regular-normal-line-height: 150%;
 
-  --text-regular-semi-bold-font-family: "DM Sans", Helvetica;
+  --text-regular-semi-bold-font-family: 'Rajdhani', sans-serif;
   --text-regular-semi-bold-font-size: 16px;
   --text-regular-semi-bold-font-style: normal;
   --text-regular-semi-bold-font-weight: 600;
   --text-regular-semi-bold-letter-spacing: 0px;
   --text-regular-semi-bold-line-height: 150%;
 
-  --text-small-link-font-family: "DM Sans", Helvetica;
+  --text-small-link-font-family: 'Rajdhani', sans-serif;
   --text-small-link-font-size: 14px;
   --text-small-link-font-style: normal;
   --text-small-link-font-weight: 400;
   --text-small-link-letter-spacing: 0px;
   --text-small-link-line-height: 150%;
 
-  --text-small-normal-font-family: "DM Sans", Helvetica;
+  --text-small-normal-font-family: 'Rajdhani', sans-serif;
   --text-small-normal-font-size: 14px;
   --text-small-normal-font-style: normal;
   --text-small-normal-font-weight: 400;
   --text-small-normal-letter-spacing: 0px;
   --text-small-normal-line-height: 150%;
 
-  --text-small-semi-bold-font-family: "DM Sans", Helvetica;
+  --text-small-semi-bold-font-family: 'Rajdhani', sans-serif;
   --text-small-semi-bold-font-size: 14px;
   --text-small-semi-bold-font-style: normal;
   --text-small-semi-bold-font-weight: 600;

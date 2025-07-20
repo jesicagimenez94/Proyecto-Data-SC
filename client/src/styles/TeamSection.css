@@ -1,5 +1,11 @@
 /* TeamSection.css */
 
+.heading-h5.text-center.text-white {
+  font-size: 32px;
+  font-weight: 600;
+  color: #E0CFF7;
+  margin-bottom: 1rem;
+}
 /* Estructura principal */
 .team-section {
   display: flex;
@@ -40,7 +46,7 @@
   font-family: var(--text-medium-normal-font-family);
   letter-spacing: var(--text-medium-normal-letter-spacing);
   font-style: var(--text-medium-normal-font-style);
-  margin: 0.5rem 0;
+  margin: 0;
 }
 
 /* Grid de tarjetas */
