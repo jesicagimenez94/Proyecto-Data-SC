@@ -9,11 +9,11 @@ import "../../styles/MissionSection.css";
 const MissionSection = () => {
   return (
     <>
-      <section className="w-full items-start gap-10 px-4 py-16 sm:gap-16 sm:px-8 md:gap-20 md:px-16 lg:px-28 flex flex-col bg-[#08030d]">
+      <section className="w-full px-4 py-12 sm:px-8 md:px-12 lg:px-16 flex flex-col bg-[#08030d]">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20 w-full">
           {/* Contenido de texto */}
-          <div className="flex flex-col items-start gap-8 flex-1">
-            <div className="flex flex-col items-start gap-6 w-full">
+          <div className="flex flex-col items-start gap-6 w-full lg:w-1/2 order-2 lg:order-1">
+            <div className="flex flex-col items-start gap-4 w-full">
               <h2 className="heading-h2 text-xl sm:text-2xl md:text-2xl lg:text-3xl text-[#E0CFF7]">
                 Nuestra misión
               </h2>
@@ -23,7 +23,7 @@ const MissionSection = () => {
             </div>
 
             {/* Botones */}
-            <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center gap-3">
               <Button
                 variant="outline"
                 className="px-6 py-2.5 bg-[#a03df4] rounded-[100px] border-transparent"
@@ -48,7 +48,7 @@ const MissionSection = () => {
 
           {/* Imagen */}
           <img
-            className="flex-1 w-full h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[540px] object-cover rounded-[20px] lg:rounded-[40px]"
+            className="w-full lg:w-1/2 h-auto max-h-[300px] sm:max-h-[400px] lg:max-h-[540px] object-cover rounded-[20px] lg:rounded-[40px] order-1 lg:order-2"
             alt="Nuestra misión"
             src="/nuestra-misionwebp.webp"
           />
