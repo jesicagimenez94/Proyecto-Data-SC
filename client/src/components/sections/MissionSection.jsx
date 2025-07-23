@@ -29,7 +29,7 @@ const MissionSection = () => {
                 className="px-6 py-2.5 bg-[#a03df4] rounded-[100px] border-transparent"
                 href="#form-section"
               >
-                <span className="text-sm sm:text-base md:text-lg text-[#E0CFF7] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
+                <span className="font-rajdhani text-sm sm:text-base md:text-lg text-[#E0CFF7] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
                   Contactanos
                 </span>
               </Button>
@@ -38,7 +38,7 @@ const MissionSection = () => {
                 variant="link"
                 className="rounded-[100px] overflow-hidden p-0"
               >
-                <span className="text-sm sm:text-base md:text-lg text-[#E0CFF7] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
+                <span className="font-rajdhani text-sm sm:text-base md:text-lg text-[#E0CFF7] tracking-[var(--text-regular-medium-letter-spacing)] leading-[var(--text-regular-medium-line-height)]">
                   Conoce más
                 </span>
                 <ChevronRightIcon className="w-5 h-5 sm:w-6 sm:h-6 text-[#a259ff]" />

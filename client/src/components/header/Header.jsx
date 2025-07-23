@@ -53,7 +53,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center justify-between flex-1 ml-10">
             <nav className="flex-1">
-              <ul className="flex items-center justify-center gap-8">
+              <ul className="font-rajdhani flex items-center justify-center gap-8">
                 {navLinks.map((item, index) => (
                   <li key={index}>
                     <a
@@ -66,7 +66,7 @@ export default function Header() {
                 ))}
               </ul>
             </nav>
-            <div className="flex items-center gap-4">
+            <div className="font-rajdhani flex items-center gap-4">
               {LanguageButton}
               {ContactButton}
             </div>
