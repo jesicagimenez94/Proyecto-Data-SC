@@ -19,7 +19,7 @@ export const Home = () => {
   return (
     <>
     <HeroSection />
-    <div className="layout flex flex-col items-start w-full">
+    <div className="flex flex-col items-start">
       <ServicesSection />
       <ExperienceSection />
       <Projects />
