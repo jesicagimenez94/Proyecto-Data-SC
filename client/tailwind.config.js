@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        rajdhani: ['Rajdhani', 'sans-serif'],
         "heading-d-h1": "var(--heading-desktop-h1-font-family)",
         "heading-d-h2": "var(--heading-desktop-h2-font-family)",
         "heading-d-h3": "var(--heading-d-h3-font-family)",

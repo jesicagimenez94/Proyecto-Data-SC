@@ -5,7 +5,7 @@ import ExperienceSection from "./components/sections/AboutUsSection";
 import {ServicesSection} from "./components/sections/services/servicesSection";
 import TeamSection from "./components/sections/TeamSection";
 // import StatsSection from "./components/sections/StatsSection";
-import TestimonialSection from "./components/sections/TestimonialSection";
+// import TestimonialSection from "./components/sections/TestimonialSection";
 import MissionSection from "./components/sections/MissionSection";
 import Projects from "./components/sections/projectsSections";
 import FormularioSection from "./components/sections/FormSection";
@@ -24,10 +24,7 @@ export const Home = () => {
       <ExperienceSection />
       <Projects />
       <MissionSection />
-      <TestimonialSection />
       <TeamSection />
-      {/*<StatsSection />*/}
-      {/*<CTASection />*/}
       <FormularioSection />
       <ScrollToTopButton />
     </div>

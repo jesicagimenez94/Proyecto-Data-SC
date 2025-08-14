@@ -1,65 +1,45 @@
-/* Estilos para la sección de proyectos - Mobile First */
+
+p.proyectos-description.proyectos-description-mb {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: -1rem;
+}
+
+
+/* Fondo parallax (individual por slide) */
+.parallax-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* z-index: 0; */
+}
+
+/* Sección base */
 .section-proyectos {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 16px 4px;
-}
-
-@media (min-width: 640px) {
-  .section-proyectos {
-    gap: 16px;
-    padding: 16px 8px;
-  }
+  padding: 64px 4px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
   .section-proyectos {
     gap: 20px;
-    padding: 16px;
+    padding: 64px;
   }
 }
 
-@media (min-width: 1024px) {
-  .section-proyectos {
-    padding: 16px 28px;
-  }
-}
-
-/* Estilos para el título */
-.proyectos-title {
-  font-size: 1rem;
-  text-align: center;
-  letter-spacing: var(--heading-desktop-h3-letter-spacing);
-  line-height: var(--heading-desktop-h3-line-height);
-  font-family: var(--heading-desktop-h3);
-  color: #E0CFF7;
-}
-
-@media (min-width: 640px) {
-  .proyectos-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .proyectos-title {
-    font-size: 1.875rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .proyectos-title {
-    font-size: 2.25rem;
-  }
-}
-
-/* Estilos para la descripción */
+/* Descripción */
 .proyectos-description {
   font-size: 0.875rem;
-  line-height: var(--text-medium-normal-line-height);
   text-align: center;
   color: #E0CFF7;
 }
@@ -68,313 +48,181 @@
   margin-bottom: 2rem;
 }
 
-@media (min-width: 640px) {
-  .proyectos-description {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .proyectos-description {
-    font-size: 1.125rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .proyectos-description {
-    font-size: 1.25rem;
-  }
-}
-
-/* Contenedor del Swiper */
+/* Contenedor swiper */
 .swiper-container {
   width: 100%;
-  max-width: 95%;
-  margin: 0 auto;
+  max-width: 100%;
   position: relative;
   overflow: hidden;
 }
 
-/* Estilos para asegurar que las tarjetas se muestren completas */
-.swiper {
-  overflow: visible !important;
-}
-
-/* Establecemos que cada slide tenga un ancho fijo de 400px */
-.swiper-slide-custom {
-  width: 400px;
-  height: auto;
-  margin-bottom: 2rem;
-}
-
-/* En pantallas muy pequeñas donde 400px no cabe, reducimos al ancho de la pantalla */
-@media (max-width: 420px) {
-  .swiper-slide-custom {
-    width: 300px;
-  }
-}
-
-/* Para pantallas medianas y grandes, mantenemos el ancho de tarjeta más espaciado */
-@media (min-width: 768px) {
-  .swiper-container {
-    max-width: 90%;
-  }
-}
-
-/* Estilos para cada tarjeta */
-.proyectos-card {
-  display: flex;
-  flex-direction: column;
+/* Swiper */
+.mySwiper {
   width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 500px;
-  margin: 0 auto;
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  transition: transform 300ms;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* MÉTODO 2: Usar pseudo-elemento ::before (Más profesional) */
+.slide-content {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 2rem 4rem;
+  border-radius: 12px;
+  max-width: auto;
+  color: white;
+  text-align: left;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative; /* Importante para el pseudo-elemento */
 }
 
-.proyectos-card:hover {
-  transform: scale(1.05);
+.slide-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6); /* Ajusta la opacidad aquí */
+  border-radius: 12px;
+  z-index: -1; /* Detrás del contenido */
 }
 
-/* Generamos clases dinámicas para cada background - En un caso real deberías agregarlas dinámicamente */
-.proyecto-bg-0 {
-  background-image: url('/proyectImg1.png');
+/* Card */
+.proyectos-card {
+  background: none;
+  border: none;
+  box-shadow: none;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+  border-radius: 20px;
+  max-width: 600px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); */
 }
 
-.proyecto-bg-1 {
-  background-image: url('/proyectImg2.png');
-}
-
-.proyecto-bg-2 {
-  background-image: url('/proyectImg3.png');
-}
-
-.proyecto-bg-3 {
-  background-image: url('/proyectImg1.png');
-}
-
-.proyecto-bg-4 {
-  background-image: url('/proyectImg2.png');
-}
-
-.proyecto-bg-5 {
-  background-image: url('/proyectImg3.png');
-}
-
-/* Contenido de la tarjeta */
+/* Card content */
 .proyectos-card-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 0.75rem;
   height: 100%;
 }
 
-@media (min-width: 640px) {
-  .proyectos-card-content {
-    padding: 1.5rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .proyectos-card-content {
-    padding: 2rem;
-  }
-}
-
-/* Contenido superior de la tarjeta */
-.card-top-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
-}
-
-@media (min-width: 640px) {
-  .card-top-content {
-    gap: 1.5rem;
-  }
-}
-
-/* Contenedor del título */
-.card-title-container {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@media (min-width: 640px) {
-  .card-title-container {
-    height: 80px;
-  }
-}
-
-/* Título de la tarjeta */
+/* Título */
 .card-title {
-  font-size: 1.125rem;
-  text-align: center;
-  color: #591794;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  font-size: 2rem;
   font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+
 }
 
-@media (min-width: 640px) {
-  .card-title {
-    font-size: 1.375rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .card-title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .card-title {
-    font-size: 1.875rem;
-  }
-}
-
-/* Contenedor de la descripción */
-.card-description-container {
-  flex: 1;
-  width: 100%;
-  min-width: 0; /* Permitimos que se reduzca si es necesario */
-  max-width: 100%;
-  overflow-y: auto;
-}
-
-/* Descripción de la tarjeta */
 .card-description {
-  font-size: 0.875rem;
-  text-align: center;
-  color: white;
+  font-size: 1.2rem;
+  color: #eee;
+  line-height: 1.5;
 }
 
-@media (min-width: 640px) {
-  .card-description {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .card-description {
-    font-size: 1.125rem;
-  }
-}
-
-/* Contenedor del botón */
+/* Botón */
 .card-button-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
 }
 
-/* Estilo del botón */
 .card-button {
+  font-family: 'Rajdhani', sans-serif;
   border-radius: 100px;
-  overflow: hidden;
   padding: 0.5rem 1rem;
-  background-color: #591794;
+  background-color: #750cca; 
   transition: background-color 0.3s;
 }
 
 .card-button:hover {
-  background-color: #e0e0e0;
+  background-color: #8a31dd;
 }
 
-/* Texto del botón */
 .button-text {
   font-size: 0.875rem;
-  color: #08030d;
+  font-weight: 600;
+  color: #ffffff;
   margin-right: 0.25rem;
+
 }
 
-@media (min-width: 640px) {
-  .button-text {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .button-text {
-    font-size: 1.125rem;
-  }
-}
-
-/* Icono del botón */
 .button-icon {
   width: 1rem;
   height: 1rem;
-  color: #08030d;
+  color: #ffffff;
+  font-weight: 600;
 }
 
-@media (min-width: 640px) {
-  .button-icon {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .button-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-  }
-}
-
-/* Personalización del Swiper */
-.mySwiper {
-  overflow: hidden;
-  position: relative;
-}
-
-/* Aseguramos que las tarjetas se muestren completamente */
-.swiper-wrapper {
-  display: flex;
-  align-items: center;
-}
-
+/* Swiper navigation */
 .swiper-button-next,
 .swiper-button-prev {
-  color: #a03df4 !important;
-  width: 40px !important;
-  height: 40px !important;
+  color:#750cca !important;
+  width: 35px !important;
+  height: 35px !important;
+  font-weight: 900;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color:#c631dd !important;
+  width: 35px !important;
+  height: 35px !important;
+  font-weight: 900;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 20px !important;
+  font-size: 35px !important;
 }
 
-@media (min-width: 640px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 35px !important;
-  }
+.swiper-pagination-bullet {
+  background: #750cca !important;
+  width: 14px !important;
+  height: 14px !important;
+  opacity: 1 !important;
 }
-
-@media (min-width: 768px) {
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 50px !important;
-  }
-}
-
 .swiper-pagination-bullet-active {
-  background: #a03df4 !important;
+  background: #fff !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slide-content {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+  }
+
+  .card-description {
+    font-size: 0.95rem;
+  }
 }

@@ -30,79 +30,75 @@
         {
             "id": 201,
             "title": "Innovative data analytics solutions",
-            "description": "LincePulce offers advanced data analytics services that empower businesses to make informed decisions. By harnessing the power of big data, we help organizations uncover valuable insights and optimize their operations for success."
+            "description": "LincePulce offers advanced data analytics services that empower businesses to make informed decisions. By harnessing the power of big data, we help organizations uncover valuable insights and optimize their operations for success.",
+            "backgroundImage": "/proyectImg1webp.webp"
         },
         {
             "id": 202,
             "title": "Customized business intelligence tools",
-            "description": "LincePulce offers customized business intelligence tools that enhance decision-making. These tools provide seamless data visualization, real-time insights, and intuitive reporting, allowing your team to access and analyze critical information efficiently."
+            "description": "LincePulce offers customized business intelligence tools that enhance decision-making. These tools provide seamless data visualization, real-time insights, and intuitive reporting, allowing your team to access and analyze critical information efficiently.",
+            "backgroundImage": "/proyectImg2webp.webp"
         },
         {
             "id": 203,
             "title": "Desarrollo de Software",
-            "description": "Creando el Futuro Diseñamos y desarrollamos aplicaciones robustas, escalables y seguras a la medida de t us necesidades. Desde plataformas web hasta integraciones complejas, nuestra experiencia garantiza productos innovadores y eficientes.",
-            "backgroundImage": "/proyectImg3.png"
+            "description": "Creando el Futuro Diseñamos y desarrollamos aplicaciones robustas, escalables y seguras a la medida de tus necesidades. Desde plataformas web hasta integraciones complejas, nuestra experiencia garantiza productos innovadores y eficientes.",
+            "backgroundImage": "/proyectImg3webp.webp"
         },
         {
             "id": 204,
             "title": "TARJETA 4",
             "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
-            "backgroundImage": "/proyectImg3.png"
+            "backgroundImage": "/proyectImg1webp.webp"
         },
         {
             "id": 205,
             "title": "TARJETA 5",
             "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
-            "backgroundImage": "/proyectImg3.png"
+            "backgroundImage": "/proyectImg2webp.webp"
         },
         {
             "id": 206,
             "title": "TARJETA 6",
             "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
-            "backgroundImage": "/proyectImg3.png"
+            "backgroundImage": "/proyectImg3webp.webp"
         }
     ],
     "teamMembers": [
         {
             "name": "Jesica Gimenez",
             "jobTitle": "Product Owner",
-            "description": "Jesica lidera proyectos tecnológicos con enfoque en el cliente. Su experiencia en software y gestión de equipos asegura resultados exitosos.",
-            "image": "/Jesica.jpeg",
+            "image": "/jesicawebp.webp",
             "linkedin": "https://www.linkedin.com/in/jesica-gimenez/"
         },
         {
             "name": "Mauro Ciancioci",
             "jobTitle": "Team Leader",
-            "description": "Mauro domina metodologías ágiles y fomenta la colaboración. Su liderazgo guía a los equipos a alcanzar metas de forma eficiente y organizada.",
-            "image": "/Mauro.png",
+            "image": "/Maurowebp.webp",
             "linkedin": "https://www.linkedin.com/in/mauro-ciancioci/"
         },
         {
             "name": "Pablo Torrez",
             "jobTitle": "Full Stack Developer",
-            "description": "Pablo desarrolla soluciones completas combinando front-end y back-end. Su enfoque integral impulsa la innovación en cada proyecto.",
-            "image": "/Pablo.jpeg",
+            "image": "/Pablowebp.webp",
             "linkedin": "https://www.linkedin.com/in/pablo-torrez-33a80324b/"
         },
         {
             "name": "Joel Barrientos",
             "jobTitle": "Full Stack Developer",
-            "description": "Joel crea aplicaciones web escalables y eficientes. Su dominio de múltiples tecnologías le permite resolver desafíos con creatividad.",
-            "image": "/Joel.jpeg",
+            "image": "/Joelwebp.webp",
             "linkedin": "https://www.linkedin.com/in/barrientossjoel/"
         },
         {
             "name": "Javier Cohen",
             "jobTitle": "Frontend Developer",
-            "description": "Javier diseña interfaces atractivas y funcionales. Su atención al detalle mejora la experiencia del usuario y resalta el diseño visual.",
             "image": "/Javier.jpeg",
             "linkedin": "https://www.linkedin.com/in/javier-cohen/"
         },
         {
             "name": "Demian Marcos Garcia",
             "jobTitle": "Backend Developer",
-            "description": "Demian optimiza sistemas backend con foco en rendimiento, escalabilidad y seguridad. Aporta soluciones robustas ante grandes demandas.",
-            "image": "/Demian.jpeg",
+            "image": "/Demianwebp.webp",
             "linkedin": "https://www.linkedin.com/in/marcos-demian-garcia/"
         }
     ],

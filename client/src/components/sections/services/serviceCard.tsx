@@ -32,7 +32,7 @@ export function ServiceCard({ title, description, backgroundPattern, url }: Serv
 
         <p className="text-small-normal text-[#f2f2f2]/80 mb-8 text-sm md:text-base flex-grow">{description}</p>
 
-        <a href={url} className="inline-flex items-center text-[#a33cfa] group mt-auto w-fit">
+        <a href={url} className="font-rajdhani inline-flex items-center text-[#a33cfa] group mt-auto w-fit">
           <span className="mr-1">Conoce más</span>
           <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
         </a>

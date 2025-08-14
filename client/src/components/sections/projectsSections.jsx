@@ -1,92 +1,85 @@
-//////////////////////////////////////////////////////////
-// Importaciones
+import React, { useRef } from "react";
 import { Card, CardContent } from "../ui/Card";
 import Button from "../ui/Button.jsx";
 import { ChevronRightIcon } from "lucide-react";
 import { useContent } from "../../context/ContentProvider";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-// import required modules
-import { Pagination, Navigation } from 'swiper/modules';
-import '../../../src/styles/Proyectos.css';
+import { Swiper, SwiperSlide } from "swiper/react";
 
-//////////////////////////////////////////////////////////
-// Componente FeaturesSection
+// Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// Swiper modules
+import { Pagination, Navigation } from "swiper/modules";
+import "../../../src/styles/Proyectos.css";
+
 const Proyectos = () => {
   const { features = [] } = useContent() || {};
-
-  // Asegurar que solo se muestren 6 tarjetas
   const displayFeatures = features.slice(0, 6);
+
+  // Referencia para acceder al Swiper
+  const swiperRef = useRef(null);
 
   return (
     <>
-      {/* Features Section */}
-      <section className="section-proyectos">
-        <h3 className="heading-h5 text-center text-white">
-          Proyectos
-        </h3>
-        <p className="proyectos-description proyectos-description-mb">
-          Conocé nuestros servicios y llevá tu negocio al próximo nivel.
-        </p>
+    <section className="section-proyectos">
+      <h3 className="heading-h5 text-center text-white">Proyectos</h3>
+      <p className="proyectos-description proyectos-description-mb">
+        Conocé nuestros servicios y llevá tu negocio al próximo nivel.
+      </p>
 
-        {/* Swiper Carousel */}
-        <div className="swiper-container">
-          <Swiper
-            slidesPerView="auto"
-            direction="horizontal"
-            spaceBetween={30}
-            pagination={{
-              clickable: true,
-              dynamicBullets: true,
-            }}
-            navigation={true}
-            modules={[Pagination, Navigation]}
-            className="mySwiper"
-            loop={true}
-            centeredSlides={false}
-            slideVisibleClass="swiper-slide-visible"
-          >
-            {displayFeatures.map((feature, index) => (
-              <SwiperSlide key={index} className="swiper-slide-custom">
-                <Card className={`proyectos-card proyecto-bg-${index}`}>
+      <div className="swiper-container">
+        <Swiper
+          speed={600}
+          pagination={{ clickable: true, dynamicBullets: true }}
+          navigation={true}
+          loop={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
+          onSlideChange={() => {
+            if (swiperRef.current && swiperRef.current.pagination) {
+              swiperRef.current.pagination.update(); // Forzar actualización de los bullets
+            }
+          }}
+        >
+          {displayFeatures.map((features, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="slide-content"
+                style={{
+                  backgroundImage: `url(${features.backgroundImage})`,
+                }}
+              >
+                <Card className="proyectos-card">
                   <CardContent className="proyectos-card-content">
-                    {/* Contenido superior */}
                     <div className="card-top-content">
                       <div className="card-title-container">
-                        <h5 className="card-title">
-                          {feature.title}
-                        </h5>
+                        <h5 className="card-title">{features.title}</h5>
                       </div>
                       <div className="card-description-container">
                         <p className="card-description">
-                          {feature.description}
+                          {features.description}
                         </p>
                       </div>
                     </div>
-
-                    {/* Botón */}
                     <div className="card-button-container">
-                      <Button
-                        variant="link"
-                        className="card-button"
-                      >
-                        <span className="button-text">
-                          Ver más
-                        </span>
+                      <Button variant="link" className="card-button">
+                        <span className="button-text">Ver más</span>
                         <ChevronRightIcon className="button-icon" />
                       </Button>
                     </div>
                   </CardContent>
                 </Card>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </section>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+    </section>
     </>
   );
 };

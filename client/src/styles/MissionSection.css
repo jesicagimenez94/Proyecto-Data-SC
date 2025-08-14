@@ -1,0 +1,13 @@
+h2.heading-h5 {
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  color: #E0CFF7;
+  margin-bottom: 2rem;
+}
+
+.text-regular-normal {
+  font-size: 18px;
+  color: #E0CFF7;
+  line-height: 1.5;
+  margin: 0.5rem 0;
+}

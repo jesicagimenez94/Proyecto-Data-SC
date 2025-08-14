@@ -22,15 +22,15 @@ const HeroSection = () => {
           </div>
   
           <div className="md:flex justify-center gap-5">
-            <Button className="text-lg md:text-xl text-white bg-[#750cca] border-none rounded-full hover:bg-[#8600f3] btn btn-lg py-4 shadow-xl mb-2 md:m-0 hover:shadow-2xl hover:shadow-[#a43cfa]" href="#form-section">
-              
+            <Button className="font-rajdhani text-lg md:text-xl text-white bg-[#750cca] border-none rounded-full hover:bg-[#8600f3] btn btn-lg py-4 shadow-xl mb-2 md:m-0 hover:shadow-2xl hover:shadow-[#a43cfa]" href="#form-section">
+
                 Contactanos
               
             </Button>
 
             <Button
               variant="outline"
-              className="text-lg md:text-xl text-white border-zinc-800 border rounded-full hover:bg-slate-200 py-4 hover:text-[#000] btn btn-lg md:m-0 mt-2 bg-[#222]/30 backdrop-blur-2xl"
+              className="font-rajdhani text-lg md:text-xl text-white border-zinc-800 border rounded-full hover:bg-slate-200 py-4 hover:text-[#000] btn btn-lg md:m-0 mt-2 bg-[#222]/30 backdrop-blur-2xl"
               href="#servicios"
             >
               
