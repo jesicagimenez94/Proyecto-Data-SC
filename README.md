@@ -1,4 +1,4 @@
-# EstelarCode
+# EstelarCode - Oficial
 
 [![Deploy to Railway](https://github.com/jesicagimenez94/Proyecto-Data-SC/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/jesicagimenez94/Proyecto-Data-SC/actions/workflows/deploy.yml)
 
