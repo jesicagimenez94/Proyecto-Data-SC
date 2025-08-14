@@ -1,0 +1,163 @@
+{
+    "navLinks": [
+        {
+            "id": 100,
+            "text": "Inicio",
+            "href": "/"
+        },
+        {
+            "id": 101,
+            "text": "Servicios",
+            "href": "/#servicios"
+        },
+        {
+            "id":102,
+            "text": "Nosotros",
+            "href":"/#sobre-nosotros"
+        },
+        {
+            "id": 103,
+            "text": "Proyectos",
+            "href": "/#proyectos"
+        },
+        {
+            "id": 104,
+            "text": "Team Members",
+            "href": "/#team-members"
+        }
+    ],
+    "features": [
+        {
+            "id": 201,
+            "title": "Innovative data analytics solutions",
+            "description": "LincePulce offers advanced data analytics services that empower businesses to make informed decisions. By harnessing the power of big data, we help organizations uncover valuable insights and optimize their operations for success."
+        },
+        {
+            "id": 202,
+            "title": "Customized business intelligence tools",
+            "description": "LincePulce offers customized business intelligence tools that enhance decision-making. These tools provide seamless data visualization, real-time insights, and intuitive reporting, allowing your team to access and analyze critical information efficiently."
+        },
+        {
+            "id": 203,
+            "title": "Desarrollo de Software",
+            "description": "Creando el Futuro Diseñamos y desarrollamos aplicaciones robustas, escalables y seguras a la medida de t us necesidades. Desde plataformas web hasta integraciones complejas, nuestra experiencia garantiza productos innovadores y eficientes.",
+            "backgroundImage": "public/proyectImg3.png"
+        },
+        {
+            "id": 204,
+            "title": "TARJETA 4",
+            "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+            "backgroundImage": "public/proyectImg3.png"
+        },
+        {
+            "id": 205,
+            "title": "TARJETA 5",
+            "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+            "backgroundImage": "public/proyectImg3.png"
+        },
+        {
+            "id": 206,
+            "title": "TARJETA 6",
+            "description": "lorem ipsum dolor sit amet consectetur adipiscing elit.",
+            "backgroundImage": "public/proyectImg3.png"
+        }
+
+    ],
+    "teamMembers": [
+        {
+            "name": "Jesica Gimenez",
+            "jobTitle": "Product Owner",
+            "description": "Jesica lidera proyectos tecnológicos con enfoque en el cliente. Su experiencia en software y gestión de equipos asegura resultados exitosos.",
+            "image": "public/Jesica.jpeg",
+            "linkedin": "https://www.linkedin.com/in/jesica-gimenez/"
+          },
+          {
+            "name": "Mauro Ciancioci",
+            "jobTitle": "Team Leader",
+            "description": "Mauro domina metodologías ágiles y fomenta la colaboración. Su liderazgo guía a los equipos a alcanzar metas de forma eficiente y organizada.",
+            "image": "public/Mauro.png",
+            "linkedin": "https://www.linkedin.com/in/mauro-ciancioci/"
+          },
+          {
+            "name": "Pablo Torrez",
+            "jobTitle": "Full Stack Developer",
+            "description": "Pablo desarrolla soluciones completas combinando front-end y back-end. Su enfoque integral impulsa la innovación en cada proyecto.",
+            "image": "public/Pablo.jpeg",
+            "linkedin": "https://www.linkedin.com/in/pablo-torrez-33a80324b/"
+          },
+          {
+            "name": "Joel Barrientos",
+            "jobTitle": "Full Stack Developer",
+            "description": "Joel crea aplicaciones web escalables y eficientes. Su dominio de múltiples tecnologías le permite resolver desafíos con creatividad.",
+            "image": "public/joel.jpeg",
+            "linkedin": "https://www.linkedin.com/in/barrientossjoel/"
+          },
+          {
+            "name": "Javier Cohen",
+            "jobTitle": "Frontend Developer",
+            "description": "Javier diseña interfaces atractivas y funcionales. Su atención al detalle mejora la experiencia del usuario y resalta el diseño visual.",
+            "image": "public/Javier.jpeg",
+            "linkedin": "https://www.linkedin.com/in/javier-cohen/"
+          },
+          {
+            "name": "Demian Marcos Garcia",
+            "jobTitle": "Backend Developer",
+            "description": "Demian optimiza sistemas backend con foco en rendimiento, escalabilidad y seguridad. Aporta soluciones robustas ante grandes demandas.",
+            "image": "public/Demian.jpeg",
+            "linkedin": "https://www.linkedin.com/in/marcos-demian-garcia/"
+          }
+    ],
+    "footerLinks": [
+        {
+            "id": 401,
+            "text": "Inicio",
+            "href": "/"
+        },
+        {
+            "id": 402,
+            "text": "Servicios",
+            "href": "/#servicios"
+        },
+        {
+            "id": 403,
+            "text": "Proyectos",
+            "href": "/#proyectos"
+        },
+        {
+            "id": 404,
+            "text": "Nosotros",
+            "href":"/#sobre-nosotros"
+        },
+        {
+            "id": 405,
+            "text": "Team Members",
+            "href": "/#team-members"
+        }
+    ],
+    "socialIcons": [
+        {
+            "id": 501,
+            "src": "public/icon---instagram-white.svg",
+            "alt": "Icon instagram",
+            "url": "https://www.instagram.com/"
+        },
+        {
+            "id": 502,
+            "src": "public/icon---x-white.svg",
+            "alt": "Icon x",
+            "url": "https://x.com/"
+        },
+        {
+            "id": 503,
+            "src": "public/icon---linkedin-white.svg",
+            "alt": "Icon linkedin",
+            "url": "https://www.linkedin.com/"
+        },
+        {
+            "id": 504,
+            "src": "public/icon---youtube-white.svg",
+            "alt": "Icon youtube",
+            "url": "https://www.youtube.com/"
+        }
+    ]
+}

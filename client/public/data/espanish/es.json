@@ -1,0 +1,14 @@
+{
+  "navLinks": [
+    { "text": "Inicio", "href": "#inicio" },
+    { "text": "Productos", "href": "#productos" },
+    { "text": "Nosotros", "href": "#nosotros" }
+  ],
+  "buttons": {
+    "contact": "Contacto",
+    "language": {
+      "es": "Español",
+      "en": "Inglés"
+    }
+  }
+}
