@@ -24,6 +24,8 @@ module.exports = {
         "text-small-link": "var(--text-small-link-font-family)",
         "text-small-normal": "var(--text-small-normal-font-family)",
         "text-small-semi-bold": "var(--text-small-semi-bold-font-family)",
+        orbitron: ['Orbitron', 'sans-serif'],
+        rajdhani: ['Rajdhani', 'sans-serif'],
         sans: [
           "ui-sans-serif",
           "system-ui",

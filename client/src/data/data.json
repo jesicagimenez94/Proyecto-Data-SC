@@ -17,12 +17,12 @@
         },
         {
             "id":103,
-            "text": "Nosotros",
+            "text": "Nuestra Misión",
             "href":"/#sobre-nosotros"
         },
         {
             "id": 104,
-            "text": "Team Members",
+            "text": "Equipo de Trabajo",
             "href": "/#team-members"
         }
     ],
@@ -124,12 +124,12 @@
         },
         {
             "id": 404,
-            "text": "Nosotros",
+            "text": "Nuestra Misión",
             "href":"/#sobre-nosotros"
         },
         {
             "id": 405,
-            "text": "Team Members",
+            "text": "Equipo de Trabajo",
             "href": "/#team-members"
         }
     ],
