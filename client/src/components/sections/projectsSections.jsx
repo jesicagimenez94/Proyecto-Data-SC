@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////
 // Importaciones
 import { Card, CardContent } from "../ui/Card";
-import Button from "../ui/button";
+import Button from "../ui/Button.jsx";
 import { ChevronRightIcon } from "lucide-react";
 import { useContent } from "../../context/ContentProvider";
 // Import Swiper React components

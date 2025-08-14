@@ -1,6 +1,6 @@
 //////////////////////////////////////////////////////////
 // Importaciones
-import Button from "../ui/button";
+import Button from "../ui/Button.jsx";
 import { Card, CardContent } from "../../components/ui/Card";
 import { useContent } from "../../context/ContentProvider";
 import { useState, useEffect } from "react";

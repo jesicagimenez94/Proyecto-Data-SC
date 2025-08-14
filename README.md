@@ -1,5 +1,7 @@
 # EstelarCode
 
+[![Deploy to Railway](https://github.com/jesicagimenez94/Proyecto-Data-SC/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/jesicagimenez94/Proyecto-Data-SC/actions/workflows/deploy.yml)
+
 Bienvenido querido compañero de desarrollo! Abajo están las instrucciones para trabajar con la app. 
 
 ## Preparándo el inicio

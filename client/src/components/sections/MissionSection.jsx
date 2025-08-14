@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////
 // Importaciones
 import { ChevronRightIcon } from "lucide-react";
-import Button from "../ui/button";
+import Button from "../ui/Button.jsx";
 
 //////////////////////////////////////////////////////////
 // Componente MissionSection
